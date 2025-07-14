@@ -30,7 +30,9 @@ export const ProblemSection = () => {
             <h2 className="heading-tactical text-4xl md:text-5xl text-white">
               Outdated ear protection
             </h2>
-            <h3 className="subheading-tactical text-2xl md:text-3xl" style={{ color: '#6C6846' }}>
+            <h3 className="subheading-tactical text-2xl md:text-3xl" style={{
+            color: '#6C6846'
+          }}>
               Fails when it matters most
             </h3>
           </div>
@@ -38,12 +40,14 @@ export const ProblemSection = () => {
         </div>
 
         <div className="grid-tactical max-w-5xl mx-auto">
-          {problems.map((problem, index) => <div key={index} className="bg-black/55 p-8 rounded-lg text-center border-2" style={{ borderColor: '#6C6846' }}>
+          {problems.map((problem, index) => <div key={index} className="bg-black/55 p-8 rounded-lg text-center border-2" style={{
+          borderColor: '#6C6846'
+        }}>
               <problem.icon className="w-16 h-16 text-scarlet-red mx-auto mb-6" strokeWidth={2} />
               <h3 className="subheading-tactical text-white text-xl mb-4 h-16 flex items-center justify-center">
                 {problem.title}
               </h3>
-              <p className="body-tactical text-white text-lg font-thin">
+              <p className="body-tactical text-white font-thin text-sm">
                 {problem.description}
               </p>
             </div>)}
