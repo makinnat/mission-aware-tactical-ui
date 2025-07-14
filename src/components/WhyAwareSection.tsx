@@ -43,7 +43,7 @@ export const WhyAwareSection = () => {
             </p>
 
             {/* Icon Highlights */}
-            <div className="flex flex-wrap gap-8 mb-10">
+            <div className="flex justify-between gap-4 mb-10 max-w-lg">
               {highlights.map((highlight, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <highlight.icon className="w-8 h-8 text-scarlet-red" strokeWidth={2} />
