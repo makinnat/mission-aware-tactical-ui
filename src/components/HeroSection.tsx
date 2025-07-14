@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-tactical-operator.jpg";
+import heroImage from "@/assets/hero-tactical-operator-plain.jpg";
 export const HeroSection = () => {
   return <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
