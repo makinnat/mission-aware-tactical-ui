@@ -1,25 +1,20 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-tactical-operator.jpg";
-
 export const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }} />
       
       {/* Dark Gradient Overlay */}
       <div className="absolute inset-0 hero-overlay" />
       
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
-        <h1 className="heading-tactical text-primary text-5xl md:text-7xl lg:text-8xl mb-6 max-w-5xl mx-auto leading-tight">
-          Custom-Fit Hearing Protection. Mission-Ready Performance.
-        </h1>
+        <h1 className="heading-tactical md:text-7xl lg:text-8xl mb-6 max-w-5xl mx-auto leading-tight text-stone-50 text-5xl">CUSTOM-FIT HEARING PROTECTION MISSION-READY PERFORMANCE</h1>
         
-        <p className="subheading-tactical text-secondary text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        <p className="subheading-tactical text-secondary md:text-2xl mb-8 max-w-3xl mx-auto font-semibold text-base">
           If it's not worn, it doesn't work. Discover gear that actually gets worn and performs flawlessly.
         </p>
         
@@ -37,6 +32,5 @@ export const HeroSection = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
