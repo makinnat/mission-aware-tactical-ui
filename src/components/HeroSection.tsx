@@ -12,7 +12,7 @@ export const HeroSection = () => {
       
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
-        <h1 className="heading-tactical md:text-7xl lg:text-8xl mb-6 max-w-5xl mx-auto leading-tight text-stone-50 text-5xl">
+        <h1 className="heading-tactical text-5xl mb-6 max-w-5xl mx-auto leading-tight text-stone-50">
           CUSTOM-FIT HEARING PROTECTION<br />
           <span style={{
           color: 'hsl(var(--scarlet-red))'
