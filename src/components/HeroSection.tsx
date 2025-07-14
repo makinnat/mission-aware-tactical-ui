@@ -30,7 +30,7 @@ export const HeroSection = () => {
           <Button className="btn-hero-cta text-white bg-black">
             Schedule A Meeting
           </Button>
-          <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm">
+          <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm text-white bg-black">
             Learn How Our Tech Works
           </Button>
         </div>
