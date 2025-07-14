@@ -29,9 +29,14 @@ export const WhyAwareSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Text content */}
           <div>
-            <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-8">
-              Engineered by Operators. Validated in the Field.
-            </h2>
+            <div className="mb-6">
+              <h2 className="heading-tactical text-4xl md:text-5xl text-white">
+                Engineered by Operators
+              </h2>
+              <h3 className="subheading-tactical text-2xl md:text-3xl" style={{ color: '#6C6846' }}>
+                Validated in the field
+              </h3>
+            </div>
             
             <p className="body-tactical text-foreground text-lg md:text-xl mb-10 leading-relaxed">
               Founded by combat-tested operators, Aware Defense delivers proven, field-tested solutions that enhance rather than hinder performance.
