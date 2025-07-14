@@ -75,14 +75,6 @@ export const TestimonialsSection = () => {
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentLogoStart((prev) => (prev + 1) % logos.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [logos.length]);
-
   return (
     <section 
       ref={ref}
@@ -126,25 +118,22 @@ export const TestimonialsSection = () => {
         {/* Logo Scroll */}
         <div className="border-t border-border pt-12">
           <div className="overflow-hidden">
-            <div className="flex items-center justify-center gap-6 md:gap-8 transition-transform duration-500 ease-in-out">
-              {Array.from({ length: 4 }, (_, i) => {
-                const logoIndex = (currentLogoStart + i) % logos.length;
-                const logo = logos[logoIndex];
-                return (
-                  <div 
-                    key={`${logoIndex}-${i}`} 
-                    className="flex-shrink-0 bg-signal-white rounded-lg p-4 shadow-sm"
-                  >
-                    <div className="h-12 md:h-16 w-24 md:w-32 flex items-center justify-center">
-                      <img 
-                        src={logo.src} 
-                        alt={logo.alt}
-                        className="h-full w-full object-contain"
-                      />
-                    </div>
+            <div className="flex items-center gap-6 md:gap-8 animate-scroll">
+              {/* Duplicate logos for seamless loop */}
+              {[...logos, ...logos].map((logo, index) => (
+                <div 
+                  key={index} 
+                  className="flex-shrink-0 bg-signal-white rounded-lg p-4 shadow-sm border-2 border-olive-drab"
+                >
+                  <div className="h-12 md:h-16 w-24 md:w-32 flex items-center justify-center">
+                    <img 
+                      src={logo.src} 
+                      alt={logo.alt}
+                      className="h-full w-full object-contain"
+                    />
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
         </div>
