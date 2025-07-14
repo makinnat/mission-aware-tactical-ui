@@ -18,9 +18,7 @@ export const HeroSection = () => {
           If it's not worn, it doesn't work. Discover gear that actually gets worn and performs flawlessly.
         </p>
         
-        <p className="body-tactical text-signal-white text-lg md:text-xl mb-12 max-w-4xl mx-auto opacity-90">
-          The world's only FDA-cleared, non-contact 3D ear scanner. Trusted by Special Operations, Aviators, and Industrial Teams.
-        </p>
+        <p className="body-tactical text-signal-white text-lg md:text-xl mb-12 max-w-4xl mx-auto opacity-90">The world's only FDA-cleared, non-contact 3D ear scanner. Trusted by Special Operations, DoD Aviators, Law Enforcement, and Industrial Teams.</p>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
