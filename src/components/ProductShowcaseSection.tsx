@@ -95,7 +95,7 @@ const ProductShowcaseSection = () => {
               {duplicatedProducts.map((product, index) => (
                 <div 
                   key={`${product.name}-${index}`} 
-                  className="flex-shrink-0 mx-8 group"
+                  className="flex-shrink-0 mx-8 group p-2"
                 >
                   <div className="w-48 h-48 bg-black rounded-2xl p-8 flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20">
                     <img
