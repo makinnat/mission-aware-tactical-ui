@@ -88,9 +88,7 @@ const Products = () => {
               <h2 className="heading-tactical text-primary text-3xl md:text-4xl">
                 WHY CUSTOM FIT MATTERS
               </h2>
-              <p className="body-tactical text-signal-white text-lg leading-relaxed">
-                Every ear is unique. Our patented FDA-cleared 3D scanner creates a precise ear profile, enabling superior protection, comfort, and sensor integration.
-              </p>
+              <p className="body-tactical text-signal-white text-lg leading-relaxed">Every ear is unique. Our patented FDA-cleared 3D scanner creates a precise ear profile, enabling superior protection, comfort, and sensor integration. With zero risk, and 100% fit. </p>
             </div>
           </div>
         </div>
