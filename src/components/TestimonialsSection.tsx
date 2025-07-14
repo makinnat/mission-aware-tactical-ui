@@ -29,12 +29,41 @@ export const TestimonialsSection = () => {
   ];
 
   const logos = [
-    "US Navy",
-    "US Army", 
-    "ONR",
-    "Emory Healthcare",
-    "Takeda",
-    "Logitech"
+    {
+      name: "US Navy",
+      src: "/lovable-uploads/d59ab18c-d11d-4598-8ecf-85b9b65b9f8d.png",
+      alt: "US Navy Logo"
+    },
+    {
+      name: "US Army", 
+      src: "/lovable-uploads/889ccf25-6998-4119-8a67-f431b97da35a.png",
+      alt: "US Army Logo"
+    },
+    {
+      name: "US Air Force",
+      src: "/lovable-uploads/0c24dfc3-6782-4c71-a3db-e2f04154ac88.png",
+      alt: "US Air Force Logo"
+    },
+    {
+      name: "ONR",
+      src: "/lovable-uploads/a8e2387b-c26e-4705-9bf5-6050903737c5.png",
+      alt: "Office of Naval Research Logo"
+    },
+    {
+      name: "Emory Healthcare",
+      src: "/lovable-uploads/2e7ebe91-8198-46cc-8c0f-a99ad3760169.png",
+      alt: "Emory Healthcare Logo"
+    },
+    {
+      name: "Takeda",
+      src: "/lovable-uploads/9ab5019f-203f-404b-89b1-a6411e681421.png",
+      alt: "Takeda Logo"
+    },
+    {
+      name: "Logitech",
+      src: "/lovable-uploads/801cc443-a322-4d8a-80c8-57f9cc359f15.png",
+      alt: "Logitech Logo"
+    }
   ];
 
   useEffect(() => {
@@ -87,10 +116,14 @@ export const TestimonialsSection = () => {
 
         {/* Logo Scroll */}
         <div className="border-t border-border pt-12">
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
             {logos.map((logo, index) => (
-              <div key={index} className="text-signal-white text-lg font-montserrat font-bold tracking-wide">
-                {logo}
+              <div key={index} className="h-12 md:h-16 flex items-center">
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt}
+                  className="h-full w-auto object-contain filter brightness-0 invert opacity-70 hover:opacity-90 transition-opacity duration-300"
+                />
               </div>
             ))}
           </div>
