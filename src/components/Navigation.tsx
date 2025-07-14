@@ -52,9 +52,9 @@ const Navigation = () => {
                         Custom Hearing Protection
                       </div>
                       <div className="pl-6">
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        <Link to="/products/earshield" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                           EarShield
-                        </a>
+                        </Link>
                         <div className="group">
                           <div className="px-4 py-1 text-desert-tan/70 text-xs uppercase tracking-wide">
                             Vented Protection
