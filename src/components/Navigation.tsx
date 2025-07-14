@@ -14,12 +14,16 @@ const Navigation = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-combat-black py-5">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between">
-          {/* Logo/Brand */}
-          <div className="text-desert-tan font-semibold text-lg tracking-wider">
-            AWARE DEFENSE
-          </div>
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/5c607f12-b54d-4365-a386-81fe63ac9dda.png" 
+                alt="Aware Defense Logo" 
+                className="h-8 w-auto"
+              />
+            </div>
 
           {/* Navigation Menu */}
           <div className="hidden md:flex items-center space-x-8">
