@@ -31,11 +31,6 @@ const ProductShowcaseSection = () => {
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/70e76af0-495a-4da0-93ad-1125704583a4.png",
-      alt: "Professional monitoring device"
-    },
-    {
-      name: "SwimPlugs",
       src: "/lovable-uploads/45b01d5a-70fa-4a10-8fb4-397924cbf291.png",
       alt: "Custom ear protection with components"
     },
