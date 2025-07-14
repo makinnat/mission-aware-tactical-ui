@@ -55,7 +55,7 @@ export const WhyAwareSection = () => {
             </div>
 
             <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm">
-              View Use Cases
+              See additional use cases
             </Button>
           </div>
 
