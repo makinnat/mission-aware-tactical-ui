@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 const productImage = "/lovable-uploads/75be66ba-1b9e-4843-b587-0343fb09a439.png";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -44,13 +45,16 @@ export const WhyAwareSection = () => {
             {/* Feature Highlights */}
             <div className="space-y-6 mb-10">
               {highlights.map((highlight, index) => (
-                <div key={index} className="space-y-2">
-                  <h4 className="heading-tactical text-scarlet-red text-lg font-bold tracking-wide">
-                    {highlight.title}
-                  </h4>
-                  <p className="body-tactical text-secondary text-base leading-relaxed">
-                    {highlight.description}
-                  </p>
+                <div key={index} className="flex items-start gap-4">
+                  <Check className="w-6 h-6 text-scarlet-red mt-1 flex-shrink-0" strokeWidth={2} />
+                  <div className="space-y-2">
+                    <h4 className="heading-tactical text-lg font-bold tracking-wide" style={{ color: '#C5A572' }}>
+                      {highlight.title}
+                    </h4>
+                    <p className="body-tactical text-white text-base leading-relaxed">
+                      {highlight.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
