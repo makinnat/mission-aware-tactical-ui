@@ -231,7 +231,9 @@ const Products = () => {
 
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-6 text-center space-y-4">
-                <Filter className="w-12 h-12 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
+                <div className="w-12 h-12 mx-auto mb-4 overflow-hidden rounded-lg">
+                  <img src="/lovable-uploads/5871d1fd-a537-4fc1-8012-e6c57c6e36d6.png" alt="MusicFilters Product" className="w-full h-full object-cover" />
+                </div>
                 <h3 className="heading-tactical text-primary text-lg">MusicFilters</h3>
                 <p className="text-secondary text-sm">
                   Interchangeable filter levels for performers
