@@ -45,7 +45,7 @@ export const ProblemSection = () => {
               <h3 className="subheading-tactical text-white text-2xl mb-4">
                 {problem.title}
               </h3>
-              <p className="body-tactical text-white text-lg font-light">
+              <p className="body-tactical text-white text-lg font-extralight">
                 {problem.description}
               </p>
             </div>)}
