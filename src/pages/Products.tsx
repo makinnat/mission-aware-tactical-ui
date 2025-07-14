@@ -62,7 +62,7 @@ const Products = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column: Stats */}
             <div className="space-y-8">
-              <div className="bg-background rounded-lg p-8 border border-secondary/20">
+              <div className="bg-background rounded-lg p-8 border-2 border-[#6C6846]">
                 <div className="text-center space-y-6">
                   <div className="text-6xl font-bold text-scarlet-red">92%</div>
                   <h3 className="heading-tactical text-primary text-2xl">
@@ -71,7 +71,7 @@ const Products = () => {
                   <div className="flex items-center justify-center space-x-4 mt-8">
                     <CheckCircle className="w-8 h-8 text-scarlet-red" />
                     <p className="text-secondary text-lg">
-                      Only Aware captures the second bend of the ear
+                      Only Aware accurately captures the second bend of the ear for superior fit and performance
                     </p>
                   </div>
                 </div>
