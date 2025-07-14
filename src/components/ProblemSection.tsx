@@ -1,4 +1,4 @@
-import { AlertTriangle, HeadphoneOff, RadioIcon } from "lucide-react";
+import { AlertTriangle, HeadphoneOff, ShieldBan } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 export const ProblemSection = () => {
   const {
@@ -14,7 +14,7 @@ export const ProblemSection = () => {
     title: "Communication Breakdown",
     description: "Muffled comms = compromised awareness"
   }, {
-    icon: RadioIcon,
+    icon: ShieldBan,
     title: "Mission Compromise",
     description: "Operators remove protection to function"
   }];
