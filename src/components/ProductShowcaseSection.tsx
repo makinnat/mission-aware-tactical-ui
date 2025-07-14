@@ -87,7 +87,7 @@ const ProductShowcaseSection = () => {
                   key={`${product.name}-${index}`} 
                   className="flex-shrink-0 mx-8 group"
                 >
-                  <div className="w-48 h-48 bg-black rounded-2xl p-8 flex items-center justify-center shadow-2xl border-2 border-amber-700 transition-all duration-300 hover:scale-105 hover:shadow-primary/20">
+                  <div className="w-48 h-48 bg-black rounded-2xl p-8 flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20">
                     <img
                       src={product.src}
                       alt={product.alt}
