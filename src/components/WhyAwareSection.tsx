@@ -48,7 +48,7 @@ export const WhyAwareSection = () => {
                 <div key={index} className="flex items-start gap-4">
                   <Check className="w-6 h-6 text-scarlet-red mt-1 flex-shrink-0" strokeWidth={2} />
                   <div className="space-y-2">
-                    <h4 className="heading-tactical text-lg font-bold tracking-wide" style={{ color: '#C5A572' }}>
+                    <h4 className="heading-tactical text-lg font-bold tracking-wide" style={{ color: '#B6A687' }}>
                       {highlight.title}
                     </h4>
                     <p className="body-tactical text-white text-base leading-relaxed">
