@@ -1,8 +1,10 @@
 import { Quote } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useState, useEffect } from "react";
 
 export const TestimonialsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const testimonials = [
     {
       quote: "Our aircrew actually want to wear them. The fit and comfort are unmatched.",
@@ -27,6 +29,14 @@ export const TestimonialsSection = () => {
     "Logitech"
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
   return (
     <section 
       ref={ref}
@@ -40,18 +50,31 @@ export const TestimonialsSection = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="text-center">
-              <Quote className="w-12 h-12 text-scarlet-red mx-auto mb-6" />
-              <blockquote className="body-tactical text-signal-white text-lg mb-6 italic leading-relaxed">
-                "{testimonial.quote}"
-              </blockquote>
-              <cite className="subheading-tactical text-secondary text-base">
-                – {testimonial.role}
-              </cite>
-            </div>
-          ))}
+        <div className="relative max-w-4xl mx-auto mb-16">
+          <div className="text-center transition-all duration-500 ease-in-out">
+            <Quote className="w-12 h-12 text-scarlet-red mx-auto mb-6" />
+            <blockquote className="body-tactical text-signal-white text-xl md:text-2xl mb-6 italic leading-relaxed">
+              "{testimonials[currentTestimonial].quote}"
+            </blockquote>
+            <cite className="subheading-tactical text-secondary text-lg">
+              – {testimonials[currentTestimonial].role}
+            </cite>
+          </div>
+          
+          {/* Dots indicator */}
+          <div className="flex justify-center mt-8 space-x-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentTestimonial(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentTestimonial 
+                    ? 'bg-scarlet-red' 
+                    : 'bg-border hover:bg-secondary'
+                }`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Logo Scroll */}
