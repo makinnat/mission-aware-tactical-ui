@@ -20,9 +20,16 @@ const Products = () => {
       {/* Hero Section */}
       <section 
         ref={heroRef}
-        className={`py-32 px-6 bg-background scroll-fade-in ${heroVisible ? 'visible' : ''}`}
+        className={`relative py-32 px-6 bg-cover bg-center bg-no-repeat scroll-fade-in ${heroVisible ? 'visible' : ''}`}
+        style={{
+          backgroundImage: `url(/lovable-uploads/c79eda20-92ba-4d64-a9d7-4e46f5cbd353.png)`
+        }}
       >
-        <div className="max-w-7xl mx-auto text-center">
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-background/70" />
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
           <h1 className="heading-tactical text-white text-3xl md:text-4xl mb-4 leading-tight">
             REVOLUTIONIZING HEARING PROTECTION
           </h1>
