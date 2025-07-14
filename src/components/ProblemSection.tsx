@@ -8,7 +8,7 @@ export const ProblemSection = () => {
   const problems = [{
     icon: AlertTriangle,
     title: "Comfort Failure",
-    description: "Constant readjustment and fatigue"
+    description: "Constant readjustment and fatique during extended operations."
   }, {
     icon: HeadphoneOff,
     title: "Communication Breakdown",
