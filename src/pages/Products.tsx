@@ -4,27 +4,38 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { CheckCircle, Shield, Headphones, Volume2, Radio, Scan, Music, Filter, Moon, Waves } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-
 const Products = () => {
-  const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
-  const { ref: whyRef, isVisible: whyVisible } = useScrollAnimation();
-  const { ref: tacticalRef, isVisible: tacticalVisible } = useScrollAnimation();
-  const { ref: industrialRef, isVisible: industrialVisible } = useScrollAnimation();
-  const { ref: lifestyleRef, isVisible: lifestyleVisible } = useScrollAnimation();
-  const { ref: ctaRef, isVisible: ctaVisible } = useScrollAnimation();
-
-  return (
-    <div className="min-h-screen w-full">
+  const {
+    ref: heroRef,
+    isVisible: heroVisible
+  } = useScrollAnimation();
+  const {
+    ref: whyRef,
+    isVisible: whyVisible
+  } = useScrollAnimation();
+  const {
+    ref: tacticalRef,
+    isVisible: tacticalVisible
+  } = useScrollAnimation();
+  const {
+    ref: industrialRef,
+    isVisible: industrialVisible
+  } = useScrollAnimation();
+  const {
+    ref: lifestyleRef,
+    isVisible: lifestyleVisible
+  } = useScrollAnimation();
+  const {
+    ref: ctaRef,
+    isVisible: ctaVisible
+  } = useScrollAnimation();
+  return <div className="min-h-screen w-full">
       <Navigation />
       
       {/* Hero Section */}
-      <section 
-        ref={heroRef}
-        className={`relative py-32 px-6 bg-cover bg-center bg-no-repeat scroll-fade-in ${heroVisible ? 'visible' : ''}`}
-        style={{
-          backgroundImage: `url(/lovable-uploads/c79eda20-92ba-4d64-a9d7-4e46f5cbd353.png)`
-        }}
-      >
+      <section ref={heroRef} className={`relative py-32 px-6 bg-cover bg-center bg-no-repeat scroll-fade-in ${heroVisible ? 'visible' : ''}`} style={{
+      backgroundImage: `url(/lovable-uploads/c79eda20-92ba-4d64-a9d7-4e46f5cbd353.png)`
+    }}>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-background/70" />
         
@@ -54,10 +65,7 @@ const Products = () => {
       </section>
 
       {/* Why Custom-Fit Section */}
-      <section 
-        ref={whyRef}
-        className={`py-20 px-6 bg-muted/30 scroll-slide-in ${whyVisible ? 'visible' : ''}`}
-      >
+      <section ref={whyRef} className={`py-20 px-6 bg-muted/30 scroll-slide-in ${whyVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column: Stats */}
@@ -70,9 +78,7 @@ const Products = () => {
                   </h3>
                   <div className="flex items-center justify-center space-x-4 mt-8">
                     <CheckCircle className="w-8 h-8 text-scarlet-red" />
-                    <p className="text-secondary text-lg">
-                      Only Aware accurately captures the second bend of the ear for superior fit and performance
-                    </p>
+                    <p className="text-secondary text-lg">Only Aware accurately captures the second bend of the ear for superior fit and performance, even beyond traditional silicone pour methods.</p>
                   </div>
                 </div>
               </div>
@@ -92,10 +98,7 @@ const Products = () => {
       </section>
 
       {/* Tactical & Military Products */}
-      <section 
-        ref={tacticalRef}
-        className={`py-20 px-6 bg-background scroll-scale-in ${tacticalVisible ? 'visible' : ''}`}
-      >
+      <section ref={tacticalRef} className={`py-20 px-6 bg-background scroll-scale-in ${tacticalVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-tactical text-primary text-3xl md:text-4xl text-center mb-16">
             FOR WARFIGHTERS, AVIATORS, AND TACTICAL OPERATORS
@@ -145,10 +148,7 @@ const Products = () => {
       </section>
 
       {/* Industrial & Law Enforcement */}
-      <section 
-        ref={industrialRef}
-        className={`py-20 px-6 bg-muted/30 scroll-slide-in ${industrialVisible ? 'visible' : ''}`}
-      >
+      <section ref={industrialRef} className={`py-20 px-6 bg-muted/30 scroll-slide-in ${industrialVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-tactical text-primary text-3xl md:text-4xl text-center mb-16">
             INDUSTRIAL-GRADE SAFETY FOR DEMANDING ENVIRONMENTS
@@ -198,10 +198,7 @@ const Products = () => {
       </section>
 
       {/* Lifestyle & Recreation */}
-      <section 
-        ref={lifestyleRef}
-        className={`py-20 px-6 bg-background scroll-scale-in ${lifestyleVisible ? 'visible' : ''}`}
-      >
+      <section ref={lifestyleRef} className={`py-20 px-6 bg-background scroll-scale-in ${lifestyleVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-tactical text-primary text-3xl md:text-4xl text-center mb-16">
             PRECISION FIT FOR PERFORMANCE, RECREATION, AND REST
@@ -264,10 +261,7 @@ const Products = () => {
       </section>
 
       {/* Final CTA */}
-      <section 
-        ref={ctaRef}
-        className={`py-20 px-6 bg-muted/30 scroll-fade-in ${ctaVisible ? 'visible' : ''}`}
-      >
+      <section ref={ctaRef} className={`py-20 px-6 bg-muted/30 scroll-fade-in ${ctaVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="heading-tactical text-primary text-4xl md:text-6xl mb-8">
             READY TO PROTECT YOUR TEAM AND YOUR HEARING?
@@ -289,8 +283,6 @@ const Products = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Products;
