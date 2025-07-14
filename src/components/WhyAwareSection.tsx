@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Award, Users, Headphones } from "lucide-react";
 import productImage from "@/assets/product-tactical-earpiece.jpg";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const WhyAwareSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const highlights = [
     {
       icon: Award,
@@ -19,7 +21,10 @@ export const WhyAwareSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-muted">
+    <section 
+      ref={ref}
+      className={`py-20 px-6 bg-muted scroll-slide-left ${isVisible ? 'visible' : ''}`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Text content */}

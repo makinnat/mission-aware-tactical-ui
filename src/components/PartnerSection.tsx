@@ -1,4 +1,7 @@
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 export const PartnerSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const partners = [
     "Invisio",
     "Gentex", 
@@ -9,7 +12,10 @@ export const PartnerSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section 
+      ref={ref}
+      className={`py-20 px-6 bg-background scroll-slide-left ${isVisible ? 'visible' : ''}`}
+    >
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-12">
           We Don't Replace Your Gear — We Make It Better

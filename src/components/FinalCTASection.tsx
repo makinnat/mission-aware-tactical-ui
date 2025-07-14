@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const FinalCTASection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   return (
-    <section className="py-20 px-6 bg-muted">
+    <section 
+      ref={ref}
+      className={`py-20 px-6 bg-muted scroll-scale-in ${isVisible ? 'visible' : ''}`}
+    >
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="heading-tactical text-primary text-4xl md:text-6xl mb-8">
           Ready to Protect Your Team and Future-Proof Your Mission?

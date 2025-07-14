@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Scan, Shield } from "lucide-react";
+import { useStaggeredAnimation } from "@/hooks/useScrollAnimation";
 
 export const HowItWorksSection = () => {
+  const { ref, isVisible } = useStaggeredAnimation();
   const steps = [
     {
       icon: Calendar,
@@ -21,7 +23,10 @@ export const HowItWorksSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-muted">
+    <section 
+      ref={ref}
+      className="py-20 px-6 bg-muted"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">
@@ -29,7 +34,7 @@ export const HowItWorksSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className={`grid md:grid-cols-3 gap-8 mb-12 stagger-children ${isVisible ? 'visible' : ''}`}>
           {steps.map((step, index) => (
             <div key={index} className="text-center relative">
               {/* Step Number */}

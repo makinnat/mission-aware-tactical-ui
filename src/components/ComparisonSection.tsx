@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const ComparisonSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const features = [
     "Fit Guarantee",
     "Communication Compatible", 
@@ -11,7 +13,10 @@ export const ComparisonSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-muted">
+    <section 
+      ref={ref}
+      className={`py-20 px-6 bg-muted scroll-fade-in ${isVisible ? 'visible' : ''}`}
+    >
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">

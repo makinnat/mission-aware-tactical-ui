@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Target, Clock, Radio, Activity } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const SolutionSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const solutions = [
     {
       icon: Target,
@@ -26,7 +28,10 @@ export const SolutionSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section 
+      ref={ref}
+      className={`py-20 px-6 bg-background scroll-slide-right ${isVisible ? 'visible' : ''}`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">

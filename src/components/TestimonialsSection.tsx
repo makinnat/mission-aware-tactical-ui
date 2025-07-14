@@ -1,6 +1,8 @@
 import { Quote } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const TestimonialsSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const testimonials = [
     {
       quote: "Our aircrew actually want to wear them. The fit and comfort are unmatched.",
@@ -26,7 +28,10 @@ export const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section 
+      ref={ref}
+      className={`py-20 px-6 bg-background scroll-scale-in ${isVisible ? 'visible' : ''}`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">

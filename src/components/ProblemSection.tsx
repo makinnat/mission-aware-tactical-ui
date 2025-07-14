@@ -1,6 +1,8 @@
 import { AlertTriangle, Volume, RadioIcon } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const ProblemSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const problems = [
     {
       icon: AlertTriangle,
@@ -20,7 +22,10 @@ export const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section 
+      ref={ref}
+      className={`py-20 px-6 bg-background scroll-fade-in ${isVisible ? 'visible' : ''}`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">
