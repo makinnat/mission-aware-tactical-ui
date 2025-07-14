@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { CheckCircle, ArrowLeft } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -39,15 +39,14 @@ const EarShield = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             
-            {/* Left Column: Product Image */}
-            <div className="space-y-4">
+            {/* Left Column: Product Image and Description */}
+            <div className="space-y-6">
               <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846]">
                 <img 
                   src="/lovable-uploads/4292650a-69ee-427d-8ccf-bc2e4433f736.png" 
                   alt="Aware EarShield" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
-              </div>
               </div>
               
               {/* Detailed Product Description */}
@@ -140,6 +139,7 @@ const EarShield = () => {
                   </p>
                 </div>
               </div>
+            </div>
 
             {/* Right Column: Product Info Panel */}
             <div className="space-y-8">
