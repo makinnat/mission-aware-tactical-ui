@@ -9,15 +9,19 @@ export const SolutionSection = () => {
   const solutions = [{
     icon: Target,
     title: "Zero Contact. Zero Risk. 100% Fit.",
-    description: "Our patented, non-contact 3D ear scanner captures the full geometry of the ear—including the critical second bend—in just 90 seconds.",
-    subtitle: "Scan Once, Fit For Your Career.",
-    subdescription: "Permanent digital profile for fast remakes and future upgrades. Your ear geometry is stored securely for life."
+    description: "Our patented, non-contact 3D ear scanner captures the full geometry of the ear—including the critical second bend—in just 90 seconds."
+  }, {
+    icon: Clock,
+    title: "Scan Once, Fit For Your Career.",
+    description: "Permanent digital profile for fast remakes and future upgrades. Your ear geometry is stored securely for life."
   }, {
     icon: Radio,
     title: "Seamless Integration",
-    description: "Works with your existing comms and helmet systems. We don't replace your gear—we make it better.",
-    subtitle: "Future-Proof Platform",
-    subdescription: "Ready for advanced biometrics and health monitoring as your operational needs evolve."
+    description: "Works with your existing comms and helmet systems. We don't replace your gear—we make it better."
+  }, {
+    icon: Activity,
+    title: "Future-Proof Platform",
+    description: "Ready for advanced biometrics and health monitoring as your operational needs evolve."
   }];
   return <section ref={ref} className={`py-20 px-6 bg-background scroll-slide-right ${isVisible ? 'visible' : ''}`}>
       <div className="max-w-7xl mx-auto">
@@ -35,14 +39,8 @@ export const SolutionSection = () => {
               <h3 className="subheading-tactical text-white text-xl mb-4">
                 {solution.title}
               </h3>
-              <p className="body-tactical text-white font-thin text-sm mb-6">
-                {solution.description}
-              </p>
-              <h4 className="subheading-tactical text-white text-lg mb-3">
-                {solution.subtitle}
-              </h4>
               <p className="body-tactical text-white font-thin text-sm">
-                {solution.subdescription}
+                {solution.description}
               </p>
             </div>)}
         </div>
