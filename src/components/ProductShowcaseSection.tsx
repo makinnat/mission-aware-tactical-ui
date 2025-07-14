@@ -99,9 +99,6 @@ const ProductShowcaseSection = () => {
                       className="max-w-full max-h-full object-contain filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300"
                     />
                   </div>
-                  <p className="text-center mt-4 text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                    {product.name}
-                  </p>
                 </div>
               ))}
             </div>
