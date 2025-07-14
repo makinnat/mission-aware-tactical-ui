@@ -29,7 +29,7 @@ export const HowItWorksSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">
+          <h2 className="heading-tactical text-signal-white text-4xl md:text-5xl mb-6">
             How to Get Started
           </h2>
         </div>
@@ -60,7 +60,7 @@ export const HowItWorksSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="btn-scarlet cta-tactical px-8 py-4 text-base rounded-sm">
+          <Button className="bg-signal-red hover:bg-signal-red/90 text-signal-white cta-tactical px-8 py-4 text-base rounded-sm">
             Book Your Expert Consultation
           </Button>
         </div>
