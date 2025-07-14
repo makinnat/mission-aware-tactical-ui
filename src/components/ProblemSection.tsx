@@ -30,7 +30,7 @@ export const ProblemSection = () => {
             <h2 className="heading-tactical text-4xl md:text-5xl text-white">
               Outdated ear protection
             </h2>
-            <h3 className="subheading-tactical text-scarlet-red text-2xl md:text-3xl">
+            <h3 className="subheading-tactical text-olive-drab text-2xl md:text-3xl">
               Fails when it matters most
             </h3>
           </div>
