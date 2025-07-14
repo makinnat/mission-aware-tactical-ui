@@ -55,7 +55,7 @@ All colors MUST be HSL.
     
     /* Tactical Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--combat-black)), hsl(0 0% 8%));
-    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(var(--combat-black) / 0.8) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsl(var(--combat-black) / 0.3) 0%, hsl(var(--combat-black) / 0.9) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--desert-tan) / 0.1), hsl(var(--desert-tan) / 0.05));
     
     /* Military Shadows */
