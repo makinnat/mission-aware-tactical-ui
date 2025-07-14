@@ -133,11 +133,11 @@ All colors MUST be HSL.
 
   /* Tactical Typography Classes */
   .heading-tactical {
-    @apply font-montserrat font-black uppercase tracking-wide;
+    @apply font-inter font-black uppercase tracking-wide;
   }
 
   .subheading-tactical {
-    @apply font-montserrat font-bold uppercase tracking-wide;
+    @apply font-inter font-bold uppercase tracking-wide;
   }
 
   .cta-tactical {
