@@ -1,17 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { CheckCircle, ArrowLeft } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const EarShield = () => {
   const {
     ref: productRef,
     isVisible: productVisible
   } = useScrollAnimation();
+
+  const [isConfirmed, setIsConfirmed] = useState(false);
 
   return (
     <div className="min-h-screen w-full">
@@ -95,8 +99,30 @@ const EarShield = () => {
                   REQUEST A SCAN TO ORDER
                 </Button>
                 
-                <Button className="btn-olive-outline w-full py-4 text-base">
-                  LEARN ABOUT EFIT 3D SCANNER
+                {/* Checkbox for 3D Scan Confirmation */}
+                <div className="flex items-center space-x-3 py-2">
+                  <Checkbox 
+                    id="scan-confirm"
+                    checked={isConfirmed}
+                    onCheckedChange={(checked) => setIsConfirmed(checked as boolean)}
+                  />
+                  <label 
+                    htmlFor="scan-confirm" 
+                    className="text-signal-white text-sm cursor-pointer"
+                  >
+                    Confirm 3D Scan On-File
+                  </label>
+                </div>
+                
+                <Button 
+                  className={`w-full py-4 text-base transition-all duration-300 ${
+                    isConfirmed 
+                      ? 'bg-secondary text-background hover:bg-secondary/90' 
+                      : 'bg-muted text-muted-foreground cursor-not-allowed'
+                  }`}
+                  disabled={!isConfirmed}
+                >
+                  ADD TO CART
                 </Button>
               </div>
 
