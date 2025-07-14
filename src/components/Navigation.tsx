@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Search, User, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -18,11 +19,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/5c607f12-b54d-4365-a386-81fe63ac9dda.png" 
-              alt="Aware Defense Logo" 
-              className="h-8 w-auto"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/5c607f12-b54d-4365-a386-81fe63ac9dda.png" 
+                alt="Aware Defense Logo" 
+                className="h-8 w-auto"
+              />
+            </Link>
           </div>
 
           {/* Centered Navigation Menu */}
@@ -35,10 +38,10 @@ const Navigation = () => {
               onMouseEnter={() => handleMouseEnter('products')}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200">
+              <Link to="/products" className="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200">
                 Products
                 <ChevronDown className="ml-1 h-3 w-3" />
-              </button>
+              </Link>
               
               {activeDropdown === 'products' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-combat-black border border-desert-tan/20 rounded-sm shadow-lg">
