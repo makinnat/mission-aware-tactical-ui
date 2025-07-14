@@ -190,7 +190,9 @@ const Products = () => {
 
             <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-8 text-center space-y-6">
-                <Scan className="w-16 h-16 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
+                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+                  <img src="/lovable-uploads/732ca253-419d-4d13-b681-0a8bdb8dfbfc.png" alt="3D Ear Scanner" className="w-full h-full object-cover" />
+                </div>
                 <h3 className="heading-tactical text-primary text-xl">3D Ear Scans</h3>
                 <p className="text-secondary">
                   Get scanned onsite — scale across your workforce
