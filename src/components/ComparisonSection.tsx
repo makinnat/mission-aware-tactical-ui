@@ -39,6 +39,12 @@ export const ComparisonSection = () => {
       aware: true,
       traditional: false,
       foam: false
+    },
+    {
+      name: "Field-tested by SOF and DoD Aviators",
+      aware: true,
+      traditional: "LIMITED",
+      foam: false
     }
   ];
 
