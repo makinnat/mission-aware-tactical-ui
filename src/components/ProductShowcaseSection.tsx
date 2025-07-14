@@ -5,54 +5,59 @@ const ProductShowcaseSection = () => {
 
   const products = [
     {
-      name: "339d683d-40d1-4155-9f3c-a63dba391db3",
+      name: "SwimPlugs",
       src: "/lovable-uploads/339d683d-40d1-4155-9f3c-a63dba391db3.png",
       alt: "Tactical ear protection product"
     },
     {
-      name: "8063ae90-fd92-4865-92cf-ac39a7b2387e",
+      name: "SwimPlugs",
       src: "/lovable-uploads/8063ae90-fd92-4865-92cf-ac39a7b2387e.png",
       alt: "Clear ear protection product"
     },
     {
-      name: "ca7c87a3-324f-4afa-8803-8c4cfd57734b",
+      name: "SwimPlugs",
       src: "/lovable-uploads/ca7c87a3-324f-4afa-8803-8c4cfd57734b.png",
       alt: "Professional ear monitoring system"
     },
     {
-      name: "5f950b83-9026-404a-a91c-d868fce64ded",
+      name: "SwimPlugs",
       src: "/lovable-uploads/5f950b83-9026-404a-a91c-d868fce64ded.png",
       alt: "Blue tactical ear protection"
     },
     {
-      name: "b1f7cecb-047e-4c2a-9b86-54ff52078aa5",
+      name: "SwimPlugs",
       src: "/lovable-uploads/b1f7cecb-047e-4c2a-9b86-54ff52078aa5.png",
       alt: "Professional in-ear monitors"
     },
     {
-      name: "70e76af0-495a-4da0-93ad-1125704583a4",
+      name: "SwimPlugs",
       src: "/lovable-uploads/70e76af0-495a-4da0-93ad-1125704583a4.png",
       alt: "Professional monitoring device"
     },
     {
-      name: "45b01d5a-70fa-4a10-8fb4-397924cbf291",
+      name: "SwimPlugs",
       src: "/lovable-uploads/45b01d5a-70fa-4a10-8fb4-397924cbf291.png",
       alt: "Custom ear protection with components"
     },
     {
-      name: "3bea60ae-ef54-424c-87a6-90816b05ca1d",
+      name: "SwimPlugs",
       src: "/lovable-uploads/3bea60ae-ef54-424c-87a6-90816b05ca1d.png",
       alt: "Clear acoustic tube system"
     },
     {
-      name: "3cb1df53-745e-44e5-95b9-ebb3c3921521",
+      name: "SwimPlugs",
       src: "/lovable-uploads/3cb1df53-745e-44e5-95b9-ebb3c3921521.png",
       alt: "Black tactical ear protection"
     },
     {
-      name: "f08cb946-2b01-4ed0-b9a2-26f1e82cd776",
+      name: "SwimPlugs",
       src: "/lovable-uploads/f08cb946-2b01-4ed0-b9a2-26f1e82cd776.png",
       alt: "Blue gradient ear protection"
+    },
+    {
+      name: "SwimPlugs",
+      src: "/lovable-uploads/4b4e91cd-a209-4478-a2de-7b81a45ef759.png",
+      alt: "Blue gradient swim ear protection"
     }
   ];
 
