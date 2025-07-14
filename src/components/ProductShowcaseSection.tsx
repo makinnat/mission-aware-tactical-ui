@@ -5,49 +5,54 @@ const ProductShowcaseSection = () => {
 
   const products = [
     {
-      name: "Tactical Binoculars",
-      src: "/lovable-uploads/cbf5a753-bdd5-4a75-98c6-20e80a09c659.png",
-      alt: "Professional tactical binoculars"
+      name: "339d683d-40d1-4155-9f3c-a63dba391db3",
+      src: "/lovable-uploads/339d683d-40d1-4155-9f3c-a63dba391db3.png",
+      alt: "Tactical ear protection product"
     },
     {
-      name: "Tactical Earpiece",
-      src: "/lovable-uploads/c48a31ba-1d62-4a5a-8fca-2c5c81f83dab.png", 
-      alt: "Tactical communication earpiece"
+      name: "8063ae90-fd92-4865-92cf-ac39a7b2387e",
+      src: "/lovable-uploads/8063ae90-fd92-4865-92cf-ac39a7b2387e.png",
+      alt: "Clear ear protection product"
     },
     {
-      name: "Custom Ear Protection",
-      src: "/lovable-uploads/bbf508c0-4d98-4982-88c4-ad74ccd85f5c.png",
-      alt: "Custom molded ear protection"
+      name: "ca7c87a3-324f-4afa-8803-8c4cfd57734b",
+      src: "/lovable-uploads/ca7c87a3-324f-4afa-8803-8c4cfd57734b.png",
+      alt: "Professional ear monitoring system"
     },
     {
-      name: "Tactical Ear Plugs", 
-      src: "/lovable-uploads/4b95c70a-27c5-400a-a838-b2203455961f.png",
-      alt: "Camouflage tactical ear plugs"
+      name: "5f950b83-9026-404a-a91c-d868fce64ded",
+      src: "/lovable-uploads/5f950b83-9026-404a-a91c-d868fce64ded.png",
+      alt: "Blue tactical ear protection"
     },
     {
-      name: "Professional Ear Protection",
-      src: "/lovable-uploads/ec701c38-6c5a-47c5-bc64-b10d92b4e618.png",
-      alt: "Professional grade ear protection"
+      name: "b1f7cecb-047e-4c2a-9b86-54ff52078aa5",
+      src: "/lovable-uploads/b1f7cecb-047e-4c2a-9b86-54ff52078aa5.png",
+      alt: "Professional in-ear monitors"
     },
     {
-      name: "Stealth Ear Protection",
-      src: "/lovable-uploads/3c7d92f9-17ed-4b9b-914f-66d3854d0bc8.png", 
-      alt: "Stealth black ear protection"
+      name: "70e76af0-495a-4da0-93ad-1125704583a4",
+      src: "/lovable-uploads/70e76af0-495a-4da0-93ad-1125704583a4.png",
+      alt: "Professional monitoring device"
     },
     {
-      name: "Tactical Communication Set",
-      src: "/lovable-uploads/aee8315a-660f-48fa-9925-2d6dcee4b268.png",
-      alt: "Tactical communication ear set"
+      name: "45b01d5a-70fa-4a10-8fb4-397924cbf291",
+      src: "/lovable-uploads/45b01d5a-70fa-4a10-8fb4-397924cbf291.png",
+      alt: "Custom ear protection with components"
     },
     {
-      name: "Advanced Ear Protection",
-      src: "/lovable-uploads/46f89658-3f71-426b-922d-d3d4d545d211.png",
-      alt: "Advanced tactical ear protection"
+      name: "3bea60ae-ef54-424c-87a6-90816b05ca1d",
+      src: "/lovable-uploads/3bea60ae-ef54-424c-87a6-90816b05ca1d.png",
+      alt: "Clear acoustic tube system"
     },
     {
-      name: "Premium Ear Guard",
-      src: "/lovable-uploads/244828ef-a80b-4a51-8921-7977b82689a4.png",
-      alt: "Premium tactical ear guard"
+      name: "3cb1df53-745e-44e5-95b9-ebb3c3921521",
+      src: "/lovable-uploads/3cb1df53-745e-44e5-95b9-ebb3c3921521.png",
+      alt: "Black tactical ear protection"
+    },
+    {
+      name: "f08cb946-2b01-4ed0-b9a2-26f1e82cd776",
+      src: "/lovable-uploads/f08cb946-2b01-4ed0-b9a2-26f1e82cd776.png",
+      alt: "Blue gradient ear protection"
     }
   ];
 
