@@ -6,11 +6,6 @@ const ProductShowcaseSection = () => {
   const products = [
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/339d683d-40d1-4155-9f3c-a63dba391db3.png",
-      alt: "Tactical ear protection product"
-    },
-    {
-      name: "SwimPlugs",
       src: "/lovable-uploads/8063ae90-fd92-4865-92cf-ac39a7b2387e.png",
       alt: "Clear ear protection product"
     },
