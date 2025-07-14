@@ -19,7 +19,7 @@ export const HeroSection = () => {
         }} className="text-4xl text-[#95182b] font-semibold">MISSION-READY PERFORMANCE</span>
         </h1>
         
-        <p className="subheading-tactical text-secondary md:text-2xl mb-8 max-w-3xl mx-auto font-semibold text-base">
+        <p className="text-secondary md:text-2xl mb-8 max-w-3xl mx-auto font-semibold text-base normal-case">
           If it's not worn, it doesn't work. Discover gear that actually gets worn and performs flawlessly.
         </p>
         
