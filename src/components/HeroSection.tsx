@@ -27,7 +27,7 @@ export const HeroSection = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button className="btn-hero-cta text-white bg-black">
+          <Button className="btn-hero-cta text-white bg-black text-base">
             Schedule A Meeting
           </Button>
           <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm text-white bg-black">
