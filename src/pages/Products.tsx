@@ -76,9 +76,8 @@ const Products = () => {
                   <h3 className="heading-tactical text-primary text-2xl">
                     UNIVERSAL FIT FAILS 92% OF THE TIME
                   </h3>
-                  <div className="flex items-center justify-center space-x-4 mt-8">
-                    <CheckCircle className="w-8 h-8 text-scarlet-red" />
-                    <p className="text-secondary text-lg">Only Aware accurately captures the second bend of the ear for superior fit and performance, even beyond traditional silicone pour methods.</p>
+                  <div className="mt-8">
+                    <p className="text-secondary text-lg text-center">Only Aware accurately captures the second bend of the ear for superior fit and performance, even beyond traditional silicone pour methods.</p>
                   </div>
                 </div>
               </div>
