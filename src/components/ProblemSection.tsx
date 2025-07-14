@@ -12,7 +12,7 @@ export const ProblemSection = () => {
   }, {
     icon: HeadphoneOff,
     title: "Communication Breakdown",
-    description: "Muffled comms = compromised awareness"
+    description: "Muffled radio communications compromise situational awareness."
   }, {
     icon: ShieldBan,
     title: "Mission Compromise",
