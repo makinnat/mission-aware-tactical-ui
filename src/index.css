@@ -36,7 +36,7 @@ All colors MUST be HSL.
     --accent-foreground: 0 0% 5.1%;
 
     /* Scarlet Red CTA */
-    --destructive: 352 80% 35%;
+    --destructive: 349 70% 34%;
     --destructive-foreground: 0 0% 100%;
 
     /* Tactical Borders */
@@ -50,7 +50,7 @@ All colors MUST be HSL.
     --combat-black: 0 0% 5.1%;
     --olive-drab: 39 18% 35%;
     --desert-tan: 39 17% 62%;
-    --scarlet-red: 352 80% 35%;
+    --scarlet-red: 349 70% 34%;
     --signal-white: 0 0% 100%;
     
     /* Tactical Gradients */
@@ -237,7 +237,7 @@ html {
   }
 
   .btn-scarlet:hover {
-    background: hsl(352 80% 40%);
+    background: hsl(349 70% 38%);
     box-shadow: 0 0 30px hsl(var(--scarlet-red) / 0.6);
     transform: translateY(-1px);
   }
