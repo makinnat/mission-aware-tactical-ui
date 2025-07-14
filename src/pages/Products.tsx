@@ -4,6 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { CheckCircle, Shield, Headphones, Volume2, Radio, Scan, Music, Filter, Moon, Waves } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Link } from "react-router-dom";
 const Products = () => {
   const {
     ref: heroRef,
@@ -111,9 +112,11 @@ const Products = () => {
                 <p className="text-secondary">
                   Highest NRR, comms-compatible, all-day mission endurance
                 </p>
-                <Button className="btn-olive-outline w-full">
-                  VIEW EARSHIELD
-                </Button>
+                <Link to="/products/earshield">
+                  <Button className="btn-olive-outline w-full">
+                    VIEW EARSHIELD
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
