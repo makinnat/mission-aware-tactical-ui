@@ -14,7 +14,9 @@ export const HeroSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
         <h1 className="heading-tactical md:text-7xl lg:text-8xl mb-6 max-w-5xl mx-auto leading-tight text-stone-50 text-5xl">
           CUSTOM-FIT HEARING PROTECTION<br />
-          <span style={{ color: 'hsl(var(--scarlet-red))' }}>MISSION-READY PERFORMANCE</span>
+          <span style={{
+          color: 'hsl(var(--scarlet-red))'
+        }} className="text-4xl text-[#95182b] font-semibold">MISSION-READY PERFORMANCE</span>
         </h1>
         
         <p className="subheading-tactical text-secondary md:text-2xl mb-8 max-w-3xl mx-auto font-semibold text-base">
