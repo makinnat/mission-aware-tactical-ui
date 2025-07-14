@@ -55,7 +55,7 @@ export const ComparisonSection = () => {
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">
+          <h2 className="heading-tactical text-signal-white text-4xl md:text-5xl mb-6">
             Don't Compromise When the Mission Depends on It
           </h2>
         </div>
@@ -113,12 +113,6 @@ export const ComparisonSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm">
-            Learn About EFIT Technology
-          </Button>
         </div>
       </div>
     </section>
