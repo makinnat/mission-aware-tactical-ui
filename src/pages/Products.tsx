@@ -261,7 +261,9 @@ const Products = () => {
 
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-6 text-center space-y-4">
-                <Waves className="w-20 h-20 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
+                <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-lg">
+                  <img src="/lovable-uploads/8656c4f5-a409-4d5f-8cd1-f4c642eba875.png" alt="SwimPlug Product" className="w-full h-full object-cover" />
+                </div>
                 <h3 className="heading-tactical text-primary text-lg">SwimPlug</h3>
                 <p className="text-secondary text-sm">
                   Water-blocking custom fit for athletes
