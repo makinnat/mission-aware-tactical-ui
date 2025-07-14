@@ -9,20 +9,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Social */}
           <div className="space-y-6">
-            <div className="w-24 h-16 bg-white rounded border border-secondary/20 flex items-center justify-center">
-              <div className="text-background font-bold text-xs">
-                <div className="grid grid-cols-13 gap-0.5">
-                  {/* American Flag Pattern */}
-                  {Array.from({ length: 50 }, (_, i) => (
-                    <div key={i} className="w-0.5 h-0.5 bg-background"></div>
-                  ))}
-                </div>
-                <div className="space-y-0.5 mt-2">
-                  {Array.from({ length: 7 }, (_, i) => (
-                    <div key={i} className="h-0.5 bg-background"></div>
-                  ))}
-                </div>
-              </div>
+            <div className="w-32 h-24">
+              <img 
+                src="/lovable-uploads/f769839c-af38-4801-aab1-98f74e7c07c9.png" 
+                alt="Made in USA" 
+                className="w-full h-full object-contain"
+              />
             </div>
             
             <div className="flex space-x-4">
