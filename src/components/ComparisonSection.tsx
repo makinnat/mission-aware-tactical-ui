@@ -60,59 +60,75 @@ export const ComparisonSection = () => {
           </h2>
         </div>
 
-        {/* Comparison Table */}
-        <div className="bg-combat-black rounded-lg overflow-hidden mb-12 border border-olive-drab">
-          <div className="grid grid-cols-4 bg-combat-black text-signal-white border-b border-olive-drab">
-            <div className="p-4 border-r border-olive-drab">
-              <h3 className="subheading-tactical text-sm font-bold">FEATURE</h3>
-            </div>
-            <div className="p-4 border-r border-olive-drab text-center">
-              <h3 className="subheading-tactical text-sm font-bold text-scarlet-red">AWARE</h3>
-            </div>
-            <div className="p-4 border-r border-olive-drab text-center">
-              <h3 className="subheading-tactical text-sm font-bold">TRADITIONAL</h3>
-            </div>
-            <div className="p-4 text-center">
-              <h3 className="subheading-tactical text-sm font-bold">FOAM</h3>
+        {/* Comparison Table and Image Layout */}
+        <div className="flex gap-8 items-start">
+          {/* Comparison Table - 2/3 width */}
+          <div className="w-2/3">
+            <div className="bg-combat-black rounded-lg overflow-hidden border border-olive-drab">
+              <div className="grid grid-cols-4 bg-combat-black text-signal-white border-b border-olive-drab">
+                <div className="p-4 border-r border-olive-drab">
+                  <h3 className="subheading-tactical text-sm font-bold">FEATURE</h3>
+                </div>
+                <div className="p-4 border-r border-olive-drab text-center">
+                  <h3 className="subheading-tactical text-sm font-bold text-scarlet-red">AWARE</h3>
+                </div>
+                <div className="p-4 border-r border-olive-drab text-center">
+                  <h3 className="subheading-tactical text-sm font-bold">TRADITIONAL</h3>
+                </div>
+                <div className="p-4 text-center">
+                  <h3 className="subheading-tactical text-sm font-bold">FOAM</h3>
+                </div>
+              </div>
+
+              {features.map((feature, index) => (
+                <div key={index} className="grid grid-cols-4 border-t border-olive-drab">
+                  <div className="p-4 bg-combat-black border-r border-olive-drab">
+                    <span className="body-tactical text-signal-white text-sm">
+                      {feature.name}
+                    </span>
+                  </div>
+                  <div className="p-4 border-r border-olive-drab bg-combat-black text-center">
+                    {feature.aware === true ? (
+                      <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
+                    ) : feature.aware === "LIMITED" ? (
+                      <span className="text-xs text-signal-white font-medium">LIMITED</span>
+                    ) : (
+                      <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
+                    )}
+                  </div>
+                  <div className="p-4 border-r border-olive-drab bg-combat-black text-center">
+                    {feature.traditional === true ? (
+                      <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
+                    ) : feature.traditional === "LIMITED" ? (
+                      <span className="text-xs text-signal-white font-medium">LIMITED</span>
+                    ) : (
+                      <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
+                    )}
+                  </div>
+                  <div className="p-4 bg-combat-black text-center">
+                    {feature.foam === true ? (
+                      <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
+                    ) : feature.foam === "LIMITED" ? (
+                      <span className="text-xs text-signal-white font-medium">LIMITED</span>
+                    ) : (
+                      <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          {features.map((feature, index) => (
-            <div key={index} className="grid grid-cols-4 border-t border-olive-drab">
-              <div className="p-4 bg-combat-black border-r border-olive-drab">
-                <span className="body-tactical text-signal-white text-sm">
-                  {feature.name}
-                </span>
-              </div>
-              <div className="p-4 border-r border-olive-drab bg-combat-black text-center">
-                {feature.aware === true ? (
-                  <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
-                ) : feature.aware === "LIMITED" ? (
-                  <span className="text-xs text-signal-white font-medium">LIMITED</span>
-                ) : (
-                  <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
-                )}
-              </div>
-              <div className="p-4 border-r border-olive-drab bg-combat-black text-center">
-                {feature.traditional === true ? (
-                  <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
-                ) : feature.traditional === "LIMITED" ? (
-                  <span className="text-xs text-signal-white font-medium">LIMITED</span>
-                ) : (
-                  <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
-                )}
-              </div>
-              <div className="p-4 bg-combat-black text-center">
-                {feature.foam === true ? (
-                  <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
-                ) : feature.foam === "LIMITED" ? (
-                  <span className="text-xs text-signal-white font-medium">LIMITED</span>
-                ) : (
-                  <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
-                )}
-              </div>
+          {/* Image Column - 1/3 width */}
+          <div className="w-1/3 flex justify-center">
+            <div className="bg-combat-black rounded-lg border border-olive-drab p-8">
+              <img 
+                src="/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png" 
+                alt="AWARE 3D Scanner Device" 
+                className="w-full h-auto object-contain"
+              />
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
