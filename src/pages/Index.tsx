@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
 import { ProblemSection } from "@/components/ProblemSection";
 import { WhyAwareSection } from "@/components/WhyAwareSection";
@@ -11,6 +12,7 @@ import { FinalCTASection } from "@/components/FinalCTASection";
 const Index = () => {
   return (
     <div className="min-h-screen w-full">
+      <Navigation />
       <HeroSection />
       <ProblemSection />
       <WhyAwareSection />
