@@ -60,7 +60,7 @@ export const HowItWorksSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-black border-2 border-signal-red hover:bg-black/90 text-signal-white cta-tactical px-8 py-4 text-base rounded-sm">
+          <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
             Book Your Expert Consultation
           </Button>
         </div>
