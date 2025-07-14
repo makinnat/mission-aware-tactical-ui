@@ -61,11 +61,11 @@ export const WhyAwareSection = () => {
 
           {/* Right: Product image */}
           <div className="relative">
-            <div className="relative z-10">
+            <div className="relative z-10 overflow-hidden rounded-lg">
               <img 
                 src={productImage} 
                 alt="Tactical operator in field operations" 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto shadow-2xl scale-105 -m-1"
               />
             </div>
             {/* Subtle background glow */}
