@@ -26,11 +26,15 @@ export const ProblemSection = () => {
   }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="heading-tactical text-4xl md:text-5xl mb-6 text-white">
-            Outdated ear protection<br />
-            Fails when it matters most
-          </h2>
-          <p className="subheading-tactical text-secondary text-xl md:text-2xl max-w-4xl mx-auto">
+          <div className="mb-6">
+            <h2 className="heading-tactical text-4xl md:text-5xl text-white">
+              Outdated ear protection
+            </h2>
+            <h3 className="subheading-tactical text-scarlet-red text-2xl md:text-3xl">
+              Fails when it matters most
+            </h3>
+          </div>
+          <p className="body-tactical text-secondary text-lg max-w-4xl mx-auto">
             Over 50% of combat soldiers suffer hearing loss because their protection doesn't fit or interferes with comms.
           </p>
         </div>
