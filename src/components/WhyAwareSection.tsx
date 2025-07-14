@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Award, Users, Headphones } from "lucide-react";
-import productImage from "@/assets/product-tactical-earpiece.jpg";
+const productImage = "/lovable-uploads/75be66ba-1b9e-4843-b587-0343fb09a439.png";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const WhyAwareSection = () => {
@@ -64,7 +64,7 @@ export const WhyAwareSection = () => {
             <div className="relative z-10">
               <img 
                 src={productImage} 
-                alt="Tactical hearing protection device" 
+                alt="Tactical operator in field operations" 
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
             </div>
