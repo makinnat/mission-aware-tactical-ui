@@ -16,7 +16,7 @@ export const ProblemSection = () => {
   }, {
     icon: ShieldBan,
     title: "Mission Compromise",
-    description: "Operators remove protection to function"
+    description: "Operators remove protection to perform critical tasks."
   }];
   return <section ref={ref} className={`relative py-20 px-6 scroll-fade-in ${isVisible ? 'visible' : ''}`} style={{
     backgroundImage: `url(/lovable-uploads/4fc34f4c-b066-4cb7-812f-9e888c91f448.png)`,
