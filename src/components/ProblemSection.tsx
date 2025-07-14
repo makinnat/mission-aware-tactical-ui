@@ -40,12 +40,12 @@ export const ProblemSection = () => {
         </div>
 
         <div className="grid-tactical max-w-5xl mx-auto">
-          {problems.map((problem, index) => <div key={index} className="card-tactical p-8 rounded-lg text-center">
+          {problems.map((problem, index) => <div key={index} className="bg-black/90 p-8 rounded-lg text-center">
               <problem.icon className="w-16 h-16 text-scarlet-red mx-auto mb-6" strokeWidth={2} />
-              <h3 className="subheading-tactical text-card-foreground text-2xl mb-4">
+              <h3 className="subheading-tactical text-white text-2xl mb-4">
                 {problem.title}
               </h3>
-              <p className="body-tactical text-card-foreground text-lg opacity-80">
+              <p className="body-tactical text-white text-lg">
                 {problem.description}
               </p>
             </div>)}
