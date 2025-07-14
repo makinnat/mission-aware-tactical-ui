@@ -21,6 +21,10 @@ export const TestimonialsSection = () => {
     {
       quote: "This experience has been extremely positive and I'm looking forward to helping your company provide invaluable hearing protection to our Sailors…and for years to come. It was like I felt a shift in morale when folks walked in and walked out (after scanning) and I'll be the first to admit that we needed this.",
       role: "Combat Aviation Brigade"
+    },
+    {
+      quote: "We've tried other 'custom' hearing protection solutions before, but nothing came close to the precision and comfort of what Aware Defense delivered. The 3D scans were fast and accurate, and our team had custom plugs in hand before the next rotation. This is what right looks like.",
+      role: "SERE Specialist"
     }
   ];
 
