@@ -61,7 +61,7 @@ export const ComparisonSection = () => {
         </div>
 
         {/* Comparison Table and Image Layout */}
-        <div className="flex gap-8 items-start">
+        <div className="flex gap-8 items-center">
           {/* Comparison Table - 2/3 width */}
           <div className="w-2/3">
             <div className="bg-combat-black rounded-lg overflow-hidden border border-olive-drab">
