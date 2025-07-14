@@ -34,7 +34,7 @@ export const TestimonialsSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">
+          <h2 className="heading-tactical text-signal-white text-4xl md:text-5xl mb-6">
             Trusted by Elite Units
           </h2>
         </div>
