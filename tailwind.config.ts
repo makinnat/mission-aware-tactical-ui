@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				/* Aware Defense Tactical Colors */
+				'combat-black': 'hsl(var(--combat-black))',
+				'olive-drab': 'hsl(var(--olive-drab))',
+				'desert-tan': 'hsl(var(--desert-tan))',
+				'scarlet-red': 'hsl(var(--scarlet-red))',
+				'signal-white': 'hsl(var(--signal-white))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

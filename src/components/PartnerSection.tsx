@@ -1,0 +1,31 @@
+export const PartnerSection = () => {
+  const partners = [
+    "Invisio",
+    "Gentex", 
+    "Ops-Core",
+    "Axil",
+    "Otto",
+    "Staccato"
+  ];
+
+  return (
+    <section className="py-20 px-6 bg-background">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-12">
+          We Don't Replace Your Gear — We Make It Better
+        </h2>
+        
+        <div className="flex flex-wrap justify-center items-center gap-12 opacity-80">
+          {partners.map((partner, index) => (
+            <div 
+              key={index} 
+              className="text-signal-white text-xl font-montserrat font-bold tracking-wide hover:text-secondary transition-colors duration-300"
+            >
+              {partner}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
