@@ -178,10 +178,11 @@ All colors MUST be HSL.
     background: #0D0D0D;
     border: 2px solid #95182B;
     color: hsl(var(--signal-white));
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
     border-radius: 8px;
     padding: 12px 24px;
     transition: var(--transition-tactical);
@@ -191,6 +192,7 @@ All colors MUST be HSL.
     background: #95182B;
     border: 2px solid #95182B;
     color: hsl(var(--signal-white));
+    box-shadow: var(--shadow-alert);
     transform: translateY(-1px);
   }
 
