@@ -6,45 +6,54 @@ const ProductShowcaseSection = () => {
   const products = [
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/8063ae90-fd92-4865-92cf-ac39a7b2387e.png",
-      alt: "Clear ear protection product"
+      src: "/lovable-uploads/bed92e28-b372-401f-b191-c06f75d54160.png",
+      alt: "Yellow ear protection with cables"
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/ca7c87a3-324f-4afa-8803-8c4cfd57734b.png",
-      alt: "Professional ear monitoring system"
+      src: "/lovable-uploads/1106a9b7-e1eb-4c18-b7c0-653862ff02dd.png",
+      alt: "Black and white ear protection devices"
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/5f950b83-9026-404a-a91c-d868fce64ded.png",
-      alt: "Blue tactical ear protection"
+      src: "/lovable-uploads/1a80bd1a-8c26-4b80-bbf9-6853495696a0.png",
+      alt: "Clear transparent ear protection"
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/b1f7cecb-047e-4c2a-9b86-54ff52078aa5.png",
-      alt: "Professional in-ear monitors"
+      src: "/lovable-uploads/83c663c5-dbf3-4729-8781-02d66756deb6.png",
+      alt: "Clear ear protection with colored accents"
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/45b01d5a-70fa-4a10-8fb4-397924cbf291.png",
-      alt: "Custom ear protection with components"
+      src: "/lovable-uploads/308e9b99-dd7d-474b-a8e9-a5e86d7c6fef.png",
+      alt: "Blue ear protection with cables"
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/3bea60ae-ef54-424c-87a6-90816b05ca1d.png",
-      alt: "Clear acoustic tube system"
+      src: "/lovable-uploads/71a992fd-155b-4df3-a294-21f188459041.png",
+      alt: "Black ear protection with blue accents"
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/3cb1df53-745e-44e5-95b9-ebb3c3921521.png",
-      alt: "Black tactical ear protection"
+      src: "/lovable-uploads/3a90284f-b504-4a79-aec4-72a9b5469446.png",
+      alt: "Professional black ear protection with components"
     },
     {
       name: "SwimPlugs",
-      src: "/lovable-uploads/f08cb946-2b01-4ed0-b9a2-26f1e82cd776.png",
+      src: "/lovable-uploads/e5876c7e-ae5c-4b85-a7e1-f76ac3c673de.png",
+      alt: "Clear ear protection with coiled cable"
+    },
+    {
+      name: "SwimPlugs",
+      src: "/lovable-uploads/064fecdc-cff5-4391-ac37-ff2652b59d58.png",
+      alt: "Black ear protection pair"
+    },
+    {
+      name: "SwimPlugs",
+      src: "/lovable-uploads/24c9958e-52a3-4409-833c-30ecae02d79d.png",
       alt: "Blue gradient ear protection"
-    },
-    {  
+    }
   ];
 
   // Duplicate products for seamless scrolling
