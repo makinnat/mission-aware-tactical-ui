@@ -13,12 +13,12 @@ export const HowItWorksSection = () => {
     {
       icon: Scan,
       title: "Get Scanned",
-      description: "FDA-cleared ear scan in 90 seconds"
+      description: "We deploy our FDA-cleared 3D ear scanner to capture your team's ear profiles"
     },
     {
       icon: Shield,
       title: "Equip & Scale",
-      description: "Deploy fit-verified protection, ready for upgrades"
+      description: "Outfit your team with precision-fit protection and upgrade to biometrics as needs evolve"
     }
   ];
 
