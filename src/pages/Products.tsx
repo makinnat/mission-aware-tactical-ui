@@ -137,7 +137,7 @@ const Products = () => {
                 <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png" alt="RadioCOMM / CEP Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">RadioCOMM / CEP</h3>
+                <h3 className="heading-tactical text-primary text-xl">RADIOCOMM</h3>
                 <p className="text-secondary">
                   Comms-integrated custom earpiece for real-time clarity
                 </p>
