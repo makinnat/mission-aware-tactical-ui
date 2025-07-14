@@ -24,7 +24,13 @@ export const ProblemSection = () => {
   return (
     <section 
       ref={ref}
-      className={`py-20 px-6 bg-background scroll-fade-in ${isVisible ? 'visible' : ''}`}
+      className={`relative py-20 px-6 scroll-fade-in ${isVisible ? 'visible' : ''}`}
+      style={{
+        backgroundImage: `url(/lovable-uploads/4fc34f4c-b066-4cb7-812f-9e888c91f448.png)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
