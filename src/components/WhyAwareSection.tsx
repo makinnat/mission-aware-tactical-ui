@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Award, Users, Headphones } from "lucide-react";
 const productImage = "/lovable-uploads/75be66ba-1b9e-4843-b587-0343fb09a439.png";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -7,16 +6,16 @@ export const WhyAwareSection = () => {
   const { ref, isVisible } = useScrollAnimation();
   const highlights = [
     {
-      icon: Award,
-      text: "FDA-Cleared"
+      title: "FDA CLEARED TECHNOLOGY",
+      description: "Our scanning technology meets the highest medical standards"
     },
     {
-      icon: Users,
-      text: "SOF-Tested"
+      title: "SPECIAL OPERATIONS TRUSTED", 
+      description: "Validated by DoD aviators in the field"
     },
     {
-      icon: Headphones,
-      text: "Comms-Integrated"
+      title: "INDUSTRY PARTNERSHIPS",
+      description: "Integrated with Invisio, Gentex, Ops-Core, Staccato, Axil, and Otto"
     }
   ];
 
@@ -42,14 +41,16 @@ export const WhyAwareSection = () => {
               Founded by combat-tested operators, Aware Defense delivers proven, field-tested solutions that enhance rather than hinder performance.
             </p>
 
-            {/* Icon Highlights */}
-            <div className="flex justify-between gap-4 mb-10 max-w-lg">
+            {/* Feature Highlights */}
+            <div className="space-y-6 mb-10">
               {highlights.map((highlight, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <highlight.icon className="w-8 h-8 text-scarlet-red" strokeWidth={2} />
-                  <span className="subheading-tactical text-secondary text-lg">
-                    {highlight.text}
-                  </span>
+                <div key={index} className="space-y-2">
+                  <h4 className="heading-tactical text-scarlet-red text-lg font-bold tracking-wide">
+                    {highlight.title}
+                  </h4>
+                  <p className="body-tactical text-secondary text-base leading-relaxed">
+                    {highlight.description}
+                  </p>
                 </div>
               ))}
             </div>
