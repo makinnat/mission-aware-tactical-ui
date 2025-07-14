@@ -7,16 +7,20 @@ export const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const testimonials = [
     {
-      quote: "Our aircrew actually want to wear them. The fit and comfort are unmatched.",
+      quote: "We operate in some of the harshest conditions in the world. Aware's EarDefenders held up to salt, sand, and sustained flight hours. The passive protection is solid, and our aircrew say they actually want to wear them. These aren't just another issued item—they're mission-critical.",
+      role: "Osprey Pilot and Safety Officer"
+    },
+    {
+      quote: "The Aware team showed up on time, set up quickly, and scanned our entire aircrew within a day. Their custom hearing protection fits flawlessly under our helmets and provides the best seal we've ever had with CEP over-molds. Professional, efficient, and 100% tailored for naval aviation.",
       role: "Aviation Safety Officer"
     },
     {
-      quote: "They scanned a task force in 48 hours. Outstanding execution.",
-      role: "Special Tactics Liaison"
+      quote: "Aware Defense impressed me not only with their product quality but with their deep respect for the law enforcement community. Their support helps us continue our mission: ensuring that officers leave the job with the same level of protection and care they had while wearing the badge.",
+      role: "Retired Law Enforcement Professional"
     },
     {
-      quote: "Perfect fit, every time. Compliance is up, downtime is down.",
-      role: "Audiologist"
+      quote: "This experience has been extremely positive and I'm looking forward to helping your company provide invaluable hearing protection to our Sailors…and for years to come. It was like I felt a shift in morale when folks walked in and walked out (after scanning) and I'll be the first to admit that we needed this.",
+      role: "Combat Aviation Brigade"
     }
   ];
 
