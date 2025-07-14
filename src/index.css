@@ -174,6 +174,26 @@ All colors MUST be HSL.
     transform: translateY(-1px);
   }
 
+  .btn-hero-cta {
+    background: hsl(var(--combat-black));
+    border: 2px solid hsl(var(--scarlet-red));
+    color: hsl(var(--signal-white));
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 12px 24px;
+    transition: var(--transition-tactical);
+  }
+
+  .btn-hero-cta:hover {
+    background: hsl(var(--scarlet-red));
+    border: 2px solid hsl(var(--scarlet-red));
+    color: hsl(var(--signal-white));
+    transform: translateY(-1px);
+  }
+
   .btn-olive-outline {
     border: 2px solid hsl(var(--olive-drab));
     color: hsl(var(--olive-drab));
