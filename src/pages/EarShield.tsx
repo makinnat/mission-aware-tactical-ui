@@ -129,8 +129,8 @@ const EarShield = () => {
               {/* Additional Info */}
               <div className="pt-4 border-t border-[#6C6846]">
                 <p className="text-secondary text-sm">
-                  Professional fitting and scanning services available nationwide. 
-                  Contact us for enterprise pricing and bulk orders.
+                  Individual scanning opportunities available at events, or coordinated with team scanning locations. 
+                  Check out our upcoming events, or reach out to the team to coordinate your scan.
                 </p>
               </div>
             </div>
