@@ -23,9 +23,13 @@ const Products = () => {
         className={`py-32 px-6 bg-background scroll-fade-in ${heroVisible ? 'visible' : ''}`}
       >
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="heading-tactical text-white text-3xl md:text-4xl mb-8 leading-tight">
-            REVOLUTIONIZING HEARING PROTECTION FOR MISSION-CRITICAL ENVIRONMENTS
+          <h1 className="heading-tactical text-white text-3xl md:text-4xl mb-4 leading-tight">
+            REVOLUTIONIZING HEARING PROTECTION
           </h1>
+          
+          <h2 className="subheading-tactical text-secondary text-xl md:text-2xl mb-8">
+            FOR MISSION-CRITICAL ENVIRONMENTS
+          </h2>
           
           <p className="body-tactical text-signal-white text-lg mb-12 max-w-4xl mx-auto">
             From warfighters to industrial operators and musicians — Aware Defense delivers the comfort, protection, and integration that universal products can't.
