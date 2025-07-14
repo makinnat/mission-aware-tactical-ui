@@ -32,12 +32,14 @@ export const SolutionSection = () => {
         </div>
 
         <div className="grid-tactical-4 mb-12">
-          {solutions.map((solution, index) => <div key={index} className="card-tactical p-8 rounded-lg text-center">
+          {solutions.map((solution, index) => <div key={index} className="bg-black/55 p-8 rounded-lg text-center border-2" style={{
+          borderColor: '#6C6846'
+        }}>
               <solution.icon className="w-16 h-16 text-scarlet-red mx-auto mb-6" strokeWidth={2} />
-              <h3 className="subheading-tactical text-card-foreground text-xl mb-4">
+              <h3 className="subheading-tactical text-white text-xl mb-4">
                 {solution.title}
               </h3>
-              <p className="body-tactical text-card-foreground opacity-80">
+              <p className="body-tactical text-white font-thin text-sm">
                 {solution.description}
               </p>
             </div>)}
