@@ -8,7 +8,7 @@ export const HowItWorksSection = () => {
     {
       icon: Calendar,
       title: "Schedule a Meeting",
-      description: "Talk to an Aware Defense expert"
+      description: "Review your mission requirements with an Aware Defense expert"
     },
     {
       icon: Scan,
