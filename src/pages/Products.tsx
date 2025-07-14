@@ -119,7 +119,9 @@ const Products = () => {
 
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-8 text-center space-y-6">
-                <Volume2 className="w-16 h-16 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
+                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+                  <img src="/lovable-uploads/bced67a7-d7bf-45c1-b515-634e0f92fdd3.png" alt="EarDefender Product" className="w-full h-full object-cover" />
+                </div>
                 <h3 className="heading-tactical text-primary text-xl">EarDefender</h3>
                 <p className="text-secondary">
                   Reliable tactical protection with sealed fit for high-noise ops
