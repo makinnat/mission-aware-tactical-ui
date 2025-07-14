@@ -44,16 +44,7 @@ const ProductShowcaseSection = () => {
       src: "/lovable-uploads/f08cb946-2b01-4ed0-b9a2-26f1e82cd776.png",
       alt: "Blue gradient ear protection"
     },
-    {
-      name: "SwimPlugs",
-      src: "/lovable-uploads/4b4e91cd-a209-4478-a2de-7b81a45ef759.png",
-      alt: "Blue gradient swim ear protection"
-    },
-    {
-      name: "SwimPlugs",
-      src: "/lovable-uploads/ade983a7-462e-4306-9b64-0a826ded8df8.png",
-      alt: "Black tactical earpiece covers"
-    }
+    {  
   ];
 
   // Duplicate products for seamless scrolling
