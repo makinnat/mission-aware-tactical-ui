@@ -53,11 +53,6 @@ const ProductShowcaseSection = () => {
       name: "SwimPlugs",
       src: "/lovable-uploads/ade983a7-462e-4306-9b64-0a826ded8df8.png",
       alt: "Black tactical earpiece covers"
-    },
-    {
-      name: "SwimPlugs",
-      src: "/lovable-uploads/9b270845-4af3-4a48-aaa0-69ead472d728.png",
-      alt: "Black tactical ear protection"
     }
   ];
 
