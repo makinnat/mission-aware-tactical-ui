@@ -34,9 +34,7 @@ export const ProblemSection = () => {
               Fails when it matters most
             </h3>
           </div>
-          <p className="body-tactical text-secondary text-lg max-w-4xl mx-auto">
-            Over 50% of combat soldiers suffer hearing loss because their protection doesn't fit or interferes with comms.
-          </p>
+          <p className="body-tactical text-secondary text-lg max-w-4xl mx-auto">Over 50% of combat soldiers suffer hearing loss because their protection doesn't fit or interferes with communication. You shouldn't have to choose between comfort, protection, and performance.</p>
         </div>
 
         <div className="grid-tactical max-w-5xl mx-auto">
