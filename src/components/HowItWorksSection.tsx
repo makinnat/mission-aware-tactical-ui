@@ -44,12 +44,14 @@ export const HowItWorksSection = () => {
                 </span>
               </div>
               
-              <div className="card-tactical p-8 rounded-lg">
+              <div className="bg-black/55 p-8 rounded-lg border-2" style={{
+          borderColor: '#6C6846'
+        }}>
                 <step.icon className="w-16 h-16 text-scarlet-red mx-auto mb-6" strokeWidth={2} />
-                <h3 className="subheading-tactical text-card-foreground text-2xl mb-4">
+                <h3 className="subheading-tactical text-white text-xl mb-4">
                   {step.title}
                 </h3>
-                <p className="body-tactical text-card-foreground opacity-80 text-lg">
+                <p className="body-tactical text-white font-thin text-sm">
                   {step.description}
                 </p>
               </div>
