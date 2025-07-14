@@ -216,7 +216,7 @@ const Products = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-6 text-center space-y-4">
-                <div className="w-12 h-12 mx-auto mb-4 overflow-hidden rounded-lg">
+                <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/e6f319aa-df08-44f9-a43f-616e668d2ae1.png" alt="MusicPlugs Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-lg">MusicPlugs</h3>
@@ -231,7 +231,7 @@ const Products = () => {
 
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-6 text-center space-y-4">
-                <div className="w-12 h-12 mx-auto mb-4 overflow-hidden rounded-lg">
+                <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/5871d1fd-a537-4fc1-8012-e6c57c6e36d6.png" alt="MusicFilters Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-lg">MusicFilters</h3>
@@ -246,7 +246,7 @@ const Products = () => {
 
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-6 text-center space-y-4">
-                <Moon className="w-12 h-12 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
+                <Moon className="w-20 h-20 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
                 <h3 className="heading-tactical text-primary text-lg">SleepPlug</h3>
                 <p className="text-secondary text-sm">
                   Low-profile comfort for deep sleep
@@ -259,7 +259,7 @@ const Products = () => {
 
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-6 text-center space-y-4">
-                <Waves className="w-12 h-12 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
+                <Waves className="w-20 h-20 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
                 <h3 className="heading-tactical text-primary text-lg">SwimPlug</h3>
                 <p className="text-secondary text-sm">
                   Water-blocking custom fit for athletes
