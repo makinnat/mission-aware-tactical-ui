@@ -9,6 +9,10 @@ export const FinalCTASection = () => {
       className={`py-20 px-6 bg-background scroll-scale-in ${isVisible ? 'visible' : ''}`}
     >
       <div className="max-w-7xl mx-auto text-center">
+        <h2 className="heading-tactical text-primary text-4xl md:text-6xl mb-8">
+          Ready to Protect Your Team and Future-Proof Your Mission?
+        </h2>
+        
         <p className="text-secondary mb-8 max-w-3xl mx-auto font-semibold text-base normal-case md:text-lg">
           Schedule a meeting to review your requirements with an Aware Defense expert.
         </p>
