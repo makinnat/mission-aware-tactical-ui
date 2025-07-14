@@ -104,7 +104,9 @@ const Products = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-8 text-center space-y-6">
-                <Shield className="w-16 h-16 text-primary mx-auto group-hover:text-scarlet-red transition-colors" />
+                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+                  <img src="/lovable-uploads/4292650a-69ee-427d-8ccf-bc2e4433f736.png" alt="EarShield Product" className="w-full h-full object-cover" />
+                </div>
                 <h3 className="heading-tactical text-primary text-xl">EarShield</h3>
                 <p className="text-secondary">
                   Highest NRR, comms-compatible, all-day mission endurance
