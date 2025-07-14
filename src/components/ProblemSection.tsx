@@ -1,4 +1,4 @@
-import { AlertTriangle, Volume, RadioIcon } from "lucide-react";
+import { AlertTriangle, HeadphoneOff, RadioIcon } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 export const ProblemSection = () => {
   const {
@@ -10,7 +10,7 @@ export const ProblemSection = () => {
     title: "Comfort Failure",
     description: "Constant readjustment and fatigue"
   }, {
-    icon: Volume,
+    icon: HeadphoneOff,
     title: "Communication Breakdown",
     description: "Muffled comms = compromised awareness"
   }, {
