@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { CheckCircle, ArrowLeft } from "lucide-react";
@@ -16,6 +17,8 @@ const EarShield = () => {
   } = useScrollAnimation();
 
   const [isConfirmed, setIsConfirmed] = useState(false);
+  const [selectedColor, setSelectedColor] = useState("");
+  const [selectedFinish, setSelectedFinish] = useState("");
 
   return (
     <div className="min-h-screen w-full">
@@ -58,11 +61,49 @@ const EarShield = () => {
                   Premium custom-fit earplugs with NRR 27 dB. Built for tactical and industrial environments. Seamless communication system compatibility.
                 </p>
 
-                {/* NRR Badge */}
-                <div className="flex items-center gap-4 pt-2">
+                {/* NRR Badge and Price */}
+                <div className="flex items-center justify-between pt-2">
                   <Badge className="bg-secondary text-background text-sm px-4 py-2 font-semibold">
                     NRR 27 dB
                   </Badge>
+                  <div className="text-right">
+                    <span className="text-primary text-2xl font-bold">$199.00</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Options */}
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Color Selection */}
+                  <div className="space-y-2">
+                    <label className="text-signal-white text-sm font-medium">Color</label>
+                    <Select value={selectedColor} onValueChange={setSelectedColor}>
+                      <SelectTrigger className="w-full bg-muted/30 border-[#6C6846] text-signal-white">
+                        <SelectValue placeholder="Select color" />
+                      </SelectTrigger>
+                      <SelectContent className="bg-background border-[#6C6846] z-50">
+                        <SelectItem value="black" className="text-signal-white hover:bg-muted/30">Black</SelectItem>
+                        <SelectItem value="blue" className="text-signal-white hover:bg-muted/30">Blue</SelectItem>
+                        <SelectItem value="clear" className="text-signal-white hover:bg-muted/30">Clear</SelectItem>
+                        <SelectItem value="camouflage" className="text-signal-white hover:bg-muted/30">Camouflage</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Finish Selection */}
+                  <div className="space-y-2">
+                    <label className="text-signal-white text-sm font-medium">Finish</label>
+                    <Select value={selectedFinish} onValueChange={setSelectedFinish}>
+                      <SelectTrigger className="w-full bg-muted/30 border-[#6C6846] text-signal-white">
+                        <SelectValue placeholder="Select finish" />
+                      </SelectTrigger>
+                      <SelectContent className="bg-background border-[#6C6846] z-50">
+                        <SelectItem value="matte" className="text-signal-white hover:bg-muted/30">Matte</SelectItem>
+                        <SelectItem value="glossy" className="text-signal-white hover:bg-muted/30">Glossy</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
                 </div>
               </div>
 
