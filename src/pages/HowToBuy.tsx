@@ -233,7 +233,7 @@ const HowToBuy = () => {
       <section ref={deliveryRef} className={`py-20 transition-all duration-1000 delay-400 ${deliveryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-olive-drab text-center mb-16">
+            <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
               BILLING, SHIPPING, & LEAD TIME
             </h2>
             
@@ -283,7 +283,7 @@ const HowToBuy = () => {
       <section ref={finalCtaRef} className={`py-20 transition-all duration-1000 delay-800 ${finalCtaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-olive-drab mb-8">
+            <h2 className="text-4xl font-bold text-signal-white mb-8">
               HAVE QUESTIONS BEFORE YOU BUY?
             </h2>
             <p className="text-xl text-desert-tan leading-relaxed mb-10">
