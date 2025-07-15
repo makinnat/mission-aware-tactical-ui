@@ -88,7 +88,7 @@ const HowToBuy = () => {
                     
                   </div>
                   <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
-                    SCHEDULE A GROUP SCAN
+                    Request an Implementation Consultation
                   </Button>
                 </CardContent>
               </Card>
