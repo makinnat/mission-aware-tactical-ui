@@ -44,7 +44,7 @@ export const Footer = () => {
           </div>
 
           {/* Atlanta Office */}
-          <div>
+          <div className="text-center">
             <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
               ATLANTA OFFICE
             </h3>
@@ -63,7 +63,7 @@ export const Footer = () => {
           </div>
 
           {/* San Diego Office */}
-          <div>
+          <div className="text-center">
             <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
               SAN DIEGO OFFICE
             </h3>
@@ -76,7 +76,7 @@ export const Footer = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div>
+          <div className="text-center">
             <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
               STAY UPDATED
             </h3>
