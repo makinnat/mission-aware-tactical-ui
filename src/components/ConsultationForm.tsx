@@ -235,6 +235,7 @@ export const ConsultationForm = () => {
                       <SelectItem value="ground">Ground</SelectItem>
                       <SelectItem value="maritime">Maritime</SelectItem>
                       <SelectItem value="industrial">Industrial</SelectItem>
+                      <SelectItem value="law-enforcement">Law Enforcement</SelectItem>
                       <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
