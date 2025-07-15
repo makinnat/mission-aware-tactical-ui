@@ -419,10 +419,6 @@ const EFit3DScanner = () => {
                 LEARN MORE ABOUT OUR TECHNOLOGY
               </Button>
             </div>
-            
-            <p className="text-2xl font-bold text-olive-drab">
-              Fit to Fight, Built to Endure.
-            </p>
           </div>
         </div>
       </section>
