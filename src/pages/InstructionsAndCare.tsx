@@ -32,10 +32,6 @@ const InstructionsAndCare = () => {
     isVisible: cleaningVisible
   } = useScrollAnimation();
   
-  const {
-    ref: maintenanceRef,
-    isVisible: maintenanceVisible
-  } = useScrollAnimation();
 
   return (
     <div className="min-h-screen bg-combat-black text-signal-white font-inter">
@@ -219,49 +215,6 @@ const InstructionsAndCare = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Maintenance & Storage Section */}
-      <section ref={maintenanceRef} className={`py-20 transition-all duration-1000 delay-600 ${maintenanceVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-olive-drab text-center mb-16">
-              LONG-TERM MAINTENANCE
-            </h2>
-            
-            <Card className="bg-muted/20 border-desert-tan/30 rounded-xl max-w-4xl mx-auto mb-12">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-start space-x-4">
-                  <RefreshCw className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
-                  <p className="text-lg text-signal-white">
-                    Scan profile stored for future remakes
-                  </p>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <Clock className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
-                  <p className="text-lg text-signal-white">
-                    Replace units after 12–18 months for peak performance
-                  </p>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <Shield className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
-                  <p className="text-lg text-signal-white">
-                    Contact support for warranty, upgrades, or refits
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="text-center">
-              <Button className="btn-scarlet text-lg px-8 py-3 font-semibold uppercase tracking-wide">
-                CONTACT US
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </div>
           </div>
         </div>
