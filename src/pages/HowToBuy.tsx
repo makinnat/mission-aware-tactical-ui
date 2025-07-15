@@ -59,15 +59,15 @@ const HowToBuy = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Government & Federal Buyers */}
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
-                <CardContent className="p-8 text-center space-y-6">
+              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl h-full">
+                <CardContent className="p-8 text-center space-y-6 flex flex-col h-full">
                   <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
                     <Building2 className="h-8 w-8 text-signal-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-olive-drab">
                     Government & Federal Buyers
                   </h3>
-                  <div className="space-y-3 text-signal-white">
+                  <div className="space-y-3 text-signal-white flex-grow">
                     <p>Buy through Sole Source Justification or through an 8a Parnter</p>
                     
                   </div>
@@ -78,15 +78,15 @@ const HowToBuy = () => {
               </Card>
 
               {/* Teams & Organizations */}
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
-                <CardContent className="p-8 text-center space-y-6">
+              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl h-full">
+                <CardContent className="p-8 text-center space-y-6 flex flex-col h-full">
                   <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
                     <Users className="h-8 w-8 text-signal-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-olive-drab">
                     Teams & Organizations
                   </h3>
-                  <div className="space-y-3 text-signal-white">
+                  <div className="space-y-3 text-signal-white flex-grow">
                     <p>Request a scanning event, or leverage a scanner lease for larger implementations</p>
                     
                   </div>
@@ -97,15 +97,15 @@ const HowToBuy = () => {
               </Card>
 
               {/* Individual Users */}
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
-                <CardContent className="p-8 text-center space-y-6">
+              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl h-full">
+                <CardContent className="p-8 text-center space-y-6 flex flex-col h-full">
                   <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
                     <User className="h-8 w-8 text-signal-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-olive-drab">
                     Individual Users
                   </h3>
-                  <div className="space-y-3 text-signal-white">
+                  <div className="space-y-3 text-signal-white flex-grow">
                     <p>Book a scan at an event near you</p>
                     <p>Gear delivered after fitting</p>
                   </div>
