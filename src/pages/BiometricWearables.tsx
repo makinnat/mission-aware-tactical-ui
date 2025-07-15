@@ -54,9 +54,12 @@ const BiometricWearables = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-black text-white mb-8 leading-tight md:text-6xl drop-shadow-lg uppercase">
-              BEYOND HEARING PROTECTION: THE BIOMETRIC PLATFORM
+            <h1 className="text-5xl font-black text-white mb-4 leading-tight md:text-6xl drop-shadow-lg uppercase">
+              BEYOND HEARING PROTECTION
             </h1>
+            <h2 className="text-3xl font-bold text-white/90 mb-8 leading-tight md:text-4xl drop-shadow-lg uppercase">
+              THE BIOMETRIC PLATFORM
+            </h2>
             <p className="text-xl text-white/95 leading-relaxed max-w-3xl mx-auto mb-10 drop-shadow-md">
               Aware custom-fit ear gear becomes a passive platform for in-ear sensing — no added steps, no added equipment. Your ear is the window.
             </p>
