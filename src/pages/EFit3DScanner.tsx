@@ -135,7 +135,7 @@ const EFit3DScanner = () => {
                 >
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-olive-drab rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <advantage.icon className="h-6 w-6 text-signal-white" />
+                      <advantage.icon className="h-6 w-6 text-scarlet flex-shrink-0" />
                     </div>
                     <p className="text-desert-tan text-sm leading-relaxed">
                       {advantage.text}
