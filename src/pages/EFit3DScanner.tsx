@@ -85,25 +85,24 @@ const EFit3DScanner = () => {
               <h2 className="text-3xl font-bold text-desert-tan mb-6">
                 Zero Contact. Zero Risk. Maximum Precision.
               </h2>
+            </div>
+            
+            {/* Video Section */}
+            <div className="mb-12">
+              <div className="relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden bg-combat-black">
+                <iframe 
+                  src="https://www.canva.com/design/DAGtO6bmHNg/1fMTN4pC8ZG6c2waB1oo8w/watch?embed" 
+                  allowFullScreen 
+                  allow="fullscreen"
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+            </div>
+            
+            <div className="bg-muted/10 p-8 rounded-xl mb-12">
               <p className="text-scarlet leading-relaxed">
                 Revolutionary Non-Contact Technology
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Video Section */}
-      <section className="bg-muted/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden bg-combat-black">
-              <iframe 
-                src="https://www.canva.com/design/DAGtO6bmHNg/1fMTN4pC8ZG6c2waB1oo8w/watch?embed" 
-                allowFullScreen 
-                allow="fullscreen"
-                className="absolute top-0 left-0 w-full h-full"
-              />
             </div>
           </div>
         </div>
