@@ -107,16 +107,16 @@ const BiometricWearables = () => {
               ].map((capability, index) => (
                 <Card 
                   key={index}
-                  className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-${400 + (index * 100)} ${capabilitiesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                  className={`h-full bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-${400 + (index * 100)} ${capabilitiesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 >
-                  <CardContent className="p-6 text-center">
+                  <CardContent className="p-6 text-center h-full flex flex-col">
                     <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto mb-6 flex items-center justify-center">
                       <capability.icon className="h-8 w-8 text-signal-white" />
                     </div>
-                    <h3 className="text-lg font-black text-desert-tan mb-4 uppercase">
+                    <h3 className="text-lg font-black text-desert-tan mb-4 uppercase min-h-[3rem] flex items-center justify-center">
                       {capability.title}
                     </h3>
-                    <p className="text-signal-white text-sm leading-relaxed">
+                    <p className="text-signal-white text-sm leading-relaxed flex-1 flex items-center">
                       {capability.description}
                     </p>
                   </CardContent>
