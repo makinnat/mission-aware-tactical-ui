@@ -82,10 +82,10 @@ const EFit3DScanner = () => {
             </p>
             
             <div className="bg-muted/10 p-8 rounded-xl mb-12">
-              <h2 className="text-3xl font-bold text-signal-white mb-6">
+              <h2 className="text-3xl font-bold text-desert-tan mb-6">
                 Zero Contact. Zero Risk. Maximum Precision.
               </h2>
-              <p className="text-desert-tan leading-relaxed">
+              <p className="text-scarlet leading-relaxed">
                 Revolutionary Non-Contact Technology
               </p>
             </div>
