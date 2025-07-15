@@ -17,6 +17,14 @@ export const Footer = () => {
               />
             </div>
             
+            <div className="w-48 h-16">
+              <img 
+                src="/lovable-uploads/ef310f2d-7afe-464d-816e-302392b965e4.png" 
+                alt="Aware Defense" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+            
             <div className="flex space-x-4">
               <Twitter className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
               <Instagram className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
