@@ -52,16 +52,16 @@ const Navigation = () => {
                         EarShield
                       </Link>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                        EarDefender Vented A
+                        Aviation CEP
                       </a>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                        EarDefender Vented B
-                      </a>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                        SwimPlug
+                        Custom Overmold
                       </a>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         SleepPlug
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        SwimPlug
                       </a>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         EarBud
