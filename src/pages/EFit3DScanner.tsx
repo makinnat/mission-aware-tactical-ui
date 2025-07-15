@@ -94,7 +94,7 @@ const EFit3DScanner = () => {
       </section>
 
       {/* Video Section */}
-      <section className="py-20 bg-muted/10">
+      <section className="bg-muted/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden bg-combat-black">
