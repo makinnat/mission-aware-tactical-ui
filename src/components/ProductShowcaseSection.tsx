@@ -1,4 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { LazyImage } from "@/components/ui/lazy-image";
+import { useImagePreloader } from "@/hooks/useImagePreloader";
+import { useMemo } from "react";
 
 const ProductShowcaseSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -56,6 +59,10 @@ const ProductShowcaseSection = () => {
     }
   ];
 
+  // Optimize product data and preload images
+  const productImages = useMemo(() => products.map(p => p.src), []);
+  useImagePreloader(productImages.slice(0, 4)); // Preload first 4 images
+  
   // Duplicate products for seamless scrolling
   const duplicatedProducts = [...products, ...products];
 
@@ -88,10 +95,11 @@ const ProductShowcaseSection = () => {
                   className="flex-shrink-0 mx-8 group p-2"
                 >
                   <div className="w-48 h-48 bg-black rounded-2xl p-8 flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20">
-                    <img
+                    <LazyImage
                       src={product.src}
                       alt={product.alt}
                       className="max-w-full max-h-full object-contain filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300"
+                      priority={index < 4} // Prioritize first 4 images
                     />
                   </div>
                 </div>

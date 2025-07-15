@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 import { Product } from '@/types/product';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { LazyImage } from '@/components/ui/lazy-image';
 import { useCart } from '@/contexts/CartContext';
 import { ShoppingCart, Eye } from 'lucide-react';
 
@@ -13,7 +14,7 @@ interface ProductCardProps {
   className?: string;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ 
+export const ProductCard: React.FC<ProductCardProps> = memo(({ 
   product, 
   showQuickAdd = true,
   className = "" 
@@ -50,11 +51,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       <Link to={`/products/${product.handle}`} className="block">
         <div className="relative overflow-hidden rounded-t-lg bg-muted/10">
           {product.image && (
-            <img
+            <LazyImage
               src={product.image.src}
               alt={product.image.alt}
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
             />
           )}
           
@@ -136,4 +136,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </Link>
     </Card>
   );
-};
+});
+
+ProductCard.displayName = 'ProductCard';

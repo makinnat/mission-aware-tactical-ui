@@ -1,11 +1,20 @@
 import { Button } from "@/components/ui/button";
+import { LazyImage } from "@/components/ui/lazy-image";
+import { useImagePreloader } from "@/hooks/useImagePreloader";
+
 const heroImage = "/lovable-uploads/2bf4d720-4753-487d-ba23-f8007156d857.png";
 export const HeroSection = () => {
+  // Preload critical hero image
+  useImagePreloader([heroImage], { priority: true });
+
   return <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(${heroImage})`
-    }} />
+      {/* Optimized Background Image */}
+      <LazyImage
+        src={heroImage}
+        alt="Tactical operator background"
+        priority
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       
       {/* Dark Gradient Overlay */}
       <div className="absolute inset-0 hero-overlay" />

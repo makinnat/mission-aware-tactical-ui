@@ -1,54 +1,78 @@
+import React, { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
+import { usePerformanceMonitor } from "@/hooks/usePerformanceMonitor";
 import Index from "./pages/Index";
-import Products from "./pages/Products";
-import EarShield from "./pages/EarShield";
-import GetScanned from "./pages/GetScanned";
-import InstructionsAndCare from "./pages/InstructionsAndCare";
-import HowToBuy from "./pages/HowToBuy";
-import TechnologyOverview from "./pages/TechnologyOverview";
-import EFit3DScanner from "./pages/EFit3DScanner";
-import BiometricWearables from "./pages/BiometricWearables";
-import UseCases from "./pages/UseCases";
-import AboutUs from "./pages/AboutUs";
-import RequestConsultation from "./pages/RequestConsultation";
-import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
+// Lazy load non-critical pages
+const Products = lazy(() => import("./pages/Products"));
+const EarShield = lazy(() => import("./pages/EarShield"));
+const GetScanned = lazy(() => import("./pages/GetScanned"));
+const InstructionsAndCare = lazy(() => import("./pages/InstructionsAndCare"));
+const HowToBuy = lazy(() => import("./pages/HowToBuy"));
+const TechnologyOverview = lazy(() => import("./pages/TechnologyOverview"));
+const EFit3DScanner = lazy(() => import("./pages/EFit3DScanner"));
+const BiometricWearables = lazy(() => import("./pages/BiometricWearables"));
+const UseCases = lazy(() => import("./pages/UseCases"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const RequestConsultation = lazy(() => import("./pages/RequestConsultation"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
-const App = () => (
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5, // 5 minutes
+      gcTime: 1000 * 60 * 30, // 30 minutes
+      retry: 1,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
+const PageLoader = () => (
+  <div className="min-h-screen flex items-center justify-center">
+    <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary"></div>
+  </div>
+);
+
+const App = () => {
+  usePerformanceMonitor();
+  
+  return (
   <QueryClientProvider client={queryClient}>
     <CartProvider>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/products/:handle" element={<Products />} />
-            <Route path="/collections/:handle" element={<Products />} />
-            <Route path="/products/earshield" element={<EarShield />} />
-            <Route path="/get-scanned" element={<GetScanned />} />
-            <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
-            <Route path="/how-to-buy" element={<HowToBuy />} />
-            <Route path="/technology" element={<TechnologyOverview />} />
-            <Route path="/technology/efit-3d-scanner" element={<EFit3DScanner />} />
-            <Route path="/technology/biometric-wearables" element={<BiometricWearables />} />
-            <Route path="/use-cases" element={<UseCases />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/request-consultation" element={<RequestConsultation />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:handle" element={<Products />} />
+              <Route path="/collections/:handle" element={<Products />} />
+              <Route path="/products/earshield" element={<EarShield />} />
+              <Route path="/get-scanned" element={<GetScanned />} />
+              <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
+              <Route path="/how-to-buy" element={<HowToBuy />} />
+              <Route path="/technology" element={<TechnologyOverview />} />
+              <Route path="/technology/efit-3d-scanner" element={<EFit3DScanner />} />
+              <Route path="/technology/biometric-wearables" element={<BiometricWearables />} />
+              <Route path="/use-cases" element={<UseCases />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/request-consultation" element={<RequestConsultation />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </BrowserRouter>
       </TooltipProvider>
     </CartProvider>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;
