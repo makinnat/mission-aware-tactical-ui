@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Social */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center text-center">
             <div className="w-32 h-24">
               <img 
                 src="/lovable-uploads/f769839c-af38-4801-aab1-98f74e7c07c9.png" 
