@@ -32,9 +32,7 @@ const GetScanned = () => {
       <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-olive-drab mb-8 leading-tight">
-              GET CUSTOM-FIT GEAR IN JUST 90 SECONDS
-            </h1>
+            <h1 className="text-5xl font-bold text-olive-drab mb-8 leading-tight md:text-5xl">GET SCANNED FOR CUSTOM-FIT GEAR IN JUST 90 SECONDS</h1>
             <p className="text-xl md:text-2xl text-signal-white mb-12 leading-relaxed max-w-3xl mx-auto">
               Our FDA-cleared eFit 3D scanner captures the exact geometry of your ear — no contact, no silicone. Just perfect fit, every time.
             </p>
