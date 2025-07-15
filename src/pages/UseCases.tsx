@@ -31,7 +31,7 @@ const UseCases = () => {
       icon: Shield,
       title: "Defense & Federal Government",
       subtitle: "Mission-Critical Applications",
-      description: "Warfighters rank hearing loss as the #1 service-connected disability. Aware Defense custom molds integrate seamlessly with comms suites from Gentex, Invisio and Axil, delivering full-seal impulse protection without blocking situational audio.",
+      description: "Warfighters rank hearing loss as the #1 service-connected disability. Aware Defense custom molds integrate seamlessly with comms suites from Gentex, Invisio, Axil, and more, delivering full-seal impulse protection without blocking situational audio.",
       applications: [
         "Special Operations Forces field validation with outstanding results",
         "Aviation units report improved compliance and aircrew satisfaction", 
