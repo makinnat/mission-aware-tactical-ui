@@ -228,22 +228,36 @@ const UseCases = () => {
                             <div className="flex space-x-3">
                               <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
                                 <img 
-                                  src="/lovable-uploads/cc7ec663-888b-4d72-b2d8-1a7c4e7c2690.png" 
-                                  alt="Yellow Ear Protection" 
+                                  src="/lovable-uploads/f3ca1a0a-0b90-4aea-90c0-d793af035f66.png" 
+                                  alt="Yellow Custom Earpieces" 
                                   className="w-full h-full object-cover"
                                 />
                               </div>
                               <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
                                 <img 
-                                  src="/lovable-uploads/5900a8c0-a2ed-485e-adfb-7c5259b1e025.png" 
-                                  alt="Black Ear Protection with Blue Accents" 
+                                  src="/lovable-uploads/065dc0a4-a05b-4fca-b455-9304b48e1741.png" 
+                                  alt="Black Custom Earpieces with Blue Accents" 
                                   className="w-full h-full object-cover"
                                 />
                               </div>
                               <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
                                 <img 
-                                  src="/lovable-uploads/1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png" 
-                                  alt="Blue Ear Protection" 
+                                  src="/lovable-uploads/749b2910-71a3-4bb3-b5ce-a6138b01476f.png" 
+                                  alt="Black Custom Earpieces" 
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                                <img 
+                                  src="/lovable-uploads/e4da610b-6c0b-4ab8-bf6f-9ad045af4202.png" 
+                                  alt="Blue Translucent Custom Earpiece" 
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                                <img 
+                                  src="/lovable-uploads/7e9576d1-7ec4-4c2a-8e2d-33dcdfc3131d.png" 
+                                  alt="Blue Custom Earpieces" 
                                   className="w-full h-full object-cover"
                                 />
                               </div>
