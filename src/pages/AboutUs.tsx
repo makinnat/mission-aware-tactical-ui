@@ -143,14 +143,16 @@ const AboutUs = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="bg-combat-black/50 border-desert-tan/20 hover:border-desert-tan/40 transition-all duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-scarlet-red rounded-lg mx-auto mb-6 flex items-center justify-center">
-                    <value.icon className="w-8 h-8 text-signal-white" />
+              <Card key={index} className="bg-combat-black/50 border-desert-tan/20 hover:border-desert-tan/40 transition-all duration-300 h-full">
+                <CardContent className="p-8 text-center h-full flex flex-col justify-between min-h-[280px]">
+                  <div>
+                    <div className="w-16 h-16 bg-scarlet-red rounded-lg mx-auto mb-6 flex items-center justify-center">
+                      <value.icon className="w-8 h-8 text-signal-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-desert-tan mb-4 uppercase">
+                      {value.title}
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-bold text-desert-tan mb-4 uppercase">
-                    {value.title}
-                  </h3>
                   <p className="text-signal-white leading-relaxed">
                     {value.description}
                   </p>
