@@ -76,10 +76,12 @@ const AboutUs = () => {
         className={`pt-32 pb-20 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-6xl lg:text-7xl font-black text-olive-drab mb-8 uppercase tracking-tight">
-            BUILT BY OPERATORS.<br />
-            TRUSTED BY ELITE UNITS.
+          <h1 className="text-6xl lg:text-7xl font-black text-signal-white mb-4 uppercase tracking-tight">
+            BUILT BY OPERATORS
           </h1>
+          <h2 className="text-4xl lg:text-5xl font-bold text-signal-white mb-8 uppercase tracking-tight">
+            TRUSTED BY ELITE UNITS
+          </h2>
           <p className="text-2xl text-desert-tan leading-relaxed max-w-4xl mx-auto">
             We created Aware Defense to solve the problem we lived with — gear that's uncomfortable, non-compliant, and gets tossed mid-mission.
           </p>
