@@ -233,27 +233,35 @@ const UseCases = () => {
                             ))}
                           </div>
                           
-                          {/* Product Images Placeholder */}
+                          {/* Product Images */}
                           <div className="mb-8">
                             <p className="text-xs text-desert-tan/60 uppercase tracking-wide mb-3">
                               Featured Products
                             </p>
                             <div className="flex space-x-3">
-                              {[1, 2, 3].map((item) => (
-                                <div key={item} className="w-16 h-16 bg-combat-black/40 border border-desert-tan/20 rounded-lg flex items-center justify-center">
-                                  <div className="w-3 h-3 bg-desert-tan/30 rounded"></div>
-                                </div>
-                              ))}
+                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                                <img 
+                                  src="/lovable-uploads/cc7ec663-888b-4d72-b2d8-1a7c4e7c2690.png" 
+                                  alt="Yellow Ear Protection" 
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                                <img 
+                                  src="/lovable-uploads/5900a8c0-a2ed-485e-adfb-7c5259b1e025.png" 
+                                  alt="Black Ear Protection with Blue Accents" 
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                                <img 
+                                  src="/lovable-uploads/1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png" 
+                                  alt="Blue Ear Protection" 
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
                             </div>
                           </div>
-                          
-                          <Button 
-                            className="text-sm px-6 py-3 font-semibold uppercase tracking-wide text-white"
-                            style={{ backgroundColor: '#95182b' }}
-                          >
-                            LEARN MORE ABOUT THIS SECTOR
-                            <ArrowRight className="ml-2 h-4 w-4" />
-                          </Button>
                         </div>
                         
                         {/* Image Placeholder Side */}
