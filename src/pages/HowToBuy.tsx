@@ -31,13 +31,9 @@ const HowToBuy = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section 
-        ref={heroRef} 
-        className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-        style={{
-          backgroundImage: `url('/lovable-uploads/aa0cf4ea-596c-48cc-9dc1-fd66febe17ea.png')`
-        }}
-      >
+      <section ref={heroRef} className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+      backgroundImage: `url('/lovable-uploads/aa0cf4ea-596c-48cc-9dc1-fd66febe17ea.png')`
+    }}>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-combat-black/70"></div>
         
@@ -147,7 +143,7 @@ const HowToBuy = () => {
                     <div className="space-y-3">
                       <div className="flex items-start space-x-3">
                         <CheckCircle className="h-5 w-5 text-scarlet mt-1 flex-shrink-0" />
-                        <p>90-second scanning vs. hours for traditional silicone methods</p>
+                        <p>90-second scanning vs. hours for traditional silicone methods to generate a mold</p>
                       </div>
                       <div className="flex items-start space-x-3">
                         <CheckCircle className="h-5 w-5 text-scarlet mt-1 flex-shrink-0" />
