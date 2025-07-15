@@ -44,71 +44,50 @@ const Navigation = () => {
               </Link>
               
               {activeDropdown === 'products' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-combat-black border border-desert-tan/20 rounded-sm shadow-lg">
-                  <div className="py-2">
-                    {/* Custom Hearing Protection */}
-                    <div className="group">
-                      <div className="px-4 py-2 text-desert-tan font-semibold text-xs uppercase tracking-wide border-b border-desert-tan/10">
-                        Custom Hearing Protection
-                      </div>
-                      <div className="pl-6">
-                        <Link to="/products/earshield" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          EarShield
-                        </Link>
-                        <div className="group">
-                          <div className="px-4 py-1 text-desert-tan/70 text-xs uppercase tracking-wide">
-                            Vented Protection
-                          </div>
-                          <div className="pl-4">
-                            <a href="#" className="block px-4 py-1 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                              EarDefender Vented A
-                            </a>
-                            <a href="#" className="block px-4 py-1 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                              EarDefender Vented B
-                            </a>
-                          </div>
-                        </div>
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          SwimPlug
-                        </a>
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          SleepPlug
-                        </a>
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          EarBud
-                        </a>
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          MusicPlug
-                        </a>
-                      </div>
-                    </div>
-                    
-                    {/* CEP */}
-                    <div className="group border-t border-desert-tan/10 mt-2">
-                      <div className="px-4 py-2 text-desert-tan font-semibold text-xs uppercase tracking-wide">
-                        CEP
-                      </div>
-                      <div className="pl-6">
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          EarDefender
-                        </a>
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          RadioCOMM
-                        </a>
-                      </div>
-                    </div>
+                <div className="absolute top-full left-0 pt-1 w-56 z-50">
+                  <div className="bg-combat-black border border-desert-tan/20 rounded-sm shadow-lg">
+                    <div className="py-2">
+                      {/* Products List */}
+                      <Link to="/products/earshield" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        EarShield
+                      </Link>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        EarDefender Vented A
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        EarDefender Vented B
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        SwimPlug
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        SleepPlug
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        EarBud
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        MusicPlug
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        EarDefender
+                      </a>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        RadioCOMM
+                      </a>
 
-                    {/* Other Items */}
-                    <div className="border-t border-desert-tan/10 mt-2 pt-2">
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                        Get Scanned
-                      </a>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                        How to Buy
-                      </a>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                        Instructions & Care
-                      </a>
+                      {/* Other Items */}
+                      <div className="border-t border-desert-tan/10 mt-2 pt-2">
+                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                          Get Scanned
+                        </a>
+                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                          How to Buy
+                        </a>
+                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                          Instructions & Care
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
