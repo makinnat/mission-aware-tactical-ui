@@ -272,6 +272,12 @@ const UseCases = () => {
                               alt="Defense and Federal Government Operations" 
                               className="w-full h-full object-cover"
                             />
+                          ) : index === 1 ? (
+                            <img 
+                              src="/lovable-uploads/ec0fc2c8-2cc0-4cb1-b6d4-ad1a9f439054.png" 
+                              alt="Manufacturing and Heavy Industry Operations" 
+                              className="w-full h-full object-cover"
+                            />
                           ) : index === 2 ? (
                             <img 
                               src="/lovable-uploads/5a0bcd62-e02b-4d44-b984-c3153435ab72.png" 
