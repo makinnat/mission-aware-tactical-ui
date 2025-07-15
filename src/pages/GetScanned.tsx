@@ -51,8 +51,8 @@ const GetScanned = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               
               {/* Left: Scanner Visual */}
-              <div className="space-y-4">
-                <div className="aspect-square bg-muted/20 rounded-lg overflow-hidden border-2 border-desert-tan/30 relative">
+              <div className="space-y-4 flex justify-center">
+                <div className="w-80 h-80 bg-muted/20 rounded-lg overflow-hidden border-2 border-desert-tan/30 relative">
                   <img 
                     src="/lovable-uploads/8217ea43-f1b7-4052-a29e-a0f8fbaefa20.png" 
                     alt="eFit 3D Scanner in action - contactless ear scanning process"
