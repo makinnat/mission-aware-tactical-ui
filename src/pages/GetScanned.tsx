@@ -119,7 +119,7 @@ const GetScanned = () => {
                   </p>
                   
                   <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
-                    REQUEST A GROUP SCAN
+                    Request a scanning event for your team
                   </Button>
                 </CardContent>
               </Card>
