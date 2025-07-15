@@ -43,33 +43,25 @@ const BiometricWearables = () => {
       {/* Hero Section */}
       <section 
         ref={heroRef} 
-        className={`pt-24 pb-16 relative overflow-hidden transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `url('/lovable-uploads/f246687d-5ab6-493d-9ac2-e3d568adbf79.png')`
+        }}
       >
-        {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full">
-          <iframe 
-            className="absolute inset-0 w-full h-full object-cover scale-110"
-            src="https://www.canva.com/design/DAGtOzlXTwk/HGaYXQ8ur0k-U5HdyZoYmQ/watch?embed" 
-            allowFullScreen
-            allow="fullscreen"
-            style={{ border: 'none', padding: 0, margin: 0 }}
-          />
-        </div>
+        {/* Multiple transparent overlay layers for better text readability */}
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
         
-        {/* Transparent overlay for text visibility */}
-        <div className="absolute inset-0 bg-black/60" />
-        
-        {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-white mb-8 leading-tight md:text-6xl">
+            <h1 className="text-5xl font-bold text-white mb-8 leading-tight md:text-6xl drop-shadow-lg">
               BEYOND HEARING PROTECTION: THE BIOMETRIC PLATFORM
             </h1>
-            <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-xl text-white/95 leading-relaxed max-w-3xl mx-auto mb-10 drop-shadow-md">
               Aware custom-fit ear gear becomes a passive platform for in-ear sensing — no added steps, no added equipment. Your ear is the window.
             </p>
             <Button 
-              className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white" 
+              className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white drop-shadow-lg" 
               style={{ backgroundColor: '#95182b' }}
             >
               SCHEDULE A TECHNOLOGY DEMO
