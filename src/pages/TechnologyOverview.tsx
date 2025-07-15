@@ -172,10 +172,10 @@ const TechnologyOverview = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-olive-drab mb-8">
+            <h2 className="text-4xl font-bold text-signal-white mb-8">
               THE ONLY FDA-CLEARED NON-CONTACT SYSTEM
             </h2>
-            <p className="text-xl text-signal-white leading-relaxed mb-10">
+            <p className="text-xl text-desert-tan leading-relaxed mb-10">
               Compare our patented scanner and data platform to outdated foam plug workflows. Trust the tech that elite units rely on.
             </p>
             
