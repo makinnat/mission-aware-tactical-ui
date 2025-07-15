@@ -27,6 +27,10 @@ const HowToBuy = () => {
     ref: finalCtaRef,
     isVisible: finalCtaVisible
   } = useScrollAnimation();
+  const {
+    ref: procurementRef,
+    isVisible: procurementVisible
+  } = useScrollAnimation();
   return <div className="min-h-screen bg-combat-black text-signal-white font-inter">
       <Navigation />
       
@@ -122,7 +126,7 @@ const HowToBuy = () => {
       </section>
 
       {/* Federal Procurement Justification Section */}
-      <section className="py-20 bg-muted/10">
+      <section ref={procurementRef} className={`py-20 bg-muted/10 transition-all duration-1000 delay-300 ${procurementVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
@@ -131,7 +135,7 @@ const HowToBuy = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
               {/* Proprietary Technology */}
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
+              <Card className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-500 ${procurementVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-signal-white mb-6">
                     PROPRIETARY TECHNOLOGY
@@ -163,7 +167,7 @@ const HowToBuy = () => {
               </Card>
 
               {/* Mission Critical Differentiation */}
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
+              <Card className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-700 ${procurementVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-signal-white mb-6">
                     MISSION-CRITICAL DIFFERENTIATION
@@ -186,7 +190,7 @@ const HowToBuy = () => {
             </div>
 
             {/* 8(a) Partnership Benefits */}
-            <Card className="bg-scarlet/10 border-scarlet/30 rounded-xl">
+            <Card className={`bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-900 ${procurementVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-signal-white text-center mb-8">
                   STREAMLINED PROCUREMENT THROUGH CERTIFIED 8(a) PARTNER
