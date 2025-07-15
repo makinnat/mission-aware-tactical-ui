@@ -34,7 +34,7 @@ const HowToBuy = () => {
       <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-olive-drab mb-8 leading-tight md:text-5xl">
+            <h1 className="text-5xl font-bold text-olive-drab mb-8 leading-tight md:text-5xl text-white">
               READY TO OUTFIT YOUR TEAM?
             </h1>
             <p className="text-xl text-desert-tan leading-relaxed max-w-3xl mx-auto mb-10">
