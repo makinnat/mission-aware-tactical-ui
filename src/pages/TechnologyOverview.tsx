@@ -48,7 +48,7 @@ const TechnologyOverview = () => {
       >
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-olive-drab mb-8 leading-tight md:text-6xl">
+            <h1 className="text-5xl font-bold text-signal-white mb-8 leading-tight md:text-6xl">
               TECH THAT FITS. TECH THAT PERFORMS.
             </h1>
             <p className="text-xl text-desert-tan leading-relaxed max-w-3xl mx-auto mb-10">
