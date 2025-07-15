@@ -297,6 +297,17 @@ const EFit3DScanner = () => {
                 </div>
               </div>
             </div>
+            
+            <div className="text-center mt-12">
+              <Button 
+                className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white" 
+                style={{ backgroundColor: '#95182b' }}
+                onClick={() => window.location.href = '/use-cases'}
+              >
+                SEE OTHER USE CASES
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
         </div>
       </section>
