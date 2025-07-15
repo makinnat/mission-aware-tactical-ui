@@ -332,12 +332,9 @@ const UseCases = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-black text-olive-drab mb-8 uppercase">
+            <h2 className="text-4xl font-black text-signal-white mb-8 uppercase">
               HAVE A SPECIFIC USE CASE?
             </h2>
-            <p className="text-xl text-desert-tan leading-relaxed mb-10">
-              We've worked with Tier 1 units, government agencies, and OEMs — let's solve your problem next.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
