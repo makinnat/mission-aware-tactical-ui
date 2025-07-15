@@ -66,13 +66,6 @@ const EFit3DScanner = () => {
             <p className="text-xl text-desert-tan leading-relaxed max-w-3xl mx-auto mb-10">
               Revolutionizing Ear Scanning with Medical-Grade Precision
             </p>
-            <div className="w-64 h-64 mx-auto mb-8 bg-signal-white rounded-lg flex items-center justify-center overflow-hidden">
-              <img 
-                src="/lovable-uploads/67c45871-fd6f-4e93-93b8-ce87da954882.png" 
-                alt="eFit 3D Scanner" 
-                className="w-full h-full object-contain p-6"
-              />
-            </div>
           </div>
         </div>
       </section>
