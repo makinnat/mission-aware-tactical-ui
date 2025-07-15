@@ -255,7 +255,7 @@ const UseCases = () => {
                         <div className="bg-combat-black/30 border-l border-desert-tan/20 flex items-center justify-center min-h-[300px] lg:min-h-[350px]">
                           {index === 0 ? (
                             <img 
-                              src="/lovable-uploads/ef2a7f42-78ad-43e6-bab0-ebc41257ab5d.png" 
+                              src="/lovable-uploads/f1e814a3-2edb-4313-8649-962fba392f5a.png" 
                               alt="Defense and Federal Government Operations" 
                               className="w-full h-full object-cover"
                             />
