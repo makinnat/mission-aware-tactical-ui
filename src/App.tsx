@@ -10,6 +10,7 @@ import GetScanned from "./pages/GetScanned";
 import InstructionsAndCare from "./pages/InstructionsAndCare";
 import HowToBuy from "./pages/HowToBuy";
 import TechnologyOverview from "./pages/TechnologyOverview";
+import EFit3DScanner from "./pages/EFit3DScanner";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
           <Route path="/how-to-buy" element={<HowToBuy />} />
           <Route path="/technology" element={<TechnologyOverview />} />
+          <Route path="/technology/efit-3d-scanner" element={<EFit3DScanner />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

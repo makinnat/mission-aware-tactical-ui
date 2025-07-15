@@ -108,9 +108,9 @@ const Navigation = () => {
               {activeDropdown === 'technology' && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-combat-black border border-desert-tan/20 rounded-sm shadow-lg">
                   <div className="py-2">
-                    <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                    <Link to="/technology/efit-3d-scanner" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                       eFit 3D Scanner
-                    </a>
+                    </Link>
                     <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                       Biometric Wearables
                     </a>
