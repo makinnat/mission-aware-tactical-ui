@@ -43,17 +43,36 @@ const BiometricWearables = () => {
       {/* Hero Section */}
       <section 
         ref={heroRef} 
-        className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-        style={{
-          backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url('https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3')`
-        }}
+        className={`pt-24 pb-16 relative overflow-hidden transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
+        {/* Video Background */}
+        <video 
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+        >
+          <source src="/path-to-your-video.mp4" type="video/mp4" />
+          {/* Fallback background image if video doesn't load */}
+          <div 
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3')`
+            }}
+          />
+        </video>
+        
+        {/* Transparent overlay for text visibility */}
+        <div className="absolute inset-0 bg-black/60" />
+        
+        {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-olive-drab mb-8 leading-tight md:text-6xl">
+            <h1 className="text-5xl font-bold text-white mb-8 leading-tight md:text-6xl">
               BEYOND HEARING PROTECTION: THE BIOMETRIC PLATFORM
             </h1>
-            <p className="text-xl text-desert-tan leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-10">
               Aware custom-fit ear gear becomes a passive platform for in-ear sensing — no added steps, no added equipment. Your ear is the window.
             </p>
             <Button 
