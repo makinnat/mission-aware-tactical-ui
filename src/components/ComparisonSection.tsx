@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Link } from "react-router-dom";
 
 export const ComparisonSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -127,11 +128,13 @@ export const ComparisonSection = () => {
                 alt="AWARE 3D Scanner Device" 
                 className="w-full h-auto object-contain"
               />
-              <img 
-                src="/lovable-uploads/0204ba41-f9a2-46a7-8ab2-eed84793eea6.png" 
-                alt="Company Logo" 
-                className="w-24 h-auto object-contain"
-              />
+              <Link to="/technology/efit-3d-scanner" className="block">
+                <img 
+                  src="/lovable-uploads/0204ba41-f9a2-46a7-8ab2-eed84793eea6.png" 
+                  alt="eFit 3D Scanner" 
+                  className="w-24 h-auto object-contain hover:opacity-80 transition-opacity"
+                />
+              </Link>
             </div>
           </div>
         </div>

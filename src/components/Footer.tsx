@@ -1,6 +1,7 @@
 import { Twitter, Instagram, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -25,7 +26,7 @@ export const Footer = () => {
           </div>
 
           {/* Made in USA */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center space-y-4">
             <div className="w-32 h-24">
               <img 
                 src="/lovable-uploads/f769839c-af38-4801-aab1-98f74e7c07c9.png" 
@@ -33,6 +34,13 @@ export const Footer = () => {
                 className="w-full h-full object-contain"
               />
             </div>
+            <Link to="/technology/efit-3d-scanner" className="block">
+              <img 
+                src="/lovable-uploads/0204ba41-f9a2-46a7-8ab2-eed84793eea6.png" 
+                alt="eFit 3D Scanner" 
+                className="w-24 h-auto object-contain hover:opacity-80 transition-opacity"
+              />
+            </Link>
           </div>
 
           {/* Atlanta Office */}
