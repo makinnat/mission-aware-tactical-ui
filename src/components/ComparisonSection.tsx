@@ -122,20 +122,20 @@ export const ComparisonSection = () => {
 
           {/* Image Column - 1/3 width */}
           <div className="w-1/3 flex justify-center">
-            <div className="bg-combat-black rounded-lg border border-scarlet-red p-8 flex flex-col items-center space-y-6">
-              <img 
-                src="/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png" 
-                alt="AWARE 3D Scanner Device" 
-                className="w-full h-auto object-contain"
-              />
-              <Link to="/technology/efit-3d-scanner" className="block">
+            <Link to="/technology/efit-3d-scanner" className="block w-full">
+              <div className="bg-combat-black rounded-lg border border-scarlet-red p-8 flex flex-col items-center space-y-6 hover:opacity-80 transition-opacity cursor-pointer">
+                <img 
+                  src="/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png" 
+                  alt="AWARE 3D Scanner Device" 
+                  className="w-full h-auto object-contain"
+                />
                 <img 
                   src="/lovable-uploads/e319426e-8e90-469b-bc84-bde45b072745.png" 
                   alt="eFit 3D Scanner" 
-                  className="w-24 h-auto object-contain hover:opacity-80 transition-opacity"
+                  className="w-24 h-auto object-contain"
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
