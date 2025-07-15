@@ -197,7 +197,7 @@ const HowToBuy = () => {
                     <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
                       <FileText className="h-8 w-8 text-signal-white" />
                     </div>
-                    <h4 className="font-bold text-olive-drab">Direct Contracting</h4>
+                    <h4 className="font-bold" style={{ color: '#B6A687' }}>Direct Contracting</h4>
                     <p className="text-signal-white text-sm">
                       Sole-source contracts up to $4.5M without competitive requirements. Awards cannot be protested.
                     </p>
@@ -207,7 +207,7 @@ const HowToBuy = () => {
                     <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
                       <CheckCircle className="h-8 w-8 text-signal-white" />
                     </div>
-                    <h4 className="font-bold text-olive-drab">Small Business Goals</h4>
+                    <h4 className="font-bold" style={{ color: '#B6A687' }}>Small Business Goals</h4>
                     <p className="text-signal-white text-sm">
                       Satisfies agency small business and 8(a) contracting goals while supporting disadvantaged business development.
                     </p>
@@ -217,7 +217,7 @@ const HowToBuy = () => {
                     <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
                       <Clock className="h-8 w-8 text-signal-white" />
                     </div>
-                    <h4 className="font-bold text-olive-drab">Reduced Timeline</h4>
+                    <h4 className="font-bold" style={{ color: '#B6A687' }}>Reduced Timeline</h4>
                     <p className="text-signal-white text-sm">
                       Streamlined approval process reduces procurement timeline from months to weeks.
                     </p>
