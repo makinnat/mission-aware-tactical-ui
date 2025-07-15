@@ -202,18 +202,13 @@ const UseCases = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                         {/* Content Side */}
                         <div className="p-8 lg:p-12">
-                          <div className="flex items-start space-x-4 mb-6">
-                            <div className="w-16 h-16 bg-olive-drab rounded-lg flex items-center justify-center flex-shrink-0">
-                              <sector.icon className="h-8 w-8 text-signal-white" />
-                            </div>
-                            <div>
-                              <h3 className="text-2xl font-black text-signal-white uppercase mb-2">
-                                {sector.title}
-                              </h3>
-                              <p className="text-lg font-semibold text-scarlet uppercase tracking-wide">
-                                {sector.subtitle}
-                              </p>
-                            </div>
+                          <div className="mb-6">
+                            <h3 className="text-2xl font-black text-signal-white uppercase mb-2">
+                              {sector.title}
+                            </h3>
+                            <p className="text-lg font-semibold text-scarlet uppercase tracking-wide">
+                              {sector.subtitle}
+                            </p>
                           </div>
                           
                           <p className="text-signal-white leading-relaxed mb-8">
@@ -231,6 +226,20 @@ const UseCases = () => {
                             ))}
                           </div>
                           
+                          {/* Product Images Placeholder */}
+                          <div className="mb-8">
+                            <p className="text-xs text-desert-tan/60 uppercase tracking-wide mb-3">
+                              Featured Products
+                            </p>
+                            <div className="flex space-x-3">
+                              {[1, 2, 3].map((item) => (
+                                <div key={item} className="w-16 h-16 bg-combat-black/40 border border-desert-tan/20 rounded-lg flex items-center justify-center">
+                                  <div className="w-3 h-3 bg-desert-tan/30 rounded"></div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          
                           <Button 
                             className="text-sm px-6 py-3 font-semibold uppercase tracking-wide text-white"
                             style={{ backgroundColor: '#95182b' }}
@@ -244,7 +253,7 @@ const UseCases = () => {
                         <div className="bg-combat-black/30 border-l border-desert-tan/20 flex items-center justify-center min-h-[400px] lg:min-h-[500px]">
                           <div className="text-center p-8">
                             <div className="w-20 h-20 bg-desert-tan/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                              <sector.icon className="h-10 w-10 text-desert-tan" />
+                              <div className="w-8 h-8 bg-desert-tan/40 rounded"></div>
                             </div>
                             <p className="text-desert-tan/60 text-sm uppercase tracking-wide">
                               Image Placeholder
