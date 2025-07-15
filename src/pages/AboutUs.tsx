@@ -33,9 +33,9 @@ const AboutUs = () => {
 
   const values = [
     {
-      icon: Scale,
-      title: "Humans are more Important than Hardware",
-      description: "Everything we build must deploy at scale"
+      icon: Shield,
+      title: "Fit Comes First",
+      description: "If it's not worn, it doesn't work"
     },
     {
       icon: MessageSquare,
@@ -43,9 +43,9 @@ const AboutUs = () => {
       description: "Protection shouldn't block communication"
     },
     {
-      icon: Shield,
-      title: "Fit Comes First",
-      description: "If it's not worn, it doesn't work"
+      icon: Scale,
+      title: "Scalable & Field-Proven",
+      description: "Everything we build must deploy at scale"
     },
     {
       icon: Settings,
@@ -142,11 +142,8 @@ const AboutUs = () => {
             {values.map((value, index) => (
               <Card key={index} className="bg-combat-black/50 border-desert-tan/20 hover:border-desert-tan/40 transition-all duration-300">
                 <CardContent className="p-8 text-center">
-                  <div 
-                    className="w-16 h-16 rounded-lg mx-auto mb-6 flex items-center justify-center"
-                    style={{ backgroundColor: '#95182b' }}
-                  >
-                    <value.icon className="w-8 h-8 text-signal-white" />
+                  <div className="w-16 h-16 bg-desert-tan/20 rounded-lg mx-auto mb-6 flex items-center justify-center">
+                    <value.icon className="w-8 h-8 text-desert-tan" />
                   </div>
                   <h3 className="text-xl font-bold text-desert-tan mb-4 uppercase">
                     {value.title}
