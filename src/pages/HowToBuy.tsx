@@ -4,7 +4,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Users, Building2, User, ArrowRight, FileText, Download, CheckCircle, Clock, CreditCard, Truck } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useNavigate } from "react-router-dom";
 const HowToBuy = () => {
+  const navigate = useNavigate();
+  
   const {
     ref: heroRef,
     isVisible: heroVisible
@@ -106,8 +109,11 @@ const HowToBuy = () => {
                     <p>Book a scan at an event near you</p>
                     <p>Gear delivered after fitting</p>
                   </div>
-                  <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
-                    SEE UPCOMING EVENTS
+                  <Button 
+                    className="btn-outline-olive w-full font-semibold uppercase tracking-wide"
+                    onClick={() => navigate('/get-scanned')}
+                  >
+                    Get Scanned
                   </Button>
                 </CardContent>
               </Card>
