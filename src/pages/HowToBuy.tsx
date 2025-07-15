@@ -165,7 +165,7 @@ const HowToBuy = () => {
               {/* Mission Critical Differentiation */}
               <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-olive-drab mb-6">
+                  <h3 className="text-2xl font-bold text-signal-white mb-6">
                     MISSION-CRITICAL DIFFERENTIATION
                   </h3>
                   <div className="space-y-4 text-signal-white">
