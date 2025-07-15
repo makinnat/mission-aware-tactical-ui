@@ -125,7 +125,7 @@ const HowToBuy = () => {
       <section className="py-20 bg-muted/10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-olive-drab text-center mb-16">
+            <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
               FEDERAL PROCUREMENT JUSTIFICATION
             </h2>
             
