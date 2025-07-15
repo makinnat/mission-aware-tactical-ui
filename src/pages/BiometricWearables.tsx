@@ -54,7 +54,7 @@ const BiometricWearables = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-white mb-8 leading-tight md:text-6xl drop-shadow-lg">
+            <h1 className="text-5xl font-black text-white mb-8 leading-tight md:text-6xl drop-shadow-lg uppercase">
               BEYOND HEARING PROTECTION: THE BIOMETRIC PLATFORM
             </h1>
             <p className="text-xl text-white/95 leading-relaxed max-w-3xl mx-auto mb-10 drop-shadow-md">
@@ -78,7 +78,7 @@ const BiometricWearables = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
+            <h2 className="text-4xl font-black text-signal-white text-center mb-16 uppercase">
               WHAT WE CAN MEASURE — RIGHT FROM THE EAR
             </h2>
             
@@ -113,7 +113,7 @@ const BiometricWearables = () => {
                     <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto mb-6 flex items-center justify-center">
                       <capability.icon className="h-8 w-8 text-signal-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-desert-tan mb-4">
+                    <h3 className="text-lg font-black text-desert-tan mb-4 uppercase">
                       {capability.title}
                     </h3>
                     <p className="text-signal-white text-sm leading-relaxed">
@@ -148,7 +148,7 @@ const BiometricWearables = () => {
 
               {/* Right Column - Content */}
               <div className={`transition-all duration-700 delay-700 ${whyEarVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
-                <h2 className="text-3xl font-bold text-signal-white mb-8">
+                <h2 className="text-3xl font-black text-signal-white mb-8 uppercase">
                   WHY THE EAR BEATS THE WRIST
                 </h2>
                 
@@ -194,7 +194,7 @@ const BiometricWearables = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
+            <h2 className="text-4xl font-black text-signal-white text-center mb-16 uppercase">
               FITS INTO EXISTING SYSTEMS
             </h2>
             
@@ -224,7 +224,7 @@ const BiometricWearables = () => {
                     <div className="w-16 h-16 bg-olive-drab rounded-lg mx-auto mb-6 flex items-center justify-center">
                       <integration.icon className="h-8 w-8 text-signal-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-signal-white mb-4">
+                    <h3 className="text-xl font-black text-signal-white mb-4 uppercase">
                       {integration.title}
                     </h3>
                     <p className="text-desert-tan leading-relaxed">
@@ -245,7 +245,7 @@ const BiometricWearables = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
+            <h2 className="text-4xl font-black text-signal-white text-center mb-16 uppercase">
               OPERATOR-READY
             </h2>
             
@@ -279,7 +279,7 @@ const BiometricWearables = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-olive-drab mb-8">
+            <h2 className="text-4xl font-black text-olive-drab mb-8 uppercase">
               BUILD WITH US
             </h2>
             <p className="text-xl text-desert-tan leading-relaxed mb-10">
