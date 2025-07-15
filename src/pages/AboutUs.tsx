@@ -166,18 +166,12 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
-            <div className="bg-muted/10 rounded-lg min-h-[500px] flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-20 h-20 bg-desert-tan/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="w-8 h-8 text-desert-tan/60" />
-                </div>
-                <p className="text-desert-tan/60 text-sm uppercase tracking-wide">
-                  Founder Image Placeholder
-                </p>
-                <p className="text-desert-tan/40 text-xs mt-1">
-                  Field setting or tactical photo
-                </p>
-              </div>
+            <div className="rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/a6148255-f8a9-4cfa-a3bf-461c3740c374.png"
+                alt="Founder in tactical setting"
+                className="w-full h-[500px] object-cover"
+              />
             </div>
 
             {/* Right Column - Content */}
