@@ -66,7 +66,7 @@ const HowToBuy = () => {
                   </h3>
                   <div className="space-y-3 text-signal-white">
                     <p>Buy through Sole Source Justification or through an 8a Parnter</p>
-                    <p>Includes DFARS / Berry Compliant options</p>
+                    
                   </div>
                   <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
                     CONTACT PROCUREMENT TEAM
@@ -84,8 +84,8 @@ const HowToBuy = () => {
                     Teams & Organizations
                   </h3>
                   <div className="space-y-3 text-signal-white">
-                    <p>Request an eFit scanner for on-site scanning</p>
-                    <p>Includes OSHA hearing conservation support</p>
+                    <p>Request a scanning event, or leverage a scanner lease for larger implementations</p>
+                    
                   </div>
                   <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
                     SCHEDULE A GROUP SCAN
