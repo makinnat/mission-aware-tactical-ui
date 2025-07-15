@@ -188,7 +188,7 @@ const HowToBuy = () => {
             {/* 8(a) Partnership Benefits */}
             <Card className="bg-scarlet/10 border-scarlet/30 rounded-xl">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-olive-drab text-center mb-8">
+                <h3 className="text-2xl font-bold text-signal-white text-center mb-8">
                   STREAMLINED PROCUREMENT THROUGH CERTIFIED 8(a) PARTNER
                 </h3>
                 
