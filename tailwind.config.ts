@@ -71,6 +71,7 @@ export default {
 				'olive-drab': 'hsl(var(--olive-drab))',
 				'desert-tan': 'hsl(var(--desert-tan))',
 				'scarlet-red': 'hsl(var(--scarlet-red))',
+				'scarlet': 'hsl(var(--scarlet-red))',
 				'signal-white': 'hsl(var(--signal-white))',
 			},
 			borderRadius: {
