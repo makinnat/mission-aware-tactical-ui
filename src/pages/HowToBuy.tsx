@@ -165,48 +165,6 @@ const HowToBuy = () => {
         </div>
       </section>
 
-      {/* Procurement Resources Section */}
-      <section ref={resourcesRef} className={`py-20 transition-all duration-1000 delay-600 ${resourcesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-olive-drab text-center mb-16">
-              PROCUREMENT RESOURCES
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl hover:bg-desert-tan/20 transition-colors cursor-pointer">
-                <CardContent className="p-6 text-center space-y-4">
-                  <CheckCircle className="h-8 w-8 text-scarlet mx-auto" />
-                  <h3 className="text-lg font-semibold text-olive-drab">
-                    Procurement One-Sheet
-                  </h3>
-                  <Download className="h-5 w-5 text-desert-tan mx-auto" />
-                </CardContent>
-              </Card>
-
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl hover:bg-desert-tan/20 transition-colors cursor-pointer">
-                <CardContent className="p-6 text-center space-y-4">
-                  <CheckCircle className="h-8 w-8 text-scarlet mx-auto" />
-                  <h3 className="text-lg font-semibold text-olive-drab">
-                    NSN Numbers / GSA Schedule
-                  </h3>
-                  <Download className="h-5 w-5 text-desert-tan mx-auto" />
-                </CardContent>
-              </Card>
-
-              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl hover:bg-desert-tan/20 transition-colors cursor-pointer">
-                <CardContent className="p-6 text-center space-y-4">
-                  <CheckCircle className="h-8 w-8 text-scarlet mx-auto" />
-                  <h3 className="text-lg font-semibold text-olive-drab">
-                    Vendor Certifications
-                  </h3>
-                  <Download className="h-5 w-5 text-desert-tan mx-auto" />
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA Section */}
       <section ref={finalCtaRef} className={`py-20 transition-all duration-1000 delay-800 ${finalCtaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
