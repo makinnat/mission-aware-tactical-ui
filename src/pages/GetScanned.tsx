@@ -53,17 +53,12 @@ const GetScanned = () => {
               {/* Left: Scanner Visual */}
               <div className="space-y-4">
                 <div className="aspect-square bg-muted/20 rounded-lg overflow-hidden border-2 border-desert-tan/30 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-desert-tan/10 to-transparent"></div>
-                  <div className="flex items-center justify-center h-full">
-                    <div className="text-center">
-                      <div className="w-32 h-32 mx-auto bg-desert-tan/20 rounded-full flex items-center justify-center mb-4">
-                        <div className="w-16 h-16 bg-olive-drab rounded-full flex items-center justify-center">
-                          <div className="w-8 h-8 bg-signal-white rounded-full"></div>
-                        </div>
-                      </div>
-                      <p className="text-desert-tan font-semibold">3D Scanner Visualization</p>
-                    </div>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/8217ea43-f1b7-4052-a29e-a0f8fbaefa20.png" 
+                    alt="eFit 3D Scanner in action - contactless ear scanning process"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-combat-black/20 to-transparent"></div>
                 </div>
               </div>
 
