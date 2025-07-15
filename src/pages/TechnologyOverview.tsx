@@ -102,7 +102,7 @@ const TechnologyOverview = () => {
               {/* Biometric Wearables */}
               <Card className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-600 ${pillarsVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
                 <CardContent className="p-8 text-center">
-                  <h3 className="text-2xl font-bold text-olive-drab mb-6">
+                  <h3 className="text-2xl font-bold text-signal-white mb-6">
                     FUTURE-READY SENSOR INTEGRATION
                   </h3>
                   <div className="w-48 h-48 mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden">
@@ -112,7 +112,7 @@ const TechnologyOverview = () => {
                       className="w-full h-full object-contain p-4"
                     />
                   </div>
-                  <p className="text-signal-white mb-8 leading-relaxed">
+                  <p className="text-desert-tan mb-8 leading-relaxed">
                     Our platform is built for next-gen performance: biometric data, EEG sensing, readiness tracking, and cognitive monitoring.
                   </p>
                   <Button 
