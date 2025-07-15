@@ -81,9 +81,9 @@ const Navigation = () => {
                       <Link to="/get-scanned" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         Get Scanned
                       </Link>
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        <Link to="/how-to-buy" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                           How to Buy
-                        </a>
+                        </Link>
                         <Link to="/instructions-and-care" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                           Instructions & Care
                         </Link>

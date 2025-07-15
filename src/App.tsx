@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import EarShield from "./pages/EarShield";
 import GetScanned from "./pages/GetScanned";
 import InstructionsAndCare from "./pages/InstructionsAndCare";
+import HowToBuy from "./pages/HowToBuy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/products/earshield" element={<EarShield />} />
           <Route path="/get-scanned" element={<GetScanned />} />
           <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
+          <Route path="/how-to-buy" element={<HowToBuy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
