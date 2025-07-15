@@ -116,9 +116,9 @@ const Navigation = () => {
                       <Link to="/technology/efit-3d-scanner" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         eFit 3D Scanner
                       </Link>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                      <Link to="/technology/biometric-wearables" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         Biometric Wearables
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

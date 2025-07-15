@@ -11,6 +11,7 @@ import InstructionsAndCare from "./pages/InstructionsAndCare";
 import HowToBuy from "./pages/HowToBuy";
 import TechnologyOverview from "./pages/TechnologyOverview";
 import EFit3DScanner from "./pages/EFit3DScanner";
+import BiometricWearables from "./pages/BiometricWearables";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/how-to-buy" element={<HowToBuy />} />
           <Route path="/technology" element={<TechnologyOverview />} />
           <Route path="/technology/efit-3d-scanner" element={<EFit3DScanner />} />
+          <Route path="/technology/biometric-wearables" element={<BiometricWearables />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
