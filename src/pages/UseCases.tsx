@@ -153,9 +153,16 @@ const UseCases = () => {
       {/* Hero Section */}
       <section 
         ref={heroRef} 
-        className={`pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `url('/lovable-uploads/58f8e7d8-4eae-435b-97e4-5d655310aec9.png')`
+        }}
       >
-        <div className="container mx-auto px-4">
+        {/* Multiple transparent overlay layers for better text readability */}
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70" />
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-black text-signal-white mb-6 leading-tight md:text-6xl uppercase">
               BUILT FOR THE FIELD. PROVEN IN THE FIELD.
