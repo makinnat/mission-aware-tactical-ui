@@ -46,22 +46,15 @@ const BiometricWearables = () => {
         className={`pt-24 pb-16 relative overflow-hidden transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         {/* Video Background */}
-        <video 
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-        >
-          <source src="/path-to-your-video.mp4" type="video/mp4" />
-          {/* Fallback background image if video doesn't load */}
-          <div 
-            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3')`
-            }}
+        <div className="absolute inset-0 w-full h-full">
+          <iframe 
+            className="absolute inset-0 w-full h-full object-cover scale-110"
+            src="https://www.canva.com/design/DAGtOzlXTwk/HGaYXQ8ur0k-U5HdyZoYmQ/watch?embed" 
+            allowFullScreen
+            allow="fullscreen"
+            style={{ border: 'none', padding: 0, margin: 0 }}
           />
-        </video>
+        </div>
         
         {/* Transparent overlay for text visibility */}
         <div className="absolute inset-0 bg-black/60" />
