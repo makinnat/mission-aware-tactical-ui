@@ -296,6 +296,12 @@ const UseCases = () => {
                               alt="Mining and Energy Operations" 
                               className="w-full h-full object-cover"
                             />
+                          ) : index === 5 ? (
+                            <img 
+                              src="/lovable-uploads/0395ed94-f56e-4c2d-a713-7753eee8d533.png" 
+                              alt="Transportation and Logistics Operations" 
+                              className="w-full h-full object-cover"
+                            />
                           ) : (
                             <div className="text-center p-8">
                               <div className="w-20 h-20 bg-desert-tan/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
