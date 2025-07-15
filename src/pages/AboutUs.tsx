@@ -39,17 +39,17 @@ const AboutUs = () => {
     },
     {
       icon: MessageSquare,
-      title: "Comms Are Critical", 
+      title: "Communication Critical", 
       description: "Protection shouldn't block communication. Clear comms save lives."
     },
     {
       icon: Scale,
-      title: "Scalable & Field-Proven",
+      title: "Scalable Solutions",
       description: "Everything we build must deploy at scale across diverse operations."
     },
     {
       icon: Settings,
-      title: "Future-Ready by Design",
+      title: "Future Ready Design",
       description: "Our platform evolves with the mission and emerging technologies."
     }
   ];
