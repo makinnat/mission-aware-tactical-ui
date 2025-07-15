@@ -262,7 +262,7 @@ const BiometricWearables = () => {
                   <div className="w-12 h-12 bg-scarlet rounded-lg mx-auto mb-4 flex items-center justify-center">
                     <application.icon className="h-6 w-6 text-signal-white" />
                   </div>
-                  <p className="text-desert-tan font-medium text-sm">
+                  <p className="text-desert-tan font-black text-sm uppercase">
                     {application.text}
                   </p>
                 </div>
