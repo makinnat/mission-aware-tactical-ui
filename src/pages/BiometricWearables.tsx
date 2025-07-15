@@ -279,7 +279,7 @@ const BiometricWearables = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-black text-olive-drab mb-8 uppercase">
+            <h2 className="text-4xl font-black text-signal-white mb-8 uppercase">
               JOIN US
             </h2>
             <p className="text-xl text-desert-tan leading-relaxed mb-10">
