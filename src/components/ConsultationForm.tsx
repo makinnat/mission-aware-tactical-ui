@@ -328,7 +328,6 @@ export const ConsultationForm = () => {
                       <SelectItem value="email">Email</SelectItem>
                       <SelectItem value="phone">Phone</SelectItem>
                       <SelectItem value="video-call">Video Call</SelectItem>
-                      <SelectItem value="in-person">In-Person Meeting</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
