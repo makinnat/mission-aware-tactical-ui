@@ -35,22 +35,22 @@ const AboutUs = () => {
     {
       icon: Shield,
       title: "Fit Comes First",
-      description: "If it's not worn, it doesn't work"
+      description: "If it's not worn, it doesn't work. Comfort drives compliance in the field."
     },
     {
       icon: MessageSquare,
       title: "Comms Are Critical", 
-      description: "Protection shouldn't block communication"
+      description: "Protection shouldn't block communication. Clear comms save lives."
     },
     {
       icon: Scale,
       title: "Scalable & Field-Proven",
-      description: "Everything we build must deploy at scale"
+      description: "Everything we build must deploy at scale across diverse operations."
     },
     {
       icon: Settings,
       title: "Future-Ready by Design",
-      description: "Our platform evolves with the mission"
+      description: "Our platform evolves with the mission and emerging technologies."
     }
   ];
 
