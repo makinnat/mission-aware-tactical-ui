@@ -409,7 +409,7 @@ const EFit3DScanner = () => {
                 className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white" 
                 style={{ backgroundColor: '#95182b' }}
               >
-                SCHEDULE A MEETING
+                SCHEDULE A CONSULTATION
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button 
