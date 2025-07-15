@@ -134,12 +134,12 @@ const Navigation = () => {
             </Link>
 
             {/* About Us */}
-            <a 
-              href="#" 
+            <Link 
+              to="/about" 
               className="text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
             >
               About Us
-            </a>
+            </Link>
             </div>
           </div>
 
