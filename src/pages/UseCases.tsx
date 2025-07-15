@@ -272,6 +272,12 @@ const UseCases = () => {
                               alt="Defense and Federal Government Operations" 
                               className="w-full h-full object-cover"
                             />
+                          ) : index === 2 ? (
+                            <img 
+                              src="/lovable-uploads/5a0bcd62-e02b-4d44-b984-c3153435ab72.png" 
+                              alt="Construction and Infrastructure Operations" 
+                              className="w-full h-full object-cover"
+                            />
                           ) : (
                             <div className="text-center p-8">
                               <div className="w-20 h-20 bg-desert-tan/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
