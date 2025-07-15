@@ -205,7 +205,7 @@ const HowToBuy = () => {
                   
                   <div className="text-center space-y-4">
                     <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
-                      <Building2 className="h-8 w-8 text-signal-white" />
+                      <CheckCircle className="h-8 w-8 text-signal-white" />
                     </div>
                     <h4 className="font-bold text-olive-drab">Small Business Goals</h4>
                     <p className="text-signal-white text-sm">
