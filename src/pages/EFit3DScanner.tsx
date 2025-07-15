@@ -55,7 +55,7 @@ const EFit3DScanner = () => {
         ref={heroRef} 
         className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         style={{
-          backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3')`
+          backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url('/lovable-uploads/2be47457-1497-4882-9ba2-2a41408f74b4.png')`
         }}
       >
         <div className="container mx-auto px-4 relative z-10">
