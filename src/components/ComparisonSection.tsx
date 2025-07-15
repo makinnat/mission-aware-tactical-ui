@@ -67,7 +67,7 @@ export const ComparisonSection = () => {
           <div className="w-2/3">
             <div className="bg-combat-black rounded-lg overflow-hidden border border-scarlet-red">
               <div className="grid grid-cols-4 bg-combat-black text-signal-white border-b border-scarlet-red">
-                <div className="p-4 border-r border-scarlet-red">
+                <div className="p-4 border-r border-scarlet-red text-center">
                   <h3 className="subheading-tactical text-sm font-bold">FEATURE</h3>
                 </div>
                 <div className="p-4 border-r border-scarlet-red text-center">
@@ -83,7 +83,7 @@ export const ComparisonSection = () => {
 
               {features.map((feature, index) => (
                 <div key={index} className="grid grid-cols-4 border-t border-scarlet-red">
-                  <div className="p-4 bg-combat-black border-r border-scarlet-red">
+                  <div className="p-4 bg-combat-black border-r border-scarlet-red text-center">
                     <span className="body-tactical text-signal-white text-sm">
                       {feature.name}
                     </span>
