@@ -164,8 +164,8 @@ const UseCases = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-black text-signal-white mb-6 leading-tight md:text-6xl uppercase">
-              BUILT FOR THE FIELD. PROVEN IN THE FIELD.
+            <h1 className="text-5xl font-black text-signal-white mb-6 leading-tight md:text-6xl uppercase drop-shadow-lg">
+              PROVEN IN THE FIELD
             </h1>
             <p className="text-xl text-desert-tan leading-relaxed max-w-3xl mx-auto">
               Explore how Aware Defense supports real-world missions across military, aviation, industrial, and medical domains.
