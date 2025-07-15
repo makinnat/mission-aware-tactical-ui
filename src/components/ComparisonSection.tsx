@@ -65,15 +65,15 @@ export const ComparisonSection = () => {
         <div className="flex gap-8 items-center">
           {/* Comparison Table - 2/3 width */}
           <div className="w-2/3">
-            <div className="bg-combat-black rounded-lg overflow-hidden border border-olive-drab">
-              <div className="grid grid-cols-4 bg-combat-black text-signal-white border-b border-olive-drab">
-                <div className="p-4 border-r border-olive-drab">
+            <div className="bg-combat-black rounded-lg overflow-hidden border border-scarlet-red">
+              <div className="grid grid-cols-4 bg-combat-black text-signal-white border-b border-scarlet-red">
+                <div className="p-4 border-r border-scarlet-red">
                   <h3 className="subheading-tactical text-sm font-bold">FEATURE</h3>
                 </div>
-                <div className="p-4 border-r border-olive-drab text-center">
-                  <h3 className="subheading-tactical text-sm font-bold text-scarlet-red">AWARE</h3>
+                <div className="p-4 border-r border-scarlet-red text-center">
+                  <h3 className="subheading-tactical text-lg font-black text-desert-tan">AWARE</h3>
                 </div>
-                <div className="p-4 border-r border-olive-drab text-center">
+                <div className="p-4 border-r border-scarlet-red text-center">
                   <h3 className="subheading-tactical text-sm font-bold">TRADITIONAL</h3>
                 </div>
                 <div className="p-4 text-center">
@@ -82,13 +82,13 @@ export const ComparisonSection = () => {
               </div>
 
               {features.map((feature, index) => (
-                <div key={index} className="grid grid-cols-4 border-t border-olive-drab">
-                  <div className="p-4 bg-combat-black border-r border-olive-drab">
+                <div key={index} className="grid grid-cols-4 border-t border-scarlet-red">
+                  <div className="p-4 bg-combat-black border-r border-scarlet-red">
                     <span className="body-tactical text-signal-white text-sm">
                       {feature.name}
                     </span>
                   </div>
-                  <div className="p-4 border-r border-olive-drab bg-combat-black text-center">
+                  <div className="p-4 border-r border-scarlet-red bg-combat-black text-center">
                     {feature.aware === true ? (
                       <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
                     ) : feature.aware === "LIMITED" ? (
@@ -97,7 +97,7 @@ export const ComparisonSection = () => {
                       <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
                     )}
                   </div>
-                  <div className="p-4 border-r border-olive-drab bg-combat-black text-center">
+                  <div className="p-4 border-r border-scarlet-red bg-combat-black text-center">
                     {feature.traditional === true ? (
                       <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
                     ) : feature.traditional === "LIMITED" ? (
@@ -122,7 +122,7 @@ export const ComparisonSection = () => {
 
           {/* Image Column - 1/3 width */}
           <div className="w-1/3 flex justify-center">
-            <div className="bg-combat-black rounded-lg border border-olive-drab p-8 flex flex-col items-center space-y-6">
+            <div className="bg-combat-black rounded-lg border border-scarlet-red p-8 flex flex-col items-center space-y-6">
               <img 
                 src="/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png" 
                 alt="AWARE 3D Scanner Device" 
