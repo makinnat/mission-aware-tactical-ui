@@ -139,10 +139,9 @@ const GetScanned = () => {
                     Join us at a scheduled scanning event near you.
                   </p>
                   
-                  <Button 
-                    className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide"
-                    onClick={() => eventsRef.current?.scrollIntoView({ behavior: 'smooth' })}
-                  >
+                  <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide" onClick={() => eventsRef.current?.scrollIntoView({
+                  behavior: 'smooth'
+                })}>
                     SEE UPCOMING EVENTS
                   </Button>
                 </CardContent>
@@ -194,9 +193,7 @@ const GetScanned = () => {
       <section ref={ctaRef} className={`py-20 transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-olive-drab leading-tight">
-              READY TO GET YOUR TEAM MISSION-READY?
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-olive-drab leading-tight">GET YOUR TEAM MISSION-READY</h2>
             
             <p className="text-xl text-desert-tan leading-relaxed">
               Schedule a scan, get gear that fits, and prepare for the next evolution in protection.
