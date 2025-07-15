@@ -79,7 +79,7 @@ const AboutUs = () => {
           <h1 className="text-6xl lg:text-7xl font-black text-signal-white mb-4 uppercase tracking-tight">
             BUILT BY OPERATORS
           </h1>
-          <h2 className="text-4xl lg:text-5xl font-bold text-signal-white mb-8 uppercase tracking-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-desert-tan mb-8 uppercase tracking-tight">
             TRUSTED BY ELITE UNITS
           </h2>
           <p className="text-2xl text-desert-tan leading-relaxed max-w-4xl mx-auto">
