@@ -76,8 +76,8 @@ const TechnologyOverview = () => {
               {/* eFit 3D Scanner */}
               <Card className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-400 ${pillarsVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
                 <CardContent className="p-8 text-center">
-                  <h3 className="text-2xl font-bold text-olive-drab mb-6">
-                    FDA-CLEARED. NON-CONTACT. FULLY DIGITAL.
+                  <h3 className="text-2xl font-bold text-signal-white mb-6">
+                    FDA-CLEARED. NON-CONTACT.
                   </h3>
                   <div className="w-48 h-48 mx-auto mb-6 bg-signal-white rounded-lg flex items-center justify-center overflow-hidden">
                     <img 
@@ -86,7 +86,7 @@ const TechnologyOverview = () => {
                       className="w-full h-full object-contain p-4"
                     />
                   </div>
-                  <p className="text-signal-white mb-8 leading-relaxed">
+                  <p className="text-desert-tan mb-8 leading-relaxed">
                     Our scanner captures precise ear canal geometry in under 2 minutes — no foam, no silicone, and zero infection risk.
                   </p>
                   <Button 
