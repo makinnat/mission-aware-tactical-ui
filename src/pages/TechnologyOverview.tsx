@@ -76,8 +76,12 @@ const TechnologyOverview = () => {
               {/* eFit 3D Scanner */}
               <Card className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-400 ${pillarsVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-olive-drab rounded-lg mb-6 flex items-center justify-center">
-                    <Scan className="h-8 w-8 text-signal-white" />
+                  <div className="w-16 h-16 bg-olive-drab rounded-lg mb-6 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/67c45871-fd6f-4e93-93b8-ce87da954882.png" 
+                      alt="eFit 3D Scanner" 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold text-olive-drab mb-6">
                     FDA-CLEARED. NON-CONTACT. FULLY DIGITAL.
