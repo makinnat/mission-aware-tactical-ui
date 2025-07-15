@@ -38,7 +38,14 @@ const UseCases = () => {
         "Training environments require protection without communication barriers",
         "Combat zones demand reliable protection with situational awareness"
       ],
-      imagePlaceholder: "defense-operations.jpg"
+      imagePlaceholder: "defense-operations.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/f3ca1a0a-0b90-4aea-90c0-d793af035f66.png", alt: "Yellow Custom Earpieces" },
+        { src: "/lovable-uploads/065dc0a4-a05b-4fca-b455-9304b48e1741.png", alt: "Black Custom Earpieces with Blue Accents" },
+        { src: "/lovable-uploads/749b2910-71a3-4bb3-b5ce-a6138b01476f.png", alt: "Black Custom Earpieces" },
+        { src: "/lovable-uploads/e4da610b-6c0b-4ab8-bf6f-9ad045af4202.png", alt: "Blue Translucent Custom Earpiece" },
+        { src: "/lovable-uploads/7e9576d1-7ec4-4c2a-8e2d-33dcdfc3131d.png", alt: "Blue Custom Earpieces" }
+      ]
     },
     {
       icon: Settings,
@@ -51,7 +58,12 @@ const UseCases = () => {
         "Moisture resistance withstands demanding manufacturing conditions", 
         "Digital documentation streamlines OSHA compliance reporting"
       ],
-      imagePlaceholder: "manufacturing-facility.jpg"
+      imagePlaceholder: "manufacturing-facility.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/cc7ec663-888b-4d72-b2d8-1a7c4e7c2690.png", alt: "Industrial Yellow Ear Protection" },
+        { src: "/lovable-uploads/5900a8c0-a2ed-485e-adfb-7c5259b1e025.png", alt: "Heavy Duty Black Ear Protection" },
+        { src: "/lovable-uploads/1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png", alt: "Manufacturing Blue Ear Protection" }
+      ]
     },
     {
       icon: HardHat,
@@ -64,7 +76,12 @@ const UseCases = () => {
         "Sweat resistance for outdoor work in all weather conditions",
         "Quick insertion/removal for varied noise exposure throughout the day"
       ],
-      imagePlaceholder: "construction-site.jpg"
+      imagePlaceholder: "construction-site.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png", alt: "Construction Orange Ear Protection" },
+        { src: "/lovable-uploads/cbf5a753-bdd5-4a75-98c6-20e80a09c659.png", alt: "High-Vis Yellow Construction Plugs" },
+        { src: "/lovable-uploads/bced67a7-d7bf-45c1-b515-634e0f92fdd3.png", alt: "Durable Construction Ear Protection" }
+      ]
     },
     {
       icon: Plane,
@@ -77,7 +94,12 @@ const UseCases = () => {
         "Multiple noise environments from quiet offices to flight line operations",
         "Regulatory compliance with FAA and OSHA hearing conservation standards"
       ],
-      imagePlaceholder: "aviation-ground-crew.jpg"
+      imagePlaceholder: "aviation-ground-crew.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/3cb1df53-745e-44e5-95b9-ebb3c3921521.png", alt: "Aviation Communication Earpieces" },
+        { src: "/lovable-uploads/ef310f2d-7afe-464d-816e-302392b965e4.png", alt: "Flight Line Hearing Protection" },
+        { src: "/lovable-uploads/4b4e91cd-a209-4478-a2de-7b81a45ef759.png", alt: "Aviation Ground Crew Protection" }
+      ]
     },
     {
       icon: Zap,
@@ -90,7 +112,12 @@ const UseCases = () => {
         "Remote operations benefit from biometric monitoring capabilities",
         "MSHA compliance with strict hearing conservation program requirements"
       ],
-      imagePlaceholder: "mining-operations.jpg"
+      imagePlaceholder: "mining-operations.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/4b95c70a-27c5-400a-a838-b2203455961f.png", alt: "Mining Industry Ear Protection" },
+        { src: "/lovable-uploads/244828ef-a80b-4a51-8921-7977b82689a4.png", alt: "Energy Sector Hearing Protection" },
+        { src: "/lovable-uploads/4292650a-69ee-427d-8ccf-bc2e4433f736.png", alt: "Heavy Industry Ear Plugs" }
+      ]
     },
     {
       icon: Truck,
@@ -103,7 +130,12 @@ const UseCases = () => {
         "Comfort for extended wear during long-haul operations", 
         "Quick insertion/removal for varied work environments throughout shifts"
       ],
-      imagePlaceholder: "transportation-logistics.jpg"
+      imagePlaceholder: "transportation-logistics.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/46f89658-3f71-426b-922d-d3d4d545d211.png", alt: "Transportation Hearing Protection" },
+        { src: "/lovable-uploads/8656c4f5-a409-4d5f-8cd1-f4c642eba875.png", alt: "Logistics Worker Ear Protection" },
+        { src: "/lovable-uploads/732ca253-419d-4d13-b681-0a8bdb8dfbfc.png", alt: "Mobile Workforce Ear Plugs" }
+      ]
     },
     {
       icon: Target,
@@ -116,7 +148,12 @@ const UseCases = () => {
         "Emergency responders need rapid deployment hearing protection",
         "Training facilities require protection for firearms and scenario training"
       ],
-      imagePlaceholder: "law-enforcement.jpg"
+      imagePlaceholder: "law-enforcement.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png", alt: "Law Enforcement Tactical Earpieces" },
+        { src: "/lovable-uploads/be18c3de-9beb-44fe-81a8-625c16ec03d9.png", alt: "SWAT Team Hearing Protection" },
+        { src: "/lovable-uploads/71a992fd-155b-4df3-a294-21f188459041.png", alt: "Police Officer Ear Protection" }
+      ]
     },
     {
       icon: Activity,
@@ -129,7 +166,12 @@ const UseCases = () => {
         "Shot timing feedback from steel targets remains clear",
         "Equipment malfunction alerts are not masked"
       ],
-      imagePlaceholder: "competitive-shooting.jpg"
+      imagePlaceholder: "competitive-shooting.jpg",
+      featuredProducts: [
+        { src: "/lovable-uploads/352d3b3f-b71b-42a4-866f-a51c29f3bb25.png", alt: "Shooting Sports Ear Protection" },
+        { src: "/lovable-uploads/4fc34f4c-b066-4cb7-812f-9e888c91f448.png", alt: "Competition Shooter Earpieces" },
+        { src: "/lovable-uploads/c121614b-05af-4f5b-845d-8b90cf6eee13.png", alt: "Range Safety Hearing Protection" }
+      ]
     }
   ];
 
@@ -226,41 +268,15 @@ const UseCases = () => {
                               Featured Products
                             </p>
                             <div className="flex space-x-3">
-                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
-                                <img 
-                                  src="/lovable-uploads/f3ca1a0a-0b90-4aea-90c0-d793af035f66.png" 
-                                  alt="Yellow Custom Earpieces" 
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
-                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
-                                <img 
-                                  src="/lovable-uploads/065dc0a4-a05b-4fca-b455-9304b48e1741.png" 
-                                  alt="Black Custom Earpieces with Blue Accents" 
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
-                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
-                                <img 
-                                  src="/lovable-uploads/749b2910-71a3-4bb3-b5ce-a6138b01476f.png" 
-                                  alt="Black Custom Earpieces" 
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
-                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
-                                <img 
-                                  src="/lovable-uploads/e4da610b-6c0b-4ab8-bf6f-9ad045af4202.png" 
-                                  alt="Blue Translucent Custom Earpiece" 
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
-                              <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
-                                <img 
-                                  src="/lovable-uploads/7e9576d1-7ec4-4c2a-8e2d-33dcdfc3131d.png" 
-                                  alt="Blue Custom Earpieces" 
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
+                              {sector.featuredProducts.map((product, productIndex) => (
+                                <div key={productIndex} className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                                  <img 
+                                    src={product.src} 
+                                    alt={product.alt} 
+                                    className="w-full h-full object-cover"
+                                  />
+                                </div>
+                              ))}
                             </div>
                           </div>
                         </div>
