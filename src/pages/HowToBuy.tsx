@@ -1,49 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Users, 
-  Building2, 
-  User, 
-  ArrowRight, 
-  FileText, 
-  Download,
-  CheckCircle,
-  Clock,
-  CreditCard,
-  Truck
-} from "lucide-react";
+import { Users, Building2, User, ArrowRight, FileText, Download, CheckCircle, Clock, CreditCard, Truck } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-
 const HowToBuy = () => {
   const {
     ref: heroRef,
     isVisible: heroVisible
   } = useScrollAnimation();
-  
   const {
     ref: pathsRef,
     isVisible: pathsVisible
   } = useScrollAnimation();
-  
   const {
     ref: deliveryRef,
     isVisible: deliveryVisible
   } = useScrollAnimation();
-  
   const {
     ref: resourcesRef,
     isVisible: resourcesVisible
   } = useScrollAnimation();
-  
   const {
     ref: finalCtaRef,
     isVisible: finalCtaVisible
   } = useScrollAnimation();
-
-  return (
-    <div className="min-h-screen bg-combat-black text-signal-white font-inter">
+  return <div className="min-h-screen bg-combat-black text-signal-white font-inter">
       <Navigation />
       
       {/* Hero Section */}
@@ -83,7 +65,7 @@ const HowToBuy = () => {
                     Government & Federal Buyers
                   </h3>
                   <div className="space-y-3 text-signal-white">
-                    <p>Buy through GSA Schedule or direct contract</p>
+                    <p>Buy through Sole Source Justification or through an 8a Parnter</p>
                     <p>Includes DFARS / Berry Compliant options</p>
                   </div>
                   <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
@@ -250,8 +232,6 @@ const HowToBuy = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default HowToBuy;
