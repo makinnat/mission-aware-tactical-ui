@@ -134,8 +134,8 @@ const EFit3DScanner = () => {
                   className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-500 delay-${400 + (index * 100)} ${techVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-olive-drab rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <advantage.icon className="h-6 w-6 text-scarlet flex-shrink-0" />
+                    <div className="w-12 h-12 bg-scarlet rounded-lg mx-auto mb-4 flex items-center justify-center">
+                      <advantage.icon className="h-6 w-6 text-signal-white flex-shrink-0" />
                     </div>
                     <p className="text-desert-tan text-sm leading-relaxed">
                       {advantage.text}
