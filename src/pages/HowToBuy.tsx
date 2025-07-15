@@ -169,8 +169,8 @@ const HowToBuy = () => {
                     MISSION-CRITICAL DIFFERENTIATION
                   </h3>
                   <div className="space-y-4 text-signal-white">
-                    <p className="font-semibold text-scarlet">
-                      Traditional hearing protection fails 92% of the time due to improper fit.
+                    <p className="font-semibold text-desert-tan">
+                      Traditional hearing protection fails <span className="text-scarlet">92%</span> of the time due to improper fit.
                     </p>
                     <p>
                       Only Aware Defense's proprietary eFit scanner captures the critical second bend geometry that ensures perfect seal integrity.
