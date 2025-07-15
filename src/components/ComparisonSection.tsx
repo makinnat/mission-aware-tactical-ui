@@ -90,7 +90,7 @@ export const ComparisonSection = () => {
                   </div>
                   <div className="p-4 border-r border-scarlet-red bg-combat-black text-center">
                     {feature.aware === true ? (
-                      <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
+                      <Check className="w-5 h-5 text-desert-tan mx-auto" strokeWidth={4} />
                     ) : feature.aware === "LIMITED" ? (
                       <span className="text-xs text-signal-white font-medium">LIMITED</span>
                     ) : (
@@ -99,7 +99,7 @@ export const ComparisonSection = () => {
                   </div>
                   <div className="p-4 border-r border-scarlet-red bg-combat-black text-center">
                     {feature.traditional === true ? (
-                      <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
+                      <Check className="w-5 h-5 text-desert-tan mx-auto" strokeWidth={4} />
                     ) : feature.traditional === "LIMITED" ? (
                       <span className="text-xs text-signal-white font-medium">LIMITED</span>
                     ) : (
@@ -108,7 +108,7 @@ export const ComparisonSection = () => {
                   </div>
                   <div className="p-4 bg-combat-black text-center">
                     {feature.foam === true ? (
-                      <Check className="w-5 h-5 text-scarlet-red mx-auto" strokeWidth={3} />
+                      <Check className="w-5 h-5 text-desert-tan mx-auto" strokeWidth={4} />
                     ) : feature.foam === "LIMITED" ? (
                       <span className="text-xs text-signal-white font-medium">LIMITED</span>
                     ) : (
