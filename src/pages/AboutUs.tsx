@@ -170,7 +170,7 @@ const AboutUs = () => {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-black text-olive-drab mb-4 uppercase">
+            <h2 className="text-5xl font-black text-signal-white mb-4 uppercase">
               TRUSTED ACROSS DOMAINS
             </h2>
           </div>
