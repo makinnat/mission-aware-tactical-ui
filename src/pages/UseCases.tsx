@@ -258,17 +258,11 @@ const UseCases = () => {
                         
                         {/* Image Placeholder Side */}
                         <div className="bg-combat-black/30 border-l border-desert-tan/20 flex items-center justify-center min-h-[400px] lg:min-h-[500px]">
-                          <div className="text-center p-8">
-                            <div className="w-20 h-20 bg-desert-tan/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                              <div className="w-8 h-8 bg-desert-tan/40 rounded"></div>
-                            </div>
-                            <p className="text-desert-tan/60 text-sm uppercase tracking-wide">
-                              Image Placeholder
-                            </p>
-                            <p className="text-desert-tan/40 text-xs mt-1">
-                              {sector.imagePlaceholder}
-                            </p>
-                          </div>
+                          <img 
+                            src="/lovable-uploads/ef2a7f42-78ad-43e6-bab0-ebc41257ab5d.png" 
+                            alt="Defense and Federal Government Operations" 
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                       </div>
                     </CardContent>
