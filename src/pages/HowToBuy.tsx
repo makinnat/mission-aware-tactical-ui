@@ -69,7 +69,7 @@ const HowToBuy = () => {
                     
                   </div>
                   <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
-                    CONTACT PROCUREMENT TEAM
+                    Contact our Procurement team
                   </Button>
                 </CardContent>
               </Card>
