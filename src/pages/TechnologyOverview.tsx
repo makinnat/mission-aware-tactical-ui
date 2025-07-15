@@ -79,7 +79,7 @@ const TechnologyOverview = () => {
                   <h3 className="text-2xl font-bold text-signal-white mb-6">
                     FDA-CLEARED. NON-CONTACT.
                   </h3>
-                  <div className="w-48 h-48 mx-auto mb-6 bg-signal-white rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="w-48 h-48 mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden">
                     <img 
                       src="/lovable-uploads/67c45871-fd6f-4e93-93b8-ce87da954882.png" 
                       alt="eFit 3D Scanner" 
