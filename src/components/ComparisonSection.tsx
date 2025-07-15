@@ -121,11 +121,16 @@ export const ComparisonSection = () => {
 
           {/* Image Column - 1/3 width */}
           <div className="w-1/3 flex justify-center">
-            <div className="bg-combat-black rounded-lg border border-olive-drab p-8">
+            <div className="bg-combat-black rounded-lg border border-olive-drab p-8 flex flex-col items-center space-y-6">
               <img 
                 src="/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png" 
                 alt="AWARE 3D Scanner Device" 
                 className="w-full h-auto object-contain"
+              />
+              <img 
+                src="/lovable-uploads/0204ba41-f9a2-46a7-8ab2-eed84793eea6.png" 
+                alt="Company Logo" 
+                className="w-24 h-auto object-contain"
               />
             </div>
           </div>
