@@ -23,7 +23,16 @@ export const SolutionSection = () => {
     title: "Future-Proof Platform",
     description: "Ready for advanced biometrics and health monitoring as your operational needs evolve."
   }];
-  return <section ref={ref} className={`py-20 px-6 bg-background scroll-slide-right ${isVisible ? 'visible' : ''}`}>
+  return <section 
+    ref={ref} 
+    className={`py-20 px-6 relative scroll-slide-right ${isVisible ? 'visible' : ''}`}
+    style={{
+      backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('/lovable-uploads/f5a02335-4f26-4d9b-8f10-805d00ec278c.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}
+  >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="heading-tactical text-4xl md:text-5xl mb-6 text-white">
