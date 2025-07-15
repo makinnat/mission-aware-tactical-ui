@@ -8,19 +8,19 @@ const ProductShowcaseSection = () => {
 
   const products = [
     {
-      name: "EarShield Pro",
+      name: "Aviation CEP",
+      src: "/lovable-uploads/3a90284f-b504-4a79-aec4-72a9b5469446.png",
+      alt: "Professional aviation ear protection with components"
+    },
+    {
+      name: "MusicPlugs",
+      src: "/lovable-uploads/71a992fd-155b-4df3-a294-21f188459041.png",
+      alt: "Music ear protection with blue accents"
+    },
+    {
+      name: "EarShield",
       src: "/lovable-uploads/bed92e28-b372-401f-b191-c06f75d54160.png",
       alt: "Yellow ear protection with cables"
-    },
-    {
-      name: "Tactical Scanner",
-      src: "/lovable-uploads/3a90284f-b504-4a79-aec4-72a9b5469446.png",
-      alt: "Professional black ear protection with components"
-    },
-    {
-      name: "Biometric Wearables",
-      src: "/lovable-uploads/71a992fd-155b-4df3-a294-21f188459041.png",
-      alt: "Black ear protection with blue accents"
     }
   ];
 
