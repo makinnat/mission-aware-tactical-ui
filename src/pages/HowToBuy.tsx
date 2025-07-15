@@ -7,7 +7,6 @@ import { Footer } from "@/components/Footer";
 import { useNavigate } from "react-router-dom";
 const HowToBuy = () => {
   const navigate = useNavigate();
-  
   const {
     ref: heroRef,
     isVisible: heroVisible
@@ -64,9 +63,7 @@ const HowToBuy = () => {
                   <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
                     <Building2 className="h-8 w-8 text-signal-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-olive-drab">
-                    Government & Federal Buyers
-                  </h3>
+                  <h3 className="text-2xl font-bold text-olive-drab">Federal Buyers</h3>
                   <div className="space-y-3 text-signal-white flex-grow">
                     <p>Buy through Sole Source Justification or through an 8a Parnter</p>
                     
@@ -109,10 +106,7 @@ const HowToBuy = () => {
                     <p>Book a scan at an event near you</p>
                     <p>Gear delivered after fitting</p>
                   </div>
-                  <Button 
-                    className="btn-outline-olive w-full font-semibold uppercase tracking-wide"
-                    onClick={() => navigate('/get-scanned')}
-                  >
+                  <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide" onClick={() => navigate('/get-scanned')}>
                     Get Scanned
                   </Button>
                 </CardContent>
