@@ -113,12 +113,6 @@ const EFit3DScanner = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <p className="text-lg text-signal-white leading-relaxed mb-8">
-                The eFit scanner essentially paints the ear with light using advanced radial illumination technology. This proprietary approach eliminates the risks, discomfort, and inconsistency associated with traditional silicone impression methods. By capturing the ear in its natural state, the eFit scanner ensures medical-grade accuracy that competitors cannot achieve through contact-based methods.
-              </p>
-            </div>
-
             <h3 className="text-2xl font-bold text-signal-white text-center mb-12">Key Technical Advantages</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
