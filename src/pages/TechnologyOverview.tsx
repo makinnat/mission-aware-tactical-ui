@@ -178,12 +178,57 @@ const TechnologyOverview = () => {
             <p className="text-xl text-signal-white leading-relaxed mb-10">
               Compare our patented scanner and data platform to outdated foam plug workflows. Trust the tech that elite units rely on.
             </p>
-            <div className="bg-combat-black/50 p-6 rounded-xl">
-              <img 
-                src="/lovable-uploads/a7eb31a0-2229-41c5-aa0e-e995f68e8171.png" 
-                alt="Technology Comparison Chart" 
-                className="w-full h-auto rounded-lg"
-              />
+            
+            {/* Comparison Table */}
+            <div className="bg-combat-black/80 border border-desert-tan/30 rounded-xl overflow-hidden">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-scarlet/20 border-b border-desert-tan/20">
+                    <th className="text-left p-4 text-desert-tan font-semibold uppercase tracking-wide">FEATURE</th>
+                    <th className="text-center p-4 text-scarlet font-bold uppercase tracking-wide">AWARE</th>
+                    <th className="text-center p-4 text-desert-tan font-semibold uppercase tracking-wide">TRADITIONAL</th>
+                    <th className="text-center p-4 text-desert-tan font-semibold uppercase tracking-wide">FOAM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-desert-tan/10">
+                    <td className="p-4 text-left text-signal-white text-sm">FDA-cleared, non-contact 3D scanning</td>
+                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
+                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center">✗</td>
+                  </tr>
+                  <tr className="border-b border-desert-tan/10">
+                    <td className="p-4 text-left text-signal-white text-sm">Perfectly captures second bend for superior fit</td>
+                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
+                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center">✗</td>
+                  </tr>
+                  <tr className="border-b border-desert-tan/10">
+                    <td className="p-4 text-left text-signal-white text-sm">Permanent digital profile</td>
+                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
+                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center">✗</td>
+                  </tr>
+                  <tr className="border-b border-desert-tan/10">
+                    <td className="p-4 text-left text-signal-white text-sm">Seamless comms integration</td>
+                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
+                    <td className="p-4 text-center text-desert-tan text-xs">LIMITED</td>
+                    <td className="p-4 text-center">✗</td>
+                  </tr>
+                  <tr className="border-b border-desert-tan/10">
+                    <td className="p-4 text-left text-signal-white text-sm">Future-proof biometric platform</td>
+                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
+                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center">✗</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 text-left text-signal-white text-sm">Field-tested by SOF and DoD Aviators</td>
+                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
+                    <td className="p-4 text-center text-desert-tan text-xs">LIMITED</td>
+                    <td className="p-4 text-center">✗</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
