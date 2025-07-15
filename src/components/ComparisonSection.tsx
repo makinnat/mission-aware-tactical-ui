@@ -74,10 +74,10 @@ export const ComparisonSection = () => {
                   <h3 className="subheading-tactical text-lg font-black text-desert-tan">AWARE</h3>
                 </div>
                 <div className="p-4 border-r border-scarlet-red text-center">
-                  <h3 className="subheading-tactical text-sm font-bold">TRADITIONAL</h3>
+                  <h3 className="subheading-tactical text-sm font-medium">TRADITIONAL</h3>
                 </div>
                 <div className="p-4 text-center">
-                  <h3 className="subheading-tactical text-sm font-bold">FOAM</h3>
+                  <h3 className="subheading-tactical text-sm font-medium">FOAM</h3>
                 </div>
               </div>
 
