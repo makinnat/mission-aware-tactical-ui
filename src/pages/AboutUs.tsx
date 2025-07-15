@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Shield, MessageSquare, ArrowUpRight, Settings } from "lucide-react";
+import { Shield, MessageSquare, ArrowUpRight, Settings, Quote } from "lucide-react";
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
@@ -31,6 +32,77 @@ const AboutUs = () => {
     isVisible: ctaVisible
   } = useScrollAnimation();
 
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  
+  const testimonials = [
+    {
+      quote: "We operate in some of the harshest conditions in the world. Aware's EarDefenders held up to salt, sand, and sustained flight hours. The passive protection is solid, and our aircrew say they actually want to wear them. These aren't just another issued item—they're mission-critical.",
+      role: "Osprey Pilot and Safety Officer"
+    },
+    {
+      quote: "The Aware team showed up on time, set up quickly, and scanned our entire aircrew within a day. Their custom hearing protection fits flawlessly under our helmets and provides the best seal we've ever had with CEP over-molds. Professional, efficient, and 100% tailored for naval aviation.",
+      role: "Aviation Safety Officer"
+    },
+    {
+      quote: "Aware Defense impressed me not only with their product quality but with their deep respect for the law enforcement community. Their support helps us continue our mission: ensuring that officers leave the job with the same level of protection and care they had while wearing the badge.",
+      role: "Retired Law Enforcement Professional"
+    },
+    {
+      quote: "This experience has been extremely positive and I'm looking forward to helping your company provide invaluable hearing protection to our Sailors…and for years to come. It was like I felt a shift in morale when folks walked in and walked out (after scanning) and I'll be the first to admit that we needed this.",
+      role: "Combat Aviation Brigade"
+    },
+    {
+      quote: "We've tried other 'custom' hearing protection solutions before, but nothing came close to the precision and comfort of what Aware Defense delivered. The 3D scans were fast and accurate, and our team had custom plugs in hand before the next rotation. This is what right looks like.",
+      role: "SERE Specialist"
+    }
+  ];
+
+  const logos = [
+    {
+      name: "US Navy",
+      src: "/lovable-uploads/d59ab18c-d11d-4598-8ecf-85b9b65b9f8d.png",
+      alt: "US Navy Logo"
+    },
+    {
+      name: "US Army", 
+      src: "/lovable-uploads/889ccf25-6998-4119-8a67-f431b97da35a.png",
+      alt: "US Army Logo"
+    },
+    {
+      name: "US Air Force",
+      src: "/lovable-uploads/0c24dfc3-6782-4c71-a3db-e2f04154ac88.png",
+      alt: "US Air Force Logo"
+    },
+    {
+      name: "ONR",
+      src: "/lovable-uploads/a8e2387b-c26e-4705-9bf5-6050903737c5.png",
+      alt: "Office of Naval Research Logo"
+    },
+    {
+      name: "Emory Healthcare",
+      src: "/lovable-uploads/2e7ebe91-8198-46cc-8c0f-a99ad3760169.png",
+      alt: "Emory Healthcare Logo"
+    },
+    {
+      name: "Takeda",
+      src: "/lovable-uploads/9ab5019f-203f-404b-89b1-a6411e681421.png",
+      alt: "Takeda Logo"
+    },
+    {
+      name: "Logitech",
+      src: "/lovable-uploads/801cc443-a322-4d8a-80c8-57f9cc359f15.png",
+      alt: "Logitech Logo"
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
   const values = [
     {
       icon: Shield,
@@ -54,17 +126,6 @@ const AboutUs = () => {
     }
   ];
 
-  // Partner logos for the scroll
-  const partners = [
-    "/lovable-uploads/064fecdc-cff5-4391-ac37-ff2652b59d58.png",
-    "/lovable-uploads/0c24dfc3-6782-4c71-a3db-e2f04154ac88.png",
-    "/lovable-uploads/1106a9b7-e1eb-4c18-b7c0-653862ff02dd.png",
-    "/lovable-uploads/13f84161-99ce-4565-8109-86a7671c9e94.png",
-    "/lovable-uploads/1a80bd1a-8c26-4b80-bbf9-6853495696a0.png",
-    "/lovable-uploads/1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png",
-    "/lovable-uploads/244828ef-a80b-4a51-8921-7977b82689a4.png",
-    "/lovable-uploads/24c9958e-52a3-4409-833c-30ecae02d79d.png"
-  ];
 
   return (
     <div className="min-h-screen bg-combat-black text-signal-white font-inter">
@@ -174,7 +235,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Organizations We Serve Section */}
+      {/* Trusted Across Domains Section */}
       <section 
         ref={organizationsRef}
         className={`py-20 transition-all duration-1000 delay-600 ${organizationsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -186,29 +247,54 @@ const AboutUs = () => {
             </h2>
           </div>
 
-          {/* Scrolling Partner Logos */}
-          <div className="relative overflow-hidden">
-            <div className="flex animate-scroll space-x-12">
-              {/* First set of logos */}
-              {partners.map((logo, index) => (
-                <div key={index} className="flex-shrink-0">
-                  <img 
-                    src={logo} 
-                    alt={`Partner ${index + 1}`}
-                    className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 filter grayscale"
-                  />
-                </div>
+          {/* Testimonials */}
+          <div className="relative max-w-4xl mx-auto mb-16">
+            <div className="text-center transition-all duration-500 ease-in-out">
+              <Quote className="w-12 h-12 text-scarlet-red mx-auto mb-6" />
+              <blockquote className="text-signal-white text-xl md:text-2xl mb-6 italic leading-relaxed">
+                "{testimonials[currentTestimonial].quote}"
+              </blockquote>
+              <cite className="text-desert-tan text-lg">
+                – {testimonials[currentTestimonial].role}
+              </cite>
+            </div>
+            
+            {/* Dots indicator */}
+            <div className="flex justify-center mt-8 space-x-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentTestimonial(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentTestimonial 
+                      ? 'bg-scarlet-red' 
+                      : 'bg-desert-tan/30 hover:bg-desert-tan/60'
+                  }`}
+                />
               ))}
-              {/* Duplicate set for seamless loop */}
-              {partners.map((logo, index) => (
-                <div key={`duplicate-${index}`} className="flex-shrink-0">
-                  <img 
-                    src={logo} 
-                    alt={`Partner ${index + 1}`}
-                    className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 filter grayscale"
-                  />
-                </div>
-              ))}
+            </div>
+          </div>
+
+          {/* Logo Scroll */}
+          <div className="border-t border-desert-tan/20 pt-12">
+            <div className="overflow-hidden">
+              <div className="flex items-center gap-6 md:gap-8 animate-scroll">
+                {/* Duplicate logos for seamless loop */}
+                {[...logos, ...logos].map((logo, index) => (
+                  <div 
+                    key={index} 
+                    className="flex-shrink-0 bg-signal-white rounded-lg p-4 shadow-sm border-2 border-olive-drab"
+                  >
+                    <div className="h-12 md:h-16 w-24 md:w-32 flex items-center justify-center">
+                      <img 
+                        src={logo.src} 
+                        alt={logo.alt}
+                        className="h-full w-full object-contain"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
