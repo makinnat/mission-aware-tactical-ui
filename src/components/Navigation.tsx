@@ -78,9 +78,9 @@ const Navigation = () => {
 
                       {/* Other Items */}
                       <div className="border-t border-desert-tan/10 mt-2 pt-2">
-                        <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                          Get Scanned
-                        </a>
+                      <Link to="/get-scanned" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        Get Scanned
+                      </Link>
                         <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                           How to Buy
                         </a>
