@@ -126,12 +126,12 @@ const Navigation = () => {
             </div>
 
             {/* Use Cases */}
-            <a 
-              href="#" 
+            <Link 
+              to="/use-cases" 
               className="text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
             >
               Use Cases
-            </a>
+            </Link>
 
             {/* About Us */}
             <a 
