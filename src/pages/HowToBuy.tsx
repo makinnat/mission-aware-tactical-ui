@@ -176,8 +176,8 @@ const HowToBuy = () => {
                       Only Aware Defense's proprietary eFit scanner captures the critical second bend geometry that ensures perfect seal integrity.
                     </p>
                     <div className="bg-combat-black/30 p-4 rounded-lg mt-4">
-                      <p className="text-desert-tan">
-                        <span className="font-semibold">Urgency Factor:</span> Hearing loss affects over 50% of combat soldiers and represents the #1 cause of veteran disability claims.
+                      <p className="text-signal-white">
+                        Hearing loss affects over 50% of combat soldiers and represents the #1 cause of veteran disability claims.
                       </p>
                     </div>
                   </div>
