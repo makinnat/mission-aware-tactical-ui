@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ChevronDown, Search, User, ShoppingCart } from "lucide-react";
+import { ChevronDown, Search, User } from "lucide-react";
 import { Link } from "react-router-dom";
+import { CartSidebar } from "@/components/cart/CartSidebar";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -153,9 +154,7 @@ const Navigation = () => {
               <button className="text-desert-tan hover:text-scarlet-red transition-colors duration-200">
                 <User className="h-5 w-5" />
               </button>
-              <button className="text-desert-tan hover:text-scarlet-red transition-colors duration-200">
-                <ShoppingCart className="h-5 w-5" />
-              </button>
+              <CartSidebar />
             </div>
 
             {/* Contact Us CTA */}

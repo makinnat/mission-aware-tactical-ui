@@ -4,6 +4,11 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { CheckCircle, Shield, Headphones, Volume2, Radio, Scan, Music, Filter, Moon, Waves } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ProductGrid } from "@/components/products/ProductGrid";
+import { sampleProducts, getFeaturedProducts } from "@/data/products";
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Search } from "lucide-react";
 import { Link } from "react-router-dom";
 const Products = () => {
   const {

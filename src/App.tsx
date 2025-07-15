@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartProvider } from "@/contexts/CartContext";
 import Index from "./pages/Index";
 import Products from "./pages/Products";
 import EarShield from "./pages/EarShield";
@@ -21,28 +22,32 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/earshield" element={<EarShield />} />
-          <Route path="/get-scanned" element={<GetScanned />} />
-          <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
-          <Route path="/how-to-buy" element={<HowToBuy />} />
-          <Route path="/technology" element={<TechnologyOverview />} />
-          <Route path="/technology/efit-3d-scanner" element={<EFit3DScanner />} />
-          <Route path="/technology/biometric-wearables" element={<BiometricWearables />} />
-          <Route path="/use-cases" element={<UseCases />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/request-consultation" element={<RequestConsultation />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <CartProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:handle" element={<Products />} />
+            <Route path="/collections/:handle" element={<Products />} />
+            <Route path="/products/earshield" element={<EarShield />} />
+            <Route path="/get-scanned" element={<GetScanned />} />
+            <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
+            <Route path="/how-to-buy" element={<HowToBuy />} />
+            <Route path="/technology" element={<TechnologyOverview />} />
+            <Route path="/technology/efit-3d-scanner" element={<EFit3DScanner />} />
+            <Route path="/technology/biometric-wearables" element={<BiometricWearables />} />
+            <Route path="/use-cases" element={<UseCases />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/request-consultation" element={<RequestConsultation />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </CartProvider>
   </QueryClientProvider>
 );
 
