@@ -67,52 +67,52 @@ export const ComparisonSection = () => {
           <div className="w-2/3">
             <div className="bg-combat-black rounded-lg overflow-hidden border border-scarlet-red">
               <div className="grid grid-cols-4 bg-combat-black text-signal-white border-b border-scarlet-red">
-                <div className="p-4 border-r border-scarlet-red text-center">
+                <div className="p-4 border-r border-scarlet-red flex items-center justify-center">
                   <h3 className="subheading-tactical text-sm font-bold">FEATURE</h3>
                 </div>
-                <div className="p-4 border-r border-scarlet-red text-center">
+                <div className="p-4 border-r border-scarlet-red flex items-center justify-center">
                   <h3 className="subheading-tactical text-lg font-black text-desert-tan">AWARE</h3>
                 </div>
-                <div className="p-4 border-r border-scarlet-red text-center">
+                <div className="p-4 border-r border-scarlet-red flex items-center justify-center">
                   <h3 className="subheading-tactical text-sm font-medium">TRADITIONAL</h3>
                 </div>
-                <div className="p-4 text-center">
+                <div className="p-4 flex items-center justify-center">
                   <h3 className="subheading-tactical text-sm font-medium">FOAM</h3>
                 </div>
               </div>
 
               {features.map((feature, index) => (
                 <div key={index} className="grid grid-cols-4 border-t border-scarlet-red">
-                  <div className="p-4 bg-combat-black border-r border-scarlet-red text-center">
+                  <div className="p-4 bg-combat-black border-r border-scarlet-red flex items-center justify-center">
                     <span className="body-tactical text-signal-white text-sm">
                       {feature.name}
                     </span>
                   </div>
-                  <div className="p-4 border-r border-scarlet-red bg-combat-black text-center">
+                  <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
                     {feature.aware === true ? (
-                      <Check className="w-5 h-5 text-desert-tan mx-auto" strokeWidth={4} />
+                      <Check className="w-5 h-5 text-desert-tan" strokeWidth={4} />
                     ) : feature.aware === "LIMITED" ? (
                       <span className="text-xs text-signal-white font-medium">LIMITED</span>
                     ) : (
-                      <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
+                      <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                     )}
                   </div>
-                  <div className="p-4 border-r border-scarlet-red bg-combat-black text-center">
+                  <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
                     {feature.traditional === true ? (
-                      <Check className="w-5 h-5 text-desert-tan mx-auto" strokeWidth={4} />
+                      <Check className="w-5 h-5 text-desert-tan" strokeWidth={4} />
                     ) : feature.traditional === "LIMITED" ? (
                       <span className="text-xs text-signal-white font-medium">LIMITED</span>
                     ) : (
-                      <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
+                      <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                     )}
                   </div>
-                  <div className="p-4 bg-combat-black text-center">
+                  <div className="p-4 bg-combat-black flex items-center justify-center">
                     {feature.foam === true ? (
-                      <Check className="w-5 h-5 text-desert-tan mx-auto" strokeWidth={4} />
+                      <Check className="w-5 h-5 text-desert-tan" strokeWidth={4} />
                     ) : feature.foam === "LIMITED" ? (
                       <span className="text-xs text-signal-white font-medium">LIMITED</span>
                     ) : (
-                      <X className="w-5 h-5 text-signal-white mx-auto" strokeWidth={3} />
+                      <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                     )}
                   </div>
                 </div>
