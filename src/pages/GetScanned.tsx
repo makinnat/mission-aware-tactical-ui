@@ -139,7 +139,10 @@ const GetScanned = () => {
                     Join us at a scheduled scanning event near you.
                   </p>
                   
-                  <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
+                  <Button 
+                    className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide"
+                    onClick={() => eventsRef.current?.scrollIntoView({ behavior: 'smooth' })}
+                  >
                     SEE UPCOMING EVENTS
                   </Button>
                 </CardContent>
