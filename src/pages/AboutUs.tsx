@@ -73,9 +73,18 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section 
         ref={heroRef}
-        className={`pt-32 pb-20 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`relative pt-32 pb-20 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `url('/lovable-uploads/fe973eea-926b-4ab5-9991-92cb270bd128.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
-        <div className="container mx-auto px-4 text-center">
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-6xl lg:text-7xl font-black text-signal-white mb-4 uppercase tracking-tight">
             BUILT BY OPERATORS
           </h1>
