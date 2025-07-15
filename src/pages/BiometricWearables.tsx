@@ -249,13 +249,10 @@ const BiometricWearables = () => {
               OPERATOR-READY
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { icon: Brain, text: "Cognitive performance monitoring" },
-                { icon: Plane, text: "Aviation pilot fatigue" },
                 { icon: Target, text: "Warfighter readiness tracking" },
-                { icon: Users, text: "Special ops field medicine" },
-                { icon: Activity, text: "Training & simulation performance metrics" },
                 { icon: Zap, text: "Real-time health analytics" }
               ].map((application, index) => (
                 <div 
