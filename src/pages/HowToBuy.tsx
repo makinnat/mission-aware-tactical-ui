@@ -40,7 +40,7 @@ const HowToBuy = () => {
             <p className="text-xl text-desert-tan leading-relaxed max-w-3xl mx-auto mb-10">
               Whether you're buying for a unit, department, or yourself, Aware Defense makes it easy to deploy custom-fit gear at scale.
             </p>
-            <Button className="btn-scarlet text-lg px-8 py-3 font-semibold uppercase tracking-wide">
+            <Button variant="scarlet" className="text-lg px-8 py-3 font-semibold uppercase tracking-wide">
               REQUEST A CONSULTATION
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
