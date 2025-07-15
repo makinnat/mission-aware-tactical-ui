@@ -119,19 +119,6 @@ const UseCases = () => {
       imagePlaceholder: "law-enforcement.jpg"
     },
     {
-      icon: Music,
-      title: "Music & Entertainment Industry",
-      subtitle: "Precision Audio Protection",
-      description: "Musicians are 4× more likely to develop noise-induced hearing loss than the general population. Concert sound levels can reach 120 decibels, causing instant damage without protection. Artists require fidelity as well as protection.",
-      applications: [
-        "Flat attenuation filters preserve frequency response across the musical spectrum",
-        "Musician-specific designs accommodate instruments and performance positions",
-        "Custom frequency response tailored to individual hearing profiles",
-        "Durable construction for touring and frequent use in demanding environments"
-      ],
-      imagePlaceholder: "music-entertainment.jpg"
-    },
-    {
       icon: Activity,
       title: "Recreational & Competitive Shooting",
       subtitle: "Precision Meets Protection", 
@@ -306,6 +293,12 @@ const UseCases = () => {
                             <img 
                               src="/lovable-uploads/80b794a0-00ea-493c-8eae-b5e4a067075b.png" 
                               alt="Public Safety and Law Enforcement Operations" 
+                              className="w-full h-full object-cover"
+                            />
+                          ) : index === 7 ? (
+                            <img 
+                              src="/lovable-uploads/864a9bfd-9667-4c95-b683-2c86443241bc.png" 
+                              alt="Recreational and Competitive Shooting Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : (
