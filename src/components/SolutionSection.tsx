@@ -27,7 +27,7 @@ export const SolutionSection = () => {
     ref={ref} 
     className={`py-20 px-6 relative scroll-slide-right ${isVisible ? 'visible' : ''}`}
     style={{
-      backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('/lovable-uploads/f5a02335-4f26-4d9b-8f10-805d00ec278c.png')`,
+      backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('/lovable-uploads/4286af76-97f0-43dd-a372-dd700e14d530.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
