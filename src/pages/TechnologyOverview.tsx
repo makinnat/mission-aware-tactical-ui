@@ -235,7 +235,7 @@ const TechnologyOverview = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-olive-drab mb-8">
+            <h2 className="text-4xl font-bold text-signal-white mb-8">
               WANT TO SEE IT IN ACTION?
             </h2>
             <p className="text-xl text-desert-tan leading-relaxed mb-10">
