@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Shield, MessageSquare, Scale, Settings } from "lucide-react";
+import { Shield, MessageSquare, ArrowUpRight, Settings } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
@@ -43,7 +43,7 @@ const AboutUs = () => {
       description: "Protection shouldn't block communication. Clear comms save lives."
     },
     {
-      icon: Scale,
+      icon: ArrowUpRight,
       title: "Scalable Solutions",
       description: "Everything we build must deploy at scale across diverse operations."
     },
