@@ -285,19 +285,13 @@ const BiometricWearables = () => {
             <p className="text-xl text-desert-tan leading-relaxed mb-10">
               Let's evolve together.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button 
                 className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white" 
                 style={{ backgroundColor: '#95182b' }}
               >
                 SCHEDULE A DEMO
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button 
-                variant="outline" 
-                className="text-lg px-8 py-3 font-semibold uppercase tracking-wide border-olive-drab text-olive-drab hover:bg-olive-drab hover:text-signal-white"
-              >
-                CONTACT TECH TEAM
               </Button>
             </div>
           </div>
