@@ -133,17 +133,20 @@ const AboutUs = () => {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-black text-olive-drab mb-4 uppercase">
+            <h2 className="text-5xl font-black text-signal-white mb-4 uppercase">
               OUR OPERATING PRINCIPLES
             </h2>
+            <p className="text-2xl text-desert-tan font-semibold">
+              Humans are more important than hardware
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <Card key={index} className="bg-combat-black/50 border-desert-tan/20 hover:border-desert-tan/40 transition-all duration-300">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-desert-tan/20 rounded-lg mx-auto mb-6 flex items-center justify-center">
-                    <value.icon className="w-8 h-8 text-desert-tan" />
+                  <div className="w-16 h-16 bg-scarlet-red rounded-lg mx-auto mb-6 flex items-center justify-center">
+                    <value.icon className="w-8 h-8 text-signal-white" />
                   </div>
                   <h3 className="text-xl font-bold text-desert-tan mb-4 uppercase">
                     {value.title}
