@@ -194,38 +194,32 @@ const TechnologyOverview = () => {
                   <tr className="border-b border-desert-tan/10">
                     <td className="p-4 text-left text-signal-white text-sm">FDA-cleared, non-contact 3D scanning</td>
                     <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center">✗</td>
-                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
                   </tr>
                   <tr className="border-b border-desert-tan/10">
                     <td className="p-4 text-left text-signal-white text-sm">Perfectly captures second bend for superior fit</td>
                     <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center">✗</td>
-                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
                   </tr>
                   <tr className="border-b border-desert-tan/10">
                     <td className="p-4 text-left text-signal-white text-sm">Permanent digital profile</td>
                     <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center">✗</td>
-                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
                   </tr>
                   <tr className="border-b border-desert-tan/10">
                     <td className="p-4 text-left text-signal-white text-sm">Seamless comms integration</td>
                     <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
                     <td className="p-4 text-center text-desert-tan text-xs">LIMITED</td>
-                    <td className="p-4 text-center">✗</td>
-                  </tr>
-                  <tr className="border-b border-desert-tan/10">
-                    <td className="p-4 text-left text-signal-white text-sm">Future-proof biometric platform</td>
-                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center">✗</td>
-                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-left text-signal-white text-sm">Field-tested by SOF and DoD Aviators</td>
+                    <td className="p-4 text-left text-signal-white text-sm">Future-proof biometric platform</td>
                     <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center text-desert-tan text-xs">LIMITED</td>
-                    <td className="p-4 text-center">✗</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
+                    <td className="p-4 text-center text-signal-white">X</td>
                   </tr>
                 </tbody>
               </table>
