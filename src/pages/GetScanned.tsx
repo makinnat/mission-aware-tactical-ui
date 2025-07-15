@@ -29,8 +29,19 @@ const GetScanned = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="container mx-auto px-4">
+      <section ref={heroRef} className={`relative pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/be18c3de-9beb-44fe-81a8-625c16ec03d9.png')`
+          }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-combat-black/70"></div>
+        
+        {/* Content */}
+        <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-olive-drab mb-8 leading-tight md:text-5xl">GET SCANNED FOR CUSTOM-FIT GEAR IN JUST 90 SECONDS</h1>
             <p className="text-xl md:text-2xl text-signal-white mb-12 leading-relaxed max-w-3xl mx-auto">
