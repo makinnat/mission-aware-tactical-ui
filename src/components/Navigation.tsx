@@ -106,14 +106,20 @@ const Navigation = () => {
               </Link>
               
               {activeDropdown === 'technology' && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-combat-black border border-desert-tan/20 rounded-sm shadow-lg">
-                  <div className="py-2">
-                    <Link to="/technology/efit-3d-scanner" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                      eFit 3D Scanner
-                    </Link>
-                    <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
-                      Biometric Wearables
-                    </a>
+                <div 
+                  className="absolute top-full left-0 pt-1 w-48 z-50"
+                  onMouseEnter={() => handleMouseEnter('technology')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="bg-combat-black border border-desert-tan/20 rounded-sm shadow-lg">
+                    <div className="py-2">
+                      <Link to="/technology/efit-3d-scanner" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        eFit 3D Scanner
+                      </Link>
+                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                        Biometric Wearables
+                      </a>
+                    </div>
                   </div>
                 </div>
               )}
