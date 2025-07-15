@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="bg-background border-t border-secondary/20">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
-          {/* Logo and Social */}
+          {/* Logo and Made in USA */}
           <div className="space-y-6 flex flex-col items-center text-center">
             <div className="w-48 h-16">
               <img 
@@ -18,21 +18,21 @@ export const Footer = () => {
               />
             </div>
             
-            <div className="flex space-x-4">
-              <Twitter className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
-            </div>
-          </div>
-
-          {/* Made in USA */}
-          <div className="flex flex-col items-center text-center space-y-4">
             <div className="w-32 h-24">
               <img 
                 src="/lovable-uploads/f769839c-af38-4801-aab1-98f74e7c07c9.png" 
                 alt="Made in USA" 
                 className="w-full h-full object-contain"
               />
+            </div>
+          </div>
+
+          {/* Social and eFit */}
+          <div className="flex flex-col items-center text-center space-y-4">
+            <div className="flex space-x-4">
+              <Twitter className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
+              <Instagram className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
+              <Linkedin className="w-5 h-5 text-secondary hover:text-primary cursor-pointer transition-colors" />
             </div>
             <Link to="/technology/efit-3d-scanner" className="block">
               <img 
