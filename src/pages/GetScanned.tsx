@@ -195,7 +195,7 @@ const GetScanned = () => {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-olive-drab leading-tight">GET YOUR TEAM MISSION-READY</h2>
             
-            <p className="text-xl text-desert-tan leading-relaxed">
+            <p className="text-xl text-desert-tan leading-relaxed text-white">
               Schedule a scan, get gear that fits, and prepare for the next evolution in protection.
             </p>
             
