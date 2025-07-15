@@ -4,25 +4,32 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ArrowRight, CheckCircle, MapPin, Calendar, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-
 const GetScanned = () => {
-  const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
-  const { ref: scannerRef, isVisible: scannerVisible } = useScrollAnimation();
-  const { ref: pathsRef, isVisible: pathsVisible } = useScrollAnimation();
-  const { ref: eventsRef, isVisible: eventsVisible } = useScrollAnimation();
-  const { ref: ctaRef, isVisible: ctaVisible } = useScrollAnimation();
-
-  return (
-    <div className="min-h-screen bg-combat-black text-signal-white font-inter">
+  const {
+    ref: heroRef,
+    isVisible: heroVisible
+  } = useScrollAnimation();
+  const {
+    ref: scannerRef,
+    isVisible: scannerVisible
+  } = useScrollAnimation();
+  const {
+    ref: pathsRef,
+    isVisible: pathsVisible
+  } = useScrollAnimation();
+  const {
+    ref: eventsRef,
+    isVisible: eventsVisible
+  } = useScrollAnimation();
+  const {
+    ref: ctaRef,
+    isVisible: ctaVisible
+  } = useScrollAnimation();
+  return <div className="min-h-screen bg-combat-black text-signal-white font-inter">
       <Navigation />
       
       {/* Hero Section */}
-      <section 
-        ref={heroRef}
-        className={`pt-24 pb-16 transition-all duration-1000 ${
-          heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
+      <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-olive-drab mb-8 leading-tight">
@@ -40,12 +47,7 @@ const GetScanned = () => {
       </section>
 
       {/* Why 3D Scanning Section */}
-      <section 
-        ref={scannerRef}
-        className={`py-20 transition-all duration-1000 delay-200 ${
-          scannerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
+      <section ref={scannerRef} className={`py-20 transition-all duration-1000 delay-200 ${scannerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -53,20 +55,14 @@ const GetScanned = () => {
               {/* Left: Scanner Visual */}
               <div className="space-y-4 flex justify-center">
                 <div className="w-80 h-80 bg-muted/20 rounded-lg overflow-hidden border-2 border-desert-tan/30 relative">
-                  <img 
-                    src="/lovable-uploads/8217ea43-f1b7-4052-a29e-a0f8fbaefa20.png" 
-                    alt="eFit 3D Scanner in action - contactless ear scanning process"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src="/lovable-uploads/8217ea43-f1b7-4052-a29e-a0f8fbaefa20.png" alt="eFit 3D Scanner in action - contactless ear scanning process" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-combat-black/20 to-transparent"></div>
                 </div>
               </div>
 
               {/* Right: Content */}
               <div className="space-y-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-olive-drab leading-tight">
-                  WHY OUR SCANNER MATTERS
-                </h2>
+                <h2 className="text-4xl font-bold text-olive-drab leading-tight md:text-4xl">WHY eFIT MATTERS</h2>
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -78,9 +74,7 @@ const GetScanned = () => {
                   
                   <div className="flex items-start space-x-4">
                     <CheckCircle className="h-6 w-6 text-desert-tan mt-1 flex-shrink-0" />
-                    <p className="text-lg text-signal-white">
-                      Digitally captures full ear canal geometry
-                    </p>
+                    <p className="text-lg text-signal-white">Digitally captures full ear geometry, including the second bend</p>
                   </div>
                   
                   <div className="flex items-start space-x-4">
@@ -92,9 +86,7 @@ const GetScanned = () => {
                   
                   <div className="flex items-start space-x-4">
                     <CheckCircle className="h-6 w-6 text-desert-tan mt-1 flex-shrink-0" />
-                    <p className="text-lg text-signal-white">
-                      Scans take less than 2 minutes per person
-                    </p>
+                    <p className="text-lg text-signal-white">Scans take less than 90 seconds minutes per person</p>
                   </div>
                 </div>
               </div>
@@ -104,12 +96,7 @@ const GetScanned = () => {
       </section>
 
       {/* How to Get Scanned Section */}
-      <section 
-        ref={pathsRef}
-        className={`py-20 transition-all duration-1000 delay-400 ${
-          pathsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
+      <section ref={pathsRef} className={`py-20 transition-all duration-1000 delay-400 ${pathsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-olive-drab text-center mb-16">
@@ -165,12 +152,7 @@ const GetScanned = () => {
       </section>
 
       {/* Upcoming Events Section */}
-      <section 
-        ref={eventsRef}
-        className={`py-20 transition-all duration-1000 delay-600 ${
-          eventsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
+      <section ref={eventsRef} className={`py-20 transition-all duration-1000 delay-600 ${eventsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-olive-drab text-center mb-16">
@@ -208,12 +190,7 @@ const GetScanned = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section 
-        ref={ctaRef}
-        className={`py-20 transition-all duration-1000 delay-800 ${
-          ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
+      <section ref={ctaRef} className={`py-20 transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-olive-drab leading-tight">
@@ -229,10 +206,7 @@ const GetScanned = () => {
                 REQUEST A CONSULTATION
               </Button>
               
-              <Button 
-                variant="outline" 
-                className="border-desert-tan text-desert-tan hover:bg-desert-tan hover:text-combat-black text-lg px-8 py-3 font-semibold uppercase tracking-wide w-full sm:w-auto"
-              >
+              <Button variant="outline" className="border-desert-tan text-desert-tan hover:bg-desert-tan hover:text-combat-black text-lg px-8 py-3 font-semibold uppercase tracking-wide w-full sm:w-auto">
                 CONTACT US
               </Button>
             </div>
@@ -241,8 +215,6 @@ const GetScanned = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default GetScanned;
