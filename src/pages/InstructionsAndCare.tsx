@@ -42,8 +42,9 @@ const InstructionsAndCare = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="container mx-auto px-4">
+      <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 bg-cover bg-center bg-no-repeat relative ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{backgroundImage: 'url(/lovable-uploads/a6a4e3b2-7822-4110-89db-6da73143d330.png)'}}>
+        <div className="absolute inset-0 bg-combat-black/70"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-olive-drab mb-8 leading-tight md:text-5xl">
               INSTRUCTIONS & CARE GUIDE
