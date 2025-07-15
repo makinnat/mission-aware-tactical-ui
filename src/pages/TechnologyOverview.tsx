@@ -178,12 +178,13 @@ const TechnologyOverview = () => {
             <p className="text-xl text-signal-white leading-relaxed mb-10">
               Compare our patented scanner and data platform to outdated foam plug workflows. Trust the tech that elite units rely on.
             </p>
-            <Button 
-              variant="outline" 
-              className="text-lg px-8 py-3 font-semibold uppercase tracking-wide border-olive-drab text-olive-drab hover:bg-olive-drab hover:text-signal-white"
-            >
-              VIEW COMPARISON
-            </Button>
+            <div className="bg-combat-black/50 p-6 rounded-xl">
+              <img 
+                src="/lovable-uploads/a7eb31a0-2229-41c5-aa0e-e995f68e8171.png" 
+                alt="Technology Comparison Chart" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
