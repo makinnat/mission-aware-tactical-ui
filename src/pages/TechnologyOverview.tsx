@@ -135,7 +135,7 @@ const TechnologyOverview = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-olive-drab text-center mb-16">
+            <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
               A PLATFORM BUILT FOR REAL-WORLD DEPLOYMENT
             </h2>
             
