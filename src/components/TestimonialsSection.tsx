@@ -78,7 +78,13 @@ export const TestimonialsSection = () => {
   return (
     <section 
       ref={ref}
-      className={`py-20 px-6 bg-background scroll-scale-in ${isVisible ? 'visible' : ''}`}
+      className={`py-20 px-6 relative scroll-scale-in ${isVisible ? 'visible' : ''}`}
+      style={{
+        backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('/lovable-uploads/2ee77062-fb5d-436a-95a8-68fb4628e3ae.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
