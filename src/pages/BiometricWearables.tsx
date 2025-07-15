@@ -218,16 +218,16 @@ const BiometricWearables = () => {
               ].map((integration, index) => (
                 <Card 
                   key={index}
-                  className={`bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-${600 + (index * 100)} ${integrationVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                  className={`h-full bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-${600 + (index * 100)} ${integrationVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 >
-                  <CardContent className="p-8 text-center">
+                  <CardContent className="p-8 text-center h-full flex flex-col">
                     <div className="w-16 h-16 bg-olive-drab rounded-lg mx-auto mb-6 flex items-center justify-center">
                       <integration.icon className="h-8 w-8 text-signal-white" />
                     </div>
-                    <h3 className="text-xl font-black text-signal-white mb-4 uppercase">
+                    <h3 className="text-xl font-black text-signal-white mb-4 uppercase min-h-[3rem] flex items-center justify-center">
                       {integration.title}
                     </h3>
-                    <p className="text-desert-tan leading-relaxed">
+                    <p className="text-desert-tan leading-relaxed flex-1 flex items-center">
                       {integration.description}
                     </p>
                   </CardContent>
