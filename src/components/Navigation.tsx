@@ -100,10 +100,10 @@ const Navigation = () => {
               onMouseEnter={() => handleMouseEnter('technology')}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200">
+              <Link to="/technology" className="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200">
                 Technology
                 <ChevronDown className="ml-1 h-3 w-3" />
-              </button>
+              </Link>
               
               {activeDropdown === 'technology' && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-combat-black border border-desert-tan/20 rounded-sm shadow-lg">
