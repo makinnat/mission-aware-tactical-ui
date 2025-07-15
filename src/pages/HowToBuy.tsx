@@ -125,6 +125,114 @@ const HowToBuy = () => {
         </div>
       </section>
 
+      {/* Federal Procurement Justification Section */}
+      <section className="py-20 bg-muted/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-olive-drab text-center mb-16">
+              FEDERAL PROCUREMENT JUSTIFICATION
+            </h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+              {/* Proprietary Technology */}
+              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-olive-drab mb-6">
+                    PROPRIETARY TECHNOLOGY
+                  </h3>
+                  <div className="space-y-4 text-signal-white">
+                    <p className="font-semibold">
+                      Aware Defense's eFit 3D scanner represents the world's only FDA-cleared, non-contact ear scanning technology.
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="h-5 w-5 text-scarlet mt-1 flex-shrink-0" />
+                        <p>90-second scanning vs. hours for traditional silicone methods</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="h-5 w-5 text-scarlet mt-1 flex-shrink-0" />
+                        <p>Medical-grade precision to two-micron accuracy</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="h-5 w-5 text-scarlet mt-1 flex-shrink-0" />
+                        <p>Zero-contact scanning eliminates safety concerns</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="h-5 w-5 text-scarlet mt-1 flex-shrink-0" />
+                        <p>Permanent digital profiles for lifetime support</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Mission Critical Differentiation */}
+              <Card className="bg-desert-tan/10 border-desert-tan/30 rounded-xl">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-olive-drab mb-6">
+                    MISSION-CRITICAL DIFFERENTIATION
+                  </h3>
+                  <div className="space-y-4 text-signal-white">
+                    <p className="font-semibold text-scarlet">
+                      Traditional hearing protection fails 92% of the time due to improper fit.
+                    </p>
+                    <p>
+                      Only Aware Defense's proprietary eFit scanner captures the critical second bend geometry that ensures perfect seal integrity.
+                    </p>
+                    <div className="bg-combat-black/30 p-4 rounded-lg mt-4">
+                      <p className="text-desert-tan">
+                        <span className="font-semibold">Urgency Factor:</span> Hearing loss affects over 50% of combat soldiers and represents the #1 cause of veteran disability claims.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* 8(a) Partnership Benefits */}
+            <Card className="bg-scarlet/10 border-scarlet/30 rounded-xl">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-olive-drab text-center mb-8">
+                  STREAMLINED PROCUREMENT THROUGH CERTIFIED 8(a) PARTNER
+                </h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div className="text-center space-y-4">
+                    <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
+                      <FileText className="h-8 w-8 text-signal-white" />
+                    </div>
+                    <h4 className="font-bold text-olive-drab">Direct Contracting</h4>
+                    <p className="text-signal-white text-sm">
+                      Sole-source contracts up to $4.5M without competitive requirements. Awards cannot be protested.
+                    </p>
+                  </div>
+                  
+                  <div className="text-center space-y-4">
+                    <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
+                      <Building2 className="h-8 w-8 text-signal-white" />
+                    </div>
+                    <h4 className="font-bold text-olive-drab">Small Business Goals</h4>
+                    <p className="text-signal-white text-sm">
+                      Satisfies agency small business and 8(a) contracting goals while supporting disadvantaged business development.
+                    </p>
+                  </div>
+                  
+                  <div className="text-center space-y-4">
+                    <div className="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
+                      <Clock className="h-8 w-8 text-signal-white" />
+                    </div>
+                    <h4 className="font-bold text-olive-drab">Reduced Timeline</h4>
+                    <p className="text-signal-white text-sm">
+                      Streamlined approval process reduces procurement timeline from months to weeks.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Payment & Delivery Info Section */}
       <section ref={deliveryRef} className={`py-20 transition-all duration-1000 delay-400 ${deliveryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
