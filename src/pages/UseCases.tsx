@@ -181,10 +181,10 @@ const UseCases = () => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl font-black text-olive-drab mb-6 uppercase">
-              Perfect-Fit Hearing Protection That Scales Across Every High-Noise Environment
+            <h2 className="text-3xl font-black text-signal-white mb-6 uppercase">
+              Hearing Protection That Scales Across Every High-Noise Environment
             </h2>
-            <p className="text-lg text-signal-white leading-relaxed mb-8">
+            <p className="text-lg text-desert-tan leading-relaxed mb-8">
               More than 22 million U.S. workers are exposed to hazardous noise each year, yet most universal earplugs fail to seal properly. Aware Defense combines the FDA-cleared eFit 3D Scanner with custom-molded ear protection and optional biometric sensors so organizations can deploy mission-grade safety at enterprise scale.
             </p>
           </div>
