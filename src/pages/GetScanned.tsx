@@ -64,26 +64,26 @@ const GetScanned = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-desert-tan mt-1 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
                     <p className="text-lg text-signal-white">
                       No contact, no silicone, zero infection risk
                     </p>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-desert-tan mt-1 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
                     <p className="text-lg text-signal-white">Digitally captures full ear geometry, including the second bend</p>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-desert-tan mt-1 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
                     <p className="text-lg text-signal-white">
                       Enables perfect repeatability and biometric upgrades
                     </p>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-desert-tan mt-1 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
                     <p className="text-lg text-signal-white">Scans take less than 90 seconds minutes per person</p>
                   </div>
                 </div>
