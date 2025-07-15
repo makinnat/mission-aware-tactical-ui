@@ -148,7 +148,7 @@ const BiometricWearables = () => {
 
               {/* Right Column - Content */}
               <div className={`transition-all duration-700 delay-700 ${whyEarVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
-                <h2 className="text-3xl font-bold text-olive-drab mb-8">
+                <h2 className="text-3xl font-bold text-signal-white mb-8">
                   WHY THE EAR BEATS THE WRIST
                 </h2>
                 
