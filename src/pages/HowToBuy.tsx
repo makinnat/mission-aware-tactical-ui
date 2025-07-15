@@ -57,7 +57,7 @@ const HowToBuy = () => {
       <section ref={pathsRef} className={`py-20 transition-all duration-1000 delay-200 ${pathsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-olive-drab text-center mb-16">
+            <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
               CHOOSE YOUR PATH TO MISSION-READY PROTECTION
             </h2>
             
