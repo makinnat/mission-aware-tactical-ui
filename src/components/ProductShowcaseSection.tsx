@@ -65,6 +65,11 @@ const ProductShowcaseSection = () => {
       className="py-20 bg-gradient-to-b from-background to-muted/30"
     >
       <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="heading-tactical text-primary text-4xl md:text-5xl mb-6">
+            GEAR THAT GETS WORN
+          </h2>
+        </div>
 
         <div className={`transition-all duration-700 delay-300 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
