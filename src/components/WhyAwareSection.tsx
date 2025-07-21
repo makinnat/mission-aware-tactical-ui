@@ -23,9 +23,9 @@ export const WhyAwareSection = () => {
   return (
     <section 
       ref={ref}
-      className={`py-20 px-6 scroll-slide-left ${isVisible ? 'visible' : ''}`}
+      className={`py-20 px-6 scroll-slide-left ${isVisible ? 'visible' : ''} relative`}
       style={{
-        backgroundImage: `url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
