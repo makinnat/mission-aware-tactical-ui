@@ -7,7 +7,12 @@ export const HeroSection = () => {
   // Preload critical hero image
   useImagePreloader([heroImage], { priority: true });
 
-  return <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden" style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
       {/* Optimized Background Image */}
       <LazyImage
         src={heroImage}

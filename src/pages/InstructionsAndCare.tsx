@@ -38,7 +38,7 @@ const InstructionsAndCare = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 bg-cover bg-center bg-no-repeat relative ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{backgroundImage: 'url(/lovable-uploads/a6a4e3b2-7822-4110-89db-6da73143d330.png)'}}>
+      <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 bg-cover bg-center bg-no-repeat relative ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`}}>
         <div className="absolute inset-0 bg-combat-black/70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -53,7 +53,12 @@ const InstructionsAndCare = () => {
       </section>
 
       {/* Insertion & Removal Section */}
-      <section ref={insertionRef} className={`py-20 transition-all duration-1000 delay-200 ${insertionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={insertionRef} className={`py-20 relative transition-all duration-1000 delay-200 ${insertionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
@@ -149,7 +154,12 @@ const InstructionsAndCare = () => {
       </section>
 
       {/* Cleaning Instructions Section */}
-      <section ref={cleaningRef} className={`py-20 transition-all duration-1000 delay-400 ${cleaningVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={cleaningRef} className={`py-20 relative transition-all duration-1000 delay-400 ${cleaningVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             

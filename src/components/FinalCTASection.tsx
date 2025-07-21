@@ -6,7 +6,13 @@ export const FinalCTASection = () => {
   return (
     <section 
       ref={ref}
-      className={`py-20 px-6 bg-background scroll-scale-in ${isVisible ? 'visible' : ''}`}
+      className={`py-20 px-6 relative scroll-scale-in ${isVisible ? 'visible' : ''}`}
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="heading-tactical text-white text-4xl md:text-6xl mb-8">

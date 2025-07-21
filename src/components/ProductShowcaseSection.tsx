@@ -33,7 +33,7 @@ const ProductShowcaseSection = () => {
       ref={ref} 
       className="py-20 bg-gradient-to-b from-background to-muted/30 relative"
       style={{
-        backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url('/lovable-uploads/bd0af64d-0751-45c4-89d9-0acef8a44443.png')`,
+        backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

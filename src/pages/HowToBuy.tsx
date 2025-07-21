@@ -36,7 +36,7 @@ const HowToBuy = () => {
       
       {/* Hero Section */}
       <section ref={heroRef} className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
-      backgroundImage: `url('/lovable-uploads/aa0cf4ea-596c-48cc-9dc1-fd66febe17ea.png')`
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`
     }}>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-combat-black/70"></div>
@@ -58,7 +58,12 @@ const HowToBuy = () => {
       </section>
 
       {/* Buying Paths Section */}
-      <section ref={pathsRef} className={`py-20 transition-all duration-1000 delay-200 ${pathsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={pathsRef} className={`py-20 transition-all duration-1000 delay-200 ${pathsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
@@ -126,7 +131,12 @@ const HowToBuy = () => {
       </section>
 
       {/* Federal Procurement Justification Section */}
-      <section ref={procurementRef} className={`py-20 bg-muted/10 transition-all duration-1000 delay-300 ${procurementVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={procurementRef} className={`py-20 relative transition-all duration-1000 delay-300 ${procurementVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
@@ -234,7 +244,12 @@ const HowToBuy = () => {
       </section>
 
       {/* Payment & Delivery Info Section */}
-      <section ref={deliveryRef} className={`py-20 transition-all duration-1000 delay-400 ${deliveryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={deliveryRef} className={`py-20 relative transition-all duration-1000 delay-400 ${deliveryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-signal-white text-center mb-16">
@@ -284,7 +299,12 @@ const HowToBuy = () => {
 
 
       {/* Final CTA Section */}
-      <section ref={finalCtaRef} className={`py-20 transition-all duration-1000 delay-800 ${finalCtaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={finalCtaRef} className={`py-20 relative transition-all duration-1000 delay-800 ${finalCtaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-signal-white mb-8">

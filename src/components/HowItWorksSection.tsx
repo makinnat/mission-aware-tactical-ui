@@ -25,7 +25,13 @@ export const HowItWorksSection = () => {
   return (
     <section 
       ref={ref}
-      className="py-20 px-6 bg-muted"
+      className="py-20 px-6 relative"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">

@@ -143,7 +143,12 @@ const EFit3DScanner = () => {
       </section>
 
       {/* Second Bend Section */}
-      <section className="py-20">
+      <section className="py-20 relative" style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-signal-white text-center mb-8">

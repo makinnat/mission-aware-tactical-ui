@@ -10,14 +10,12 @@ const RequestConsultation = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-          style={{
-            backgroundImage: `url(${heroImage})`
-          }} 
-        />
+      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden" style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 hero-overlay" />

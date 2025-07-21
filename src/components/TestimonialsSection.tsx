@@ -80,7 +80,7 @@ export const TestimonialsSection = () => {
       ref={ref}
       className={`py-20 px-6 relative scroll-scale-in ${isVisible ? 'visible' : ''}`}
       style={{
-        backgroundImage: `linear-gradient(rgba(13, 13, 13, 0.4), rgba(13, 13, 13, 0.4)), url('/lovable-uploads/2ee77062-fb5d-436a-95a8-68fb4628e3ae.png')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

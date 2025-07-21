@@ -40,7 +40,7 @@ const Products = () => {
       
       {/* Hero Section */}
       <section ref={heroRef} className={`relative py-32 px-6 bg-cover bg-center bg-no-repeat scroll-fade-in ${heroVisible ? 'visible' : ''}`} style={{
-      backgroundImage: `url(/lovable-uploads/c79eda20-92ba-4d64-a9d7-4e46f5cbd353.png)`
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`
     }}>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-background/70" />
@@ -71,7 +71,12 @@ const Products = () => {
       </section>
 
       {/* Why Custom-Fit Section */}
-      <section ref={whyRef} className={`py-20 px-6 bg-muted/30 scroll-slide-in ${whyVisible ? 'visible' : ''}`}>
+      <section ref={whyRef} className={`py-20 px-6 relative scroll-slide-in ${whyVisible ? 'visible' : ''}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column: Stats */}
@@ -101,7 +106,12 @@ const Products = () => {
       </section>
 
       {/* Tactical & Military Products */}
-      <section ref={tacticalRef} className={`py-20 px-6 bg-background scroll-scale-in ${tacticalVisible ? 'visible' : ''}`}>
+      <section ref={tacticalRef} className={`py-20 px-6 relative scroll-scale-in ${tacticalVisible ? 'visible' : ''}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-tactical text-primary text-3xl md:text-4xl text-center mb-16">
             FOR WARFIGHTERS, AVIATORS, AND TACTICAL OPERATORS
@@ -159,7 +169,12 @@ const Products = () => {
       </section>
 
       {/* Industrial & Law Enforcement */}
-      <section ref={industrialRef} className={`py-20 px-6 bg-muted/30 scroll-slide-in ${industrialVisible ? 'visible' : ''}`}>
+      <section ref={industrialRef} className={`py-20 px-6 relative scroll-slide-in ${industrialVisible ? 'visible' : ''}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-tactical text-primary text-3xl md:text-4xl text-center mb-16">
             INDUSTRIAL-GRADE SAFETY FOR DEMANDING ENVIRONMENTS
@@ -215,7 +230,12 @@ const Products = () => {
       </section>
 
       {/* Lifestyle & Recreation */}
-      <section ref={lifestyleRef} className={`py-20 px-6 bg-background scroll-scale-in ${lifestyleVisible ? 'visible' : ''}`}>
+      <section ref={lifestyleRef} className={`py-20 px-6 relative scroll-scale-in ${lifestyleVisible ? 'visible' : ''}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-tactical text-primary text-3xl md:text-4xl text-center mb-16">
             PRECISION FIT FOR PERFORMANCE, RECREATION, AND REST
@@ -286,7 +306,12 @@ const Products = () => {
       </section>
 
       {/* Final CTA */}
-      <section ref={ctaRef} className={`py-20 px-6 bg-muted/30 scroll-fade-in ${ctaVisible ? 'visible' : ''}`}>
+      <section ref={ctaRef} className={`py-20 px-6 relative scroll-fade-in ${ctaVisible ? 'visible' : ''}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="heading-tactical text-primary text-4xl md:text-6xl mb-8">
             READY TO PROTECT YOUR TEAM AND YOUR HEARING?

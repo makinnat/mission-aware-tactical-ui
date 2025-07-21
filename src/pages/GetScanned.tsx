@@ -29,14 +29,12 @@ const GetScanned = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section ref={heroRef} className={`relative pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/lovable-uploads/be18c3de-9beb-44fe-81a8-625c16ec03d9.png')`
-          }}
-        />
+      <section ref={heroRef} className={`relative pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-combat-black/70"></div>
         
@@ -56,7 +54,12 @@ const GetScanned = () => {
       </section>
 
       {/* Why 3D Scanning Section */}
-      <section ref={scannerRef} className={`py-20 transition-all duration-1000 delay-200 ${scannerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={scannerRef} className={`py-20 transition-all duration-1000 delay-200 ${scannerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -105,7 +108,12 @@ const GetScanned = () => {
       </section>
 
       {/* How to Get Scanned Section */}
-      <section ref={pathsRef} className={`py-20 transition-all duration-1000 delay-400 ${pathsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={pathsRef} className={`py-20 transition-all duration-1000 delay-400 ${pathsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-olive-drab text-center mb-16">
@@ -163,7 +171,12 @@ const GetScanned = () => {
       </section>
 
       {/* Upcoming Events Section */}
-      <section ref={eventsRef} className={`py-20 transition-all duration-1000 delay-600 ${eventsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={eventsRef} className={`py-20 transition-all duration-1000 delay-600 ${eventsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-olive-drab text-center mb-16">
@@ -201,7 +214,12 @@ const GetScanned = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section ref={ctaRef} className={`py-20 transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <section ref={ctaRef} className={`py-20 transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-olive-drab leading-tight">GET YOUR TEAM MISSION-READY</h2>
