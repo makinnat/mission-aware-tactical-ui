@@ -138,7 +138,7 @@ export const ComparisonSection = () => {
                 <img 
                   src="/lovable-uploads/e319426e-8e90-469b-bc84-bde45b072745.png" 
                   alt="eFit 3D Scanner" 
-                  className="w-24 h-auto object-contain"
+                  className="w-16 h-auto object-contain"
                 />
               </div>
             </Link>
