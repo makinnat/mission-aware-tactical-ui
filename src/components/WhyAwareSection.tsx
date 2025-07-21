@@ -23,7 +23,13 @@ export const WhyAwareSection = () => {
   return (
     <section 
       ref={ref}
-      className={`py-20 px-6 bg-muted scroll-slide-left ${isVisible ? 'visible' : ''}`}
+      className={`py-20 px-6 scroll-slide-left ${isVisible ? 'visible' : ''}`}
+      style={{
+        backgroundImage: `url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
