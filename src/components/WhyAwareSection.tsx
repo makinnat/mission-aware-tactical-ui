@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-const productImage = "/lovable-uploads/23108b1a-61a2-4412-be1d-2a1af0f52358.png";
+const productImage = "/lovable-uploads/cbfb1a8a-8b83-4766-abd6-811dab90c759.png";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const WhyAwareSection = () => {
