@@ -168,7 +168,7 @@ const AboutUs = () => {
             {/* Left Column - Image */}
             <div className="rounded-lg overflow-hidden">
               <img 
-                src="/lovable-uploads/74092aa5-a4f5-40a7-8a69-002b7869035d.png"
+                src="/lovable-uploads/6d2d7d54-557a-44a3-98ce-ddba1d0dc62b.png"
                 alt="Founder in tactical setting"
                 className="w-full h-[500px] object-cover"
               />
