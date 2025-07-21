@@ -162,6 +162,12 @@ const AboutUs = () => {
       <section 
         ref={originRef}
         className={`py-20 transition-all duration-1000 delay-200 ${originVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -195,7 +201,13 @@ const AboutUs = () => {
       {/* Values Section */}
       <section 
         ref={valuesRef}
-        className={`py-20 bg-muted/5 transition-all duration-1000 delay-400 ${valuesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`py-20 transition-all duration-1000 delay-400 ${valuesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -233,6 +245,12 @@ const AboutUs = () => {
       <section 
         ref={organizationsRef}
         className={`py-20 transition-all duration-1000 delay-600 ${organizationsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -297,7 +315,13 @@ const AboutUs = () => {
       {/* Final CTA Section */}
       <section 
         ref={ctaRef} 
-        className={`py-20 bg-muted/10 transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`py-20 transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
