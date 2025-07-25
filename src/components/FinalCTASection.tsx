@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const FinalCTASection = () => {
@@ -24,12 +25,16 @@ export const FinalCTASection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-          <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
-            SCHEDULE A MEETING
-          </Button>
-          <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm text-white bg-black">
-            LEARN MORE ABOUT OUR TECHNOLOGY
-          </Button>
+          <Link to="/request-consultation">
+            <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
+              SCHEDULE A MEETING
+            </Button>
+          </Link>
+          <Link to="/technology">
+            <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm text-white bg-black">
+              LEARN MORE ABOUT OUR TECHNOLOGY
+            </Button>
+          </Link>
         </div>
 
         {/* Three columns */}
