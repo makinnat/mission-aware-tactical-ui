@@ -242,61 +242,61 @@ const Products = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-6 text-center space-y-4">
+            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-6 text-center h-full flex flex-col">
                 <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/e6f319aa-df08-44f9-a43f-616e668d2ae1.png" alt="MusicPlugs Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-lg">MusicPlugs</h3>
-                <p className="text-secondary text-sm">
+                <h3 className="heading-tactical text-primary text-lg mb-3">MusicPlugs</h3>
+                <p className="text-secondary text-sm mb-4 flex-grow">
                   Audio protection with crystal clarity
                 </p>
-                <Button className="btn-olive-outline w-full text-sm">
+                <Button className="btn-olive-outline w-full text-sm mt-auto">
                   VIEW MUSICPLUGS
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-6 text-center space-y-4">
+            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-6 text-center h-full flex flex-col">
                 <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/5871d1fd-a537-4fc1-8012-e6c57c6e36d6.png" alt="MusicFilters Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-lg">MusicFilters</h3>
-                <p className="text-secondary text-sm">
+                <h3 className="heading-tactical text-primary text-lg mb-3">MusicFilters</h3>
+                <p className="text-secondary text-sm mb-4 flex-grow">
                   Interchangeable filter levels for performers
                 </p>
-                <Button className="btn-olive-outline w-full text-sm">
+                <Button className="btn-olive-outline w-full text-sm mt-auto">
                   VIEW FILTERS
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-6 text-center space-y-4">
+            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-6 text-center h-full flex flex-col">
                 <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/c121614b-05af-4f5b-845d-8b90cf6eee13.png" alt="SleepPlug Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-lg">SleepPlug</h3>
-                <p className="text-secondary text-sm">
+                <h3 className="heading-tactical text-primary text-lg mb-3">SleepPlug</h3>
+                <p className="text-secondary text-sm mb-4 flex-grow">
                   Low-profile comfort for deep sleep
                 </p>
-                <Button className="btn-olive-outline w-full text-sm">
+                <Button className="btn-olive-outline w-full text-sm mt-auto">
                   VIEW SLEEPPLUG
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-6 text-center space-y-4">
+            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-6 text-center h-full flex flex-col">
                 <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/8656c4f5-a409-4d5f-8cd1-f4c642eba875.png" alt="SwimPlug Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-lg">SwimPlug</h3>
-                <p className="text-secondary text-sm">
+                <h3 className="heading-tactical text-primary text-lg mb-3">SwimPlug</h3>
+                <p className="text-secondary text-sm mb-4 flex-grow">
                   Water-blocking custom fit for athletes
                 </p>
-                <Button className="btn-olive-outline w-full text-sm">
+                <Button className="btn-olive-outline w-full text-sm mt-auto">
                   VIEW SWIMPLUG
                 </Button>
               </CardContent>
