@@ -160,7 +160,7 @@ const Products = () => {
                   Comms-integrated custom earpiece for real-time clarity
                 </p>
                 <Button className="btn-olive-outline w-full mt-auto">
-                  VIEW CEP
+                  VIEW RADIOCOMM
                 </Button>
               </CardContent>
             </Card>
