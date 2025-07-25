@@ -36,7 +36,7 @@ const HowToBuy = () => {
       
       {/* Hero Section */}
       <section ref={heroRef} className={`pt-24 pb-16 relative bg-cover bg-center bg-no-repeat transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/dd736d2d-d5fc-4b51-bcd0-b2daf6e6d864.png')`
     }}>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-combat-black/70"></div>
