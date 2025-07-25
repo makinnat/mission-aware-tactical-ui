@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Scan, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useStaggeredAnimation } from "@/hooks/useScrollAnimation";
 
 export const HowItWorksSection = () => {
@@ -66,9 +67,11 @@ export const HowItWorksSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
-            Book Your Expert Consultation
-          </Button>
+          <Link to="/request-consultation">
+            <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
+              Book Your Expert Consultation
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
