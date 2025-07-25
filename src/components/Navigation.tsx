@@ -158,12 +158,12 @@ const Navigation = () => {
             </div>
 
             {/* Contact Us CTA */}
-            <a 
-              href="#contact" 
+            <Link 
+              to="/request-consultation" 
               className="btn-scarlet px-6 py-2 text-sm font-semibold uppercase tracking-wide transition-all duration-200"
             >
               Contact Us
-            </a>
+            </Link>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
