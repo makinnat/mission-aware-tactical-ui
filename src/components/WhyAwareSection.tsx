@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 const productImage = "/lovable-uploads/cbfb1a8a-8b83-4766-abd6-811dab90c759.png";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -65,9 +66,11 @@ export const WhyAwareSection = () => {
               ))}
             </div>
 
-            <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm">
-              See additional use cases
-            </Button>
+            <Link to="/use-cases">
+              <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm">
+                See additional use cases
+              </Button>
+            </Link>
           </div>
 
           {/* Right: Product image */}
