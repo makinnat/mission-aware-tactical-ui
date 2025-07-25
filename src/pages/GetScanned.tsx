@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ArrowRight, CheckCircle, MapPin, Calendar, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 const GetScanned = () => {
@@ -30,7 +31,7 @@ const GetScanned = () => {
       
       {/* Hero Section */}
       <section ref={heroRef} className={`relative pt-24 pb-16 transition-all duration-1000 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/68ac4c95-84ec-4119-a846-03be89b8204c.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -45,10 +46,12 @@ const GetScanned = () => {
             <p className="text-xl md:text-2xl text-signal-white mb-12 leading-relaxed max-w-3xl mx-auto">
               Our FDA-cleared eFit 3D scanner captures the exact geometry of your ear — no contact, no silicone. Just perfect fit, every time.
             </p>
-            <Button className="btn-scarlet text-lg px-8 py-4 font-semibold uppercase tracking-wide">
-              REQUEST A SCAN CONSULTATION
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/request-consultation">
+              <Button className="btn-scarlet text-lg px-8 py-4 font-semibold uppercase tracking-wide">
+                REQUEST A SCAN CONSULTATION
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
