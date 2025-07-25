@@ -118,16 +118,16 @@ const Products = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-8 text-center space-y-6">
-                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-8 text-center h-full flex flex-col">
+                <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/4292650a-69ee-427d-8ccf-bc2e4433f736.png" alt="EarShield Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">EarShield</h3>
-                <p className="text-secondary">
+                <h3 className="heading-tactical text-primary text-xl mb-4">EarShield</h3>
+                <p className="text-secondary mb-6 flex-grow">
                   Highest NRR, comms-compatible, all-day mission endurance
                 </p>
-                <Link to="/products/earshield">
+                <Link to="/products/earshield" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
                     VIEW EARSHIELD
                   </Button>
@@ -135,31 +135,31 @@ const Products = () => {
               </CardContent>
             </Card>
 
-            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-8 text-center space-y-6">
-                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-8 text-center h-full flex flex-col">
+                <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/bced67a7-d7bf-45c1-b515-634e0f92fdd3.png" alt="EarDefender Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">EarDefender</h3>
-                <p className="text-secondary">
+                <h3 className="heading-tactical text-primary text-xl mb-4">EarDefender</h3>
+                <p className="text-secondary mb-6 flex-grow">
                   Reliable tactical protection with sealed fit for high-noise ops
                 </p>
-                <Button className="btn-olive-outline w-full">
+                <Button className="btn-olive-outline w-full mt-auto">
                   VIEW EARDEFENDER
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-8 text-center space-y-6">
-                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+            <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-8 text-center h-full flex flex-col">
+                <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png" alt="RadioCOMM / CEP Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">RADIOCOMM</h3>
-                <p className="text-secondary">
+                <h3 className="heading-tactical text-primary text-xl mb-4">RADIOCOMM</h3>
+                <p className="text-secondary mb-6 flex-grow">
                   Comms-integrated custom earpiece for real-time clarity
                 </p>
-                <Button className="btn-olive-outline w-full">
+                <Button className="btn-olive-outline w-full mt-auto">
                   VIEW CEP
                 </Button>
               </CardContent>
