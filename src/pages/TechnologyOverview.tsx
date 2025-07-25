@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { ArrowRight, CheckCircle, Scan, Brain, Shield, Zap, Database, Headphones } from "lucide-react";
+import { ArrowRight, CheckCircle, Scan, Brain, Shield, Zap, Database, Headphones, Check, X } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { useNavigate } from "react-router-dom";
@@ -221,13 +221,13 @@ const TechnologyOverview = () => {
                   </span>
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                  <Check className="w-5 h-5 text-signal-white" strokeWidth={4} />
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
                 <div className="p-4 bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
               </div>
 
@@ -238,13 +238,13 @@ const TechnologyOverview = () => {
                   </span>
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                  <Check className="w-5 h-5 text-signal-white" strokeWidth={4} />
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
                 <div className="p-4 bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
               </div>
 
@@ -255,13 +255,13 @@ const TechnologyOverview = () => {
                   </span>
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                  <Check className="w-5 h-5 text-signal-white" strokeWidth={4} />
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
                 <div className="p-4 bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
               </div>
 
@@ -272,13 +272,13 @@ const TechnologyOverview = () => {
                   </span>
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                  <Check className="w-5 h-5 text-signal-white" strokeWidth={4} />
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
                   <span className="text-xs text-desert-tan font-medium">LIMITED</span>
                 </div>
                 <div className="p-4 bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
               </div>
 
@@ -289,13 +289,13 @@ const TechnologyOverview = () => {
                   </span>
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                  <Check className="w-5 h-5 text-signal-white" strokeWidth={4} />
                 </div>
                 <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
                 <div className="p-4 bg-combat-black flex items-center justify-center">
-                  <span className="text-signal-white text-2xl">×</span>
+                  <X className="w-5 h-5 text-signal-white" strokeWidth={3} />
                 </div>
               </div>
             </div>
