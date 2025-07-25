@@ -198,49 +198,106 @@ const TechnologyOverview = () => {
             </p>
             
             {/* Comparison Table */}
-            <div className="bg-combat-black/80 border border-desert-tan/30 rounded-xl overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-scarlet/20 border-b border-desert-tan/20">
-                    <th className="text-left p-4 text-desert-tan font-semibold uppercase tracking-wide">FEATURE</th>
-                    <th className="text-center p-4 text-scarlet font-bold uppercase tracking-wide">AWARE</th>
-                    <th className="text-center p-4 text-desert-tan font-semibold uppercase tracking-wide">TRADITIONAL</th>
-                    <th className="text-center p-4 text-desert-tan font-semibold uppercase tracking-wide">FOAM</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-desert-tan/10">
-                    <td className="p-4 text-left text-signal-white text-sm">FDA-cleared, non-contact 3D scanning</td>
-                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                  </tr>
-                  <tr className="border-b border-desert-tan/10">
-                    <td className="p-4 text-left text-signal-white text-sm">Perfectly captures second bend for superior fit</td>
-                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                  </tr>
-                  <tr className="border-b border-desert-tan/10">
-                    <td className="p-4 text-left text-signal-white text-sm">Permanent digital profile</td>
-                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                  </tr>
-                  <tr className="border-b border-desert-tan/10">
-                    <td className="p-4 text-left text-signal-white text-sm">Seamless comms integration</td>
-                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center text-desert-tan text-xs">LIMITED</td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 text-left text-signal-white text-sm">Future-proof biometric platform</td>
-                    <td className="p-4 text-center"><CheckCircle className="h-5 w-5 text-scarlet mx-auto" /></td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                    <td className="p-4 text-center text-signal-white">X</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-combat-black rounded-lg overflow-hidden border border-scarlet-red">
+              <div className="grid grid-cols-4 bg-combat-black text-signal-white border-b border-scarlet-red">
+                <div className="p-4 border-r border-scarlet-red flex items-center justify-center">
+                  <h3 className="text-sm font-bold uppercase tracking-wide">FEATURE</h3>
+                </div>
+                <div className="p-4 border-r border-scarlet-red flex items-center justify-center">
+                  <h3 className="text-lg font-black text-signal-white uppercase tracking-wide">AWARE</h3>
+                </div>
+                <div className="p-4 border-r border-scarlet-red flex items-center justify-center">
+                  <h3 className="text-sm font-medium text-desert-tan uppercase tracking-wide">TRADITIONAL</h3>
+                </div>
+                <div className="p-4 flex items-center justify-center">
+                  <h3 className="text-sm font-medium text-desert-tan uppercase tracking-wide">FOAM</h3>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-4 border-t border-scarlet-red">
+                <div className="p-4 bg-combat-black border-r border-scarlet-red flex items-center justify-center">
+                  <span className="text-signal-white text-sm">
+                    FDA-cleared, non-contact 3D scanning
+                  </span>
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+                <div className="p-4 bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-4 border-t border-scarlet-red">
+                <div className="p-4 bg-combat-black border-r border-scarlet-red flex items-center justify-center">
+                  <span className="text-signal-white text-sm">
+                    Perfectly captures second bend for superior fit
+                  </span>
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+                <div className="p-4 bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-4 border-t border-scarlet-red">
+                <div className="p-4 bg-combat-black border-r border-scarlet-red flex items-center justify-center">
+                  <span className="text-signal-white text-sm">
+                    Permanent digital profile
+                  </span>
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+                <div className="p-4 bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-4 border-t border-scarlet-red">
+                <div className="p-4 bg-combat-black border-r border-scarlet-red flex items-center justify-center">
+                  <span className="text-signal-white text-sm">
+                    Seamless comms integration
+                  </span>
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <span className="text-xs text-desert-tan font-medium">LIMITED</span>
+                </div>
+                <div className="p-4 bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-4 border-t border-scarlet-red">
+                <div className="p-4 bg-combat-black border-r border-scarlet-red flex items-center justify-center">
+                  <span className="text-signal-white text-sm">
+                    Future-proof biometric platform
+                  </span>
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <CheckCircle className="w-5 h-5 text-signal-white" strokeWidth={4} />
+                </div>
+                <div className="p-4 border-r border-scarlet-red bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+                <div className="p-4 bg-combat-black flex items-center justify-center">
+                  <span className="text-signal-white text-2xl">×</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
