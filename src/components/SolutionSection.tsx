@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Target, Clock, Radio, Activity } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 export const SolutionSection = () => {
   const {
@@ -55,9 +56,11 @@ export const SolutionSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="btn-scarlet cta-tactical px-8 py-4 text-base rounded-sm">
-            See How It Works
-          </Button>
+          <Link to="/technology">
+            <Button className="btn-scarlet cta-tactical px-8 py-4 text-base rounded-sm">
+              See How It Works
+            </Button>
+          </Link>
         </div>
       </div>
     </section>;
