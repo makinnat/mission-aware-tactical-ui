@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { LazyImage } from "@/components/ui/lazy-image";
 import { useImagePreloader } from "@/hooks/useImagePreloader";
+import { Link } from "react-router-dom";
 
 const heroImage = "/lovable-uploads/2bf4d720-4753-487d-ba23-f8007156d857.png";
 export const HeroSection = () => {
@@ -41,12 +42,16 @@ export const HeroSection = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
-            Schedule A Meeting
-          </Button>
-          <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm text-white bg-black">
-            Learn How Our Tech Works
-          </Button>
+          <Link to="/request-consultation">
+            <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
+              Schedule A Meeting
+            </Button>
+          </Link>
+          <Link to="/technology">
+            <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm text-white bg-black">
+              Learn How Our Tech Works
+            </Button>
+          </Link>
         </div>
       </div>
     </section>;
