@@ -157,15 +157,6 @@ const EarShield = () => {
                   Premium custom-fit earplugs with NRR 27 dB. Built for tactical and industrial environments. Seamless communication system compatibility.
                 </p>
 
-                {/* NRR Badge and Price */}
-                <div className="flex items-center justify-between pt-2">
-                  <Badge className="bg-secondary text-background text-sm px-4 py-2 font-semibold">
-                    NRR 27 dB
-                  </Badge>
-                  <div className="text-right">
-                    <span className="text-primary text-2xl font-bold">$199.00</span>
-                  </div>
-                </div>
               </div>
 
               {/* Product Options */}
@@ -203,32 +194,6 @@ const EarShield = () => {
                 </div>
               </div>
 
-              {/* Specifications */}
-              <Card className="bg-muted/30 border-[#6C6846]">
-                <CardContent className="p-6">
-                  <h3 className="heading-tactical text-primary text-xl mb-4">
-                    Specifications
-                  </h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-signal-white">
-                      <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Custom-fit using FDA-cleared scan</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-signal-white">
-                      <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Compatible with Invisio, Ops-Core, Gentex</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-signal-white">
-                      <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Medical-grade hypoallergenic material</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-signal-white">
-                      <CheckCircle className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Lightweight, all-day wearable</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
 
               {/* CTAs */}
               <div className="space-y-4">
