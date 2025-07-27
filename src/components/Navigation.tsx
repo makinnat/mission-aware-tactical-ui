@@ -58,9 +58,9 @@ const Navigation = () => {
                       <Link to="/products/custom-overmold" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         Custom Overmold
                       </Link>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                      <Link to="/products/sleepplug" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         SleepPlug
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         SwimPlug
                       </a>
