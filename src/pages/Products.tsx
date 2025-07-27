@@ -151,11 +151,11 @@ const Products = () => {
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
               <CardContent className="p-8 text-center h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png" alt="EarShield Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/84a31d0b-15e4-451c-b912-8cea07846932.png" alt="EarShield Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">EarShield</h3>
                 <p className="text-secondary mb-6 flex-grow">
-                  Highest NRR, comms-compatible, all-day mission endurance
+                  Experience the next generation of hearing protection with Aware EarShield
                 </p>
                 <Link to="/products/earshield" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
