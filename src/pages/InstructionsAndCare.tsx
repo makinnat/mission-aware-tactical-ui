@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const InstructionsAndCare = () => {
   const {
@@ -30,6 +31,11 @@ const InstructionsAndCare = () => {
   const {
     ref: cleaningRef,
     isVisible: cleaningVisible
+  } = useScrollAnimation();
+  
+  const {
+    ref: ctaRef,
+    isVisible: ctaVisible
   } = useScrollAnimation();
   
 
@@ -226,6 +232,37 @@ const InstructionsAndCare = () => {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section ref={ctaRef} className={`py-20 px-6 relative scroll-fade-in ${ctaVisible ? 'visible' : ''}`} style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="heading-tactical text-primary text-4xl md:text-6xl mb-8">
+            READY TO PROTECT YOUR TEAM AND YOUR HEARING?
+          </h2>
+          
+          <p className="subheading-tactical text-secondary text-xl md:text-2xl mb-12">
+            Custom-fit comfort. Field-tested performance. Future-ready gear.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Link to="/request-consultation">
+              <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300">
+                SCHEDULE A MEETING
+              </Button>
+            </Link>
+            <Link to="/efit-3d-scanner">
+              <Button className="btn-olive-outline cta-tactical px-8 py-4 text-base rounded-sm text-white bg-black">
+                LEARN ABOUT OUR SCANNER
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
