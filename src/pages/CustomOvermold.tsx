@@ -72,13 +72,9 @@ export default function CustomOvermold() {
             {/* Right Column: Product Info Panel - Takes up 3 of 5 columns */}
             <div className="space-y-8 lg:col-span-3">
               <div className="space-y-4">
-                <h1 className="heading-tactical text-primary text-4xl md:text-5xl">
+                <h1 className="heading-tactical text-signal-white text-4xl md:text-5xl">
                   AWARE CUSTOM OVERMOLD
                 </h1>
-                
-                <p className="body-tactical text-signal-white text-lg leading-relaxed">
-                  Custom-fit ear canal sleeves designed to integrate with your existing comms systems—transforming popular headsets into mission-ready solutions.
-                </p>
               </div>
 
               {/* Product Options */}
