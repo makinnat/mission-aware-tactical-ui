@@ -19,6 +19,15 @@ const EarShield = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedFinish, setSelectedFinish] = useState("");
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const productImages = [
+    "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png",
+    "/lovable-uploads/59ac8214-a01c-4867-bd0d-8386c6982f0e.png",
+    "/lovable-uploads/24d19ee8-99dc-4db3-aea4-831b24467eb7.png",
+    "/lovable-uploads/c1558d09-4028-4c64-9d53-034404f3f627.png",
+    "/lovable-uploads/1c02955e-0de3-4cfd-a618-f1c391087f89.png"
+  ];
 
   return (
     <div className="min-h-screen w-full">
@@ -48,10 +57,31 @@ const EarShield = () => {
             <div className="space-y-6">
               <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846]">
                 <img 
-                  src="/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png" 
+                  src={productImages[currentImageIndex]} 
                   alt="Aware EarShield" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
+              </div>
+              
+              {/* Thumbnail Gallery */}
+              <div className="flex gap-3 justify-center">
+                {productImages.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                      currentImageIndex === index 
+                        ? 'border-secondary shadow-lg scale-105' 
+                        : 'border-[#6C6846] hover:border-secondary/50 hover:scale-102'
+                    }`}
+                  >
+                    <img 
+                      src={image} 
+                      alt={`EarShield view ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
               </div>
             </div>
 
