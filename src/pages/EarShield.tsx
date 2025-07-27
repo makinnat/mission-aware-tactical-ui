@@ -48,7 +48,7 @@ const EarShield = () => {
             <div className="space-y-6">
               <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846]">
                 <img 
-                  src="/lovable-uploads/4292650a-69ee-427d-8ccf-bc2e4433f736.png" 
+                  src="/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png" 
                   alt="Aware EarShield" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
