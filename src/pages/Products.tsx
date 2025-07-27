@@ -121,7 +121,7 @@ const Products = () => {
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
               <CardContent className="p-8 text-center h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/4292650a-69ee-427d-8ccf-bc2e4433f736.png" alt="Custom Overmolds Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/c8c84d7c-5408-41e6-a09b-c302b846944b.png" alt="Custom Overmolds Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">Custom Overmolds</h3>
                 <p className="text-secondary mb-6 flex-grow">
