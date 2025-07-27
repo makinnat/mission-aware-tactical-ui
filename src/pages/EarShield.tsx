@@ -130,9 +130,11 @@ const EarShield = () => {
 
               {/* CTAs */}
               <div className="space-y-4">
-                <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300 w-full py-4">
-                  REQUEST CONSULTATION TO SCAN MY TEAM
-                </Button>
+                <Link to="/request-consultation">
+                  <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300 w-full py-4">
+                    REQUEST CONSULTATION TO SCAN MY TEAM
+                  </Button>
+                </Link>
                 
                 {/* Checkbox for 3D Scan Confirmation */}
                 <div className="flex items-center space-x-3 py-2">
