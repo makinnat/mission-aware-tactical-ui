@@ -4,7 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Users, Building2, User, ArrowRight, FileText, Download, CheckCircle, Clock, CreditCard, Truck } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 const HowToBuy = () => {
   const navigate = useNavigate();
   const {
@@ -49,10 +49,12 @@ const HowToBuy = () => {
             <p className="text-xl text-desert-tan leading-relaxed max-w-3xl mx-auto mb-10">
               Whether you're buying for a unit, department, or yourself, Aware Defense makes it easy to deploy custom-fit gear at scale.
             </p>
-            <Button variant="scarlet" className="text-lg px-8 py-3 font-semibold uppercase tracking-wide">
-              REQUEST A CONSULTATION
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/request-consultation">
+              <Button variant="scarlet" className="text-lg px-8 py-3 font-semibold uppercase tracking-wide">
+                REQUEST A CONSULTATION
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
