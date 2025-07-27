@@ -33,7 +33,7 @@ export default function CustomOvermold() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Product Images */}
           <div className="space-y-4">
-            <div className="aspect-square rounded-lg overflow-hidden bg-card transform scale-75 ml-auto">
+            <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846] transform scale-85">
               <img
                 src={productImages[imageIndex]}
                 alt="Custom Overmold"
@@ -42,7 +42,7 @@ export default function CustomOvermold() {
             </div>
             
             {/* Thumbnail Navigation */}
-            <div className="flex gap-3 ml-auto w-3/4">
+            <div className="flex gap-3 justify-center">
               {productImages.map((image, index) => (
                 <button
                   key={index}
