@@ -12,6 +12,7 @@ import Index from "./pages/Index";
 // Lazy load non-critical pages
 const Products = lazy(() => import("./pages/Products"));
 const EarShield = lazy(() => import("./pages/EarShield"));
+const AviationCEP = lazy(() => import("./pages/AviationCEP"));
 const GetScanned = lazy(() => import("./pages/GetScanned"));
 const InstructionsAndCare = lazy(() => import("./pages/InstructionsAndCare"));
 const HowToBuy = lazy(() => import("./pages/HowToBuy"));
@@ -58,6 +59,7 @@ const App = () => {
               <Route path="/products/:handle" element={<Products />} />
               <Route path="/collections/:handle" element={<Products />} />
               <Route path="/products/earshield" element={<EarShield />} />
+              <Route path="/products/aviation-cep" element={<AviationCEP />} />
               <Route path="/get-scanned" element={<GetScanned />} />
               <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
               <Route path="/how-to-buy" element={<HowToBuy />} />
