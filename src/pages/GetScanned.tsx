@@ -217,10 +217,12 @@ const GetScanned = () => {
                   Meet Aware Defense and get scanned on-site during SOF Week. Reserve your spot in advance.
                 </p>
                 
-                <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
-                  LEARN MORE ABOUT SOF WEEK
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <a href="https://sofweek.org/" target="_blank" rel="noopener noreferrer">
+                  <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
+                    LEARN MORE ABOUT SOF WEEK
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
