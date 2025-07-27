@@ -69,9 +69,6 @@ export default function CustomOvermold() {
               <h1 className="heading-tactical text-primary text-4xl md:text-5xl">
                 AWARE CUSTOM OVERMOLD
               </h1>
-              <p className="text-lg text-muted-foreground">
-                Custom-fit ear canal sleeves designed to integrate with your existing comms systems—transforming popular headsets into mission-ready solutions.
-              </p>
             </div>
 
             {/* Customization Options */}
