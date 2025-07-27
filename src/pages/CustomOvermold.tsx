@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -36,18 +37,20 @@ export default function CustomOvermold() {
               <img
                 src={productImages[imageIndex]}
                 alt="Custom Overmold"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             
             {/* Thumbnail Navigation */}
-            <div className="grid grid-cols-4 gap-2">
+            <div className="flex gap-3 justify-center">
               {productImages.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setImageIndex(index)}
-                  className={`aspect-square rounded-lg overflow-hidden border-2 transition-colors ${
-                    imageIndex === index ? 'border-primary' : 'border-border'
+                  className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                    imageIndex === index 
+                      ? 'border-secondary shadow-lg scale-105' 
+                      : 'border-[#6C6846] hover:border-secondary/50 hover:scale-102'
                   }`}
                 >
                   <img
@@ -119,9 +122,11 @@ export default function CustomOvermold() {
                 </div>
 
               <div className="space-y-4">
-                <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300 w-full py-4">
-                  REQUEST CONSULTATION TO SCAN MY TEAM
-                </Button>
+                <Link to="/request-consultation">
+                  <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300 w-full py-4">
+                    REQUEST CONSULTATION TO SCAN MY TEAM
+                  </Button>
+                </Link>
                 
                 {/* Checkbox for 3D Scan Confirmation */}
                 <div className="flex items-center space-x-3 py-2">
