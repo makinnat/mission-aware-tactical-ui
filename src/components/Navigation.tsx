@@ -52,9 +52,9 @@ const Navigation = () => {
                       <Link to="/products/earshield" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         EarShield
                       </Link>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                      <Link to="/products/aviation-cep" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         Aviation CEP
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         Custom Overmold
                       </a>
