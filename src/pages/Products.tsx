@@ -136,11 +136,11 @@ const Products = () => {
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
               <CardContent className="p-8 text-center h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/bced67a7-d7bf-45c1-b515-634e0f92fdd3.png" alt="Aviation CEP Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/f08ea2b9-fb1c-4945-aca8-82c79c5a4189.png" alt="Aviation CEP Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">Aviation CEP</h3>
                 <p className="text-secondary mb-6 flex-grow">
-                  Aviation-specific communication earpiece for cockpit environments
+                  Achieve crystal-clear communications while maintaining superior hearing protection with the Aviation CEP
                 </p>
                 <Button className="btn-olive-outline w-full mt-auto">
                   VIEW AVIATION CEP
