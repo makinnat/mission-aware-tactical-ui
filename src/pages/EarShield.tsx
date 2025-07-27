@@ -42,9 +42,9 @@ const EarShield = () => {
         backgroundRepeat: 'no-repeat'
       }}>
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
             
-            {/* Left Column: Product Image and Description */}
+            {/* Left Column: Product Image */}
             <div className="space-y-6">
               <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846]">
                 <img 
@@ -52,97 +52,6 @@ const EarShield = () => {
                   alt="Aware EarShield" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
-              </div>
-              
-              {/* Detailed Product Description */}
-              <div className="space-y-6 bg-muted/20 p-6 rounded-lg border border-[#6C6846]">
-                <div>
-                  <h3 className="heading-tactical text-primary text-xl mb-3">Overview</h3>
-                  <p className="body-tactical text-signal-white leading-relaxed">
-                    Experience the next generation of hearing protection with Aware EarShield, featuring 
-                    proprietary advanced materials that provide superior ear-shielding defense while 
-                    preserving essential hearing levels. This innovative hearing protection solution represents a 
-                    breakthrough in balancing maximum protection with situational awareness.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="heading-tactical text-primary text-xl mb-3">Revolutionary Protection Technology</h3>
-                  <ul className="space-y-2 text-signal-white">
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>NRR 27 dB industry-leading noise reduction</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>Permits hearing conversation through advanced material design</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>Proprietary blended material for optimal protection and comfort</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>Hypoallergenic and antibacterial construction</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>Maintains acoustic seal throughout extended use</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>Repeatable attenuation for consistent protection</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="heading-tactical text-primary text-xl mb-3">Military Applications</h3>
-                  <p className="body-tactical text-signal-white leading-relaxed">
-                    EarShield provides advanced protection that doesn't obstruct essential sounds, ensuring 
-                    warfighters remain protected while maintaining tactical advantage and situational awareness.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="heading-tactical text-primary text-xl mb-3">Industrial Excellence</h3>
-                  <ul className="space-y-2 text-signal-white">
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>All-day workplace wear designed for comfort from clock-in to clock-out</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>Enterprise communications integration maintains radio and intercom connectivity</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>OSHA compliance exceeds workplace safety requirements</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-secondary mt-1">•</span>
-                      <span>Reduces workplace hearing loss which affects 48 million Americans</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="heading-tactical text-primary text-xl mb-3">Advanced Material Science</h3>
-                  <p className="body-tactical text-signal-white leading-relaxed">
-                    The proprietary shielding format allows conversational-level hearing while blocking harmful 
-                    noise. This breakthrough technology eliminates the traditional trade-off between 
-                    protection and awareness that has limited conventional hearing protection effectiveness.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="heading-tactical text-primary text-xl mb-3">Professional Benefits</h3>
-                  <p className="body-tactical text-signal-white leading-relaxed">
-                    Unlike traditional hearing protection that workers remove to communicate, exposing 
-                    themselves to harmful noise, EarShield allows clear communication while maintaining 
-                    continuous protection throughout the workday.
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -156,7 +65,6 @@ const EarShield = () => {
                 <p className="body-tactical text-signal-white text-lg leading-relaxed">
                   Premium custom-fit earplugs with NRR 27 dB. Built for tactical and industrial environments. Seamless communication system compatibility.
                 </p>
-
               </div>
 
               {/* Product Options */}
@@ -193,7 +101,6 @@ const EarShield = () => {
                   </div>
                 </div>
               </div>
-
 
               {/* CTAs */}
               <div className="space-y-4">
@@ -233,6 +140,95 @@ const EarShield = () => {
                 <p className="text-secondary text-sm">
                   Individual scanning opportunities available at events, or coordinated with team scanning locations. 
                   Check out our upcoming events, or reach out to the team to coordinate your scan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Overview Section - Full Width */}
+          <div className="space-y-6 bg-muted/20 p-8 rounded-lg border border-[#6C6846]">
+            <div>
+              <h3 className="heading-tactical text-primary text-2xl mb-4">Overview</h3>
+              <p className="body-tactical text-signal-white leading-relaxed text-lg">
+                Experience the next generation of hearing protection with Aware EarShield, featuring 
+                proprietary advanced materials that provide superior ear-shielding defense while 
+                preserving essential hearing levels. This innovative hearing protection solution represents a 
+                breakthrough in balancing maximum protection with situational awareness.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div>
+                <h4 className="heading-tactical text-primary text-xl mb-3">Revolutionary Protection Technology</h4>
+                <ul className="space-y-2 text-signal-white">
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>NRR 27 dB industry-leading noise reduction</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>Permits hearing conversation through advanced material design</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>Proprietary blended material for optimal protection and comfort</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>Hypoallergenic and antibacterial construction</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>Maintains acoustic seal throughout extended use</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>Repeatable attenuation for consistent protection</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="heading-tactical text-primary text-xl mb-3">Military Applications</h4>
+                <p className="body-tactical text-signal-white leading-relaxed mb-4">
+                  EarShield provides advanced protection that doesn't obstruct essential sounds, ensuring 
+                  warfighters remain protected while maintaining tactical advantage and situational awareness.
+                </p>
+
+                <h4 className="heading-tactical text-primary text-xl mb-3">Advanced Material Science</h4>
+                <p className="body-tactical text-signal-white leading-relaxed">
+                  The proprietary shielding format allows conversational-level hearing while blocking harmful 
+                  noise. This breakthrough technology eliminates the traditional trade-off between 
+                  protection and awareness that has limited conventional hearing protection effectiveness.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="heading-tactical text-primary text-xl mb-3">Industrial Excellence</h4>
+                <ul className="space-y-2 text-signal-white mb-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>All-day workplace wear designed for comfort from clock-in to clock-out</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>Enterprise communications integration maintains radio and intercom connectivity</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>OSHA compliance exceeds workplace safety requirements</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-secondary mt-1">•</span>
+                    <span>Reduces workplace hearing loss which affects 48 million Americans</span>
+                  </li>
+                </ul>
+
+                <h4 className="heading-tactical text-primary text-xl mb-3">Professional Benefits</h4>
+                <p className="body-tactical text-signal-white leading-relaxed">
+                  Unlike traditional hearing protection that workers remove to communicate, exposing 
+                  themselves to harmful noise, EarShield allows clear communication while maintaining 
+                  continuous protection throughout the workday.
                 </p>
               </div>
             </div>
