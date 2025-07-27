@@ -84,9 +84,11 @@ const HowToBuy = () => {
                     <p>Buy through Sole Source Justification or through an 8a Parnter</p>
                     
                   </div>
-                  <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
-                    Contact our Procurement team
-                  </Button>
+                  <Link to="/request-consultation">
+                    <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
+                      Contact our Procurement team
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -103,9 +105,11 @@ const HowToBuy = () => {
                     <p>Request a scanning event, or leverage a scanner lease for larger implementations</p>
                     
                   </div>
-                  <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
-                    request consultation
-                  </Button>
+                  <Link to="/request-consultation">
+                    <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
+                      request consultation
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -122,9 +126,11 @@ const HowToBuy = () => {
                     <p>Book a scan at an event near you</p>
                     <p>Gear delivered after fitting</p>
                   </div>
-                  <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide" onClick={() => navigate('/get-scanned')}>
-                    Get Scanned
-                  </Button>
+                  <Link to="/get-scanned">
+                    <Button className="btn-outline-olive w-full font-semibold uppercase tracking-wide">
+                      Get Scanned
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>
