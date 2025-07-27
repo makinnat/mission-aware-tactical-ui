@@ -73,8 +73,6 @@ export default function CustomOvermold() {
 
             {/* Customization Options */}
             <div className="space-y-6">
-              <h3 className="text-lg font-semibold mb-4">Customization Options</h3>
-              
               <div className="grid grid-cols-3 gap-4 mb-6">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Color</label>
