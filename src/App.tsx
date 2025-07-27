@@ -13,7 +13,7 @@ import Index from "./pages/Index";
 const Products = lazy(() => import("./pages/Products"));
 const EarShield = lazy(() => import("./pages/EarShield"));
 const AviationCEP = lazy(() => import("./pages/AviationCEP"));
-const CustomOvermold = lazy(() => import("./pages/CustomOvermoldSimple"));
+const CustomOvermold = lazy(() => import("./pages/CustomOvermold"));
 const GetScanned = lazy(() => import("./pages/GetScanned"));
 const InstructionsAndCare = lazy(() => import("./pages/InstructionsAndCare"));
 const HowToBuy = lazy(() => import("./pages/HowToBuy"));
