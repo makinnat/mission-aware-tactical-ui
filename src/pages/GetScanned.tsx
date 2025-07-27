@@ -149,9 +149,11 @@ const GetScanned = () => {
                     Schedule a scanner deployment to your unit or facility.
                   </p>
                   
-                  <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
-                    Request a scanning event for your team
-                  </Button>
+                  <Link to="/request-consultation">
+                    <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
+                      Request a scanning event for your team
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
 
