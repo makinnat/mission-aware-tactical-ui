@@ -73,11 +73,10 @@ export default function CustomOvermold() {
             </div>
 
             {/* Customization Options */}
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-4">Customization Options</h3>
-                
-                <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="space-y-6">
+              <h3 className="text-lg font-semibold mb-4">Customization Options</h3>
+              
+              <div className="grid grid-cols-3 gap-4 mb-6">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Color</label>
                     <Select value={selectedColor} onValueChange={setSelectedColor}>
@@ -120,30 +119,29 @@ export default function CustomOvermold() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-2 mb-6">
-                  <Checkbox 
-                    id="confirm" 
-                    checked={confirmed}
-                    onCheckedChange={(checked) => setConfirmed(checked === true)}
-                  />
-                  <label htmlFor="confirm" className="text-sm">
-                    I confirm that I need custom overmolds for tactical communication systems
-                  </label>
-                </div>
+              <div className="flex items-center space-x-2 mb-6">
+                <Checkbox 
+                  id="confirm" 
+                  checked={confirmed}
+                  onCheckedChange={(checked) => setConfirmed(checked === true)}
+                />
+                <label htmlFor="confirm" className="text-sm">
+                  I confirm that I need custom overmolds for tactical communication systems
+                </label>
+              </div>
 
-                <div className="space-y-3">
-                  <Button className="w-full" variant="outline">
-                    REQUEST CONSULTATION
-                  </Button>
-                  <Button 
-                    className="w-full" 
-                    disabled={!confirmed || !selectedColor || !selectedFinish || !selectedBrand}
-                  >
-                    ADD TO CART
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+              <div className="space-y-3">
+                <Button className="w-full" variant="outline">
+                  REQUEST CONSULTATION
+                </Button>
+                <Button 
+                  className="w-full" 
+                  disabled={!confirmed || !selectedColor || !selectedFinish || !selectedBrand}
+                >
+                  ADD TO CART
+                </Button>
+              </div>
+            </div>
 
             {/* Key Benefits */}
             <div className="grid grid-cols-2 gap-4">
