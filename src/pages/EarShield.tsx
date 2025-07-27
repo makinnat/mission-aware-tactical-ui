@@ -51,10 +51,10 @@ const EarShield = () => {
         backgroundRepeat: 'no-repeat'
       }}>
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start mb-16">
             
-            {/* Left Column: Product Image */}
-            <div className="space-y-6">
+            {/* Left Column: Product Image - Takes up 2 of 5 columns */}
+            <div className="space-y-6 lg:col-span-2">
               <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846] transform scale-85">
                 <img 
                   src={productImages[currentImageIndex]} 
@@ -85,8 +85,8 @@ const EarShield = () => {
               </div>
             </div>
 
-            {/* Right Column: Product Info Panel */}
-            <div className="space-y-8">
+            {/* Right Column: Product Info Panel - Takes up 3 of 5 columns */}
+            <div className="space-y-8 lg:col-span-3">
               <div className="space-y-4">
                 <h1 className="heading-tactical text-primary text-4xl md:text-5xl">
                   Aware EarShield
