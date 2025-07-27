@@ -322,13 +322,17 @@ const HowToBuy = () => {
               We'll walk you through what to order, how to scan, and how to deploy Aware products fast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white" style={{ backgroundColor: '#95182b' }}>
-                TALK TO OUR TEAM
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button className="btn-outline-olive text-lg px-8 py-3 font-semibold uppercase tracking-wide">
-                REQUEST A QUOTE
-              </Button>
+              <Link to="/request-consultation">
+                <Button className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white" style={{ backgroundColor: '#95182b' }}>
+                  TALK TO OUR TEAM
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/request-consultation">
+                <Button className="btn-outline-olive text-lg px-8 py-3 font-semibold uppercase tracking-wide">
+                  REQUEST A QUOTE
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
