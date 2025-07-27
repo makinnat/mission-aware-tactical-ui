@@ -88,13 +88,9 @@ const EarShield = () => {
             {/* Right Column: Product Info Panel - Takes up 3 of 5 columns */}
             <div className="space-y-8 lg:col-span-3">
               <div className="space-y-4">
-                <h1 className="heading-tactical text-primary text-4xl md:text-5xl">
+                <h1 className="heading-tactical text-signal-white text-4xl md:text-5xl">
                   Aware EarShield
                 </h1>
-                
-                <p className="body-tactical text-signal-white text-lg leading-relaxed">
-                  Premium custom-fit earplugs with NRR 27 dB. Built for tactical and industrial environments. Seamless communication system compatibility.
-                </p>
               </div>
 
               {/* Product Options */}
