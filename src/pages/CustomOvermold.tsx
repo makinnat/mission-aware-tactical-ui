@@ -63,7 +63,6 @@ export default function CustomOvermold() {
           {/* Product Details */}
           <div className="space-y-6">
             <div>
-              <Badge variant="secondary" className="mb-2">TACTICAL COMMUNICATION</Badge>
               <h1 className="text-4xl font-bold text-foreground mb-4">
                 Aware Custom Overmold
               </h1>
