@@ -245,13 +245,17 @@ const GetScanned = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-              <Button className="btn-scarlet text-lg px-8 py-3 font-semibold uppercase tracking-wide w-full sm:w-auto">
-                REQUEST A CONSULTATION
-              </Button>
+              <Link to="/request-consultation">
+                <Button className="btn-scarlet text-lg px-8 py-3 font-semibold uppercase tracking-wide w-full sm:w-auto">
+                  REQUEST A CONSULTATION
+                </Button>
+              </Link>
               
-              <Button variant="outline" className="border-desert-tan text-desert-tan hover:bg-desert-tan hover:text-combat-black text-lg px-8 py-3 font-semibold uppercase tracking-wide w-full sm:w-auto">
-                CONTACT US
-              </Button>
+              <Link to="/request-consultation">
+                <Button variant="outline" className="border-desert-tan text-desert-tan hover:bg-desert-tan hover:text-combat-black text-lg px-8 py-3 font-semibold uppercase tracking-wide w-full sm:w-auto">
+                  CONTACT US
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
