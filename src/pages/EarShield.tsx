@@ -55,7 +55,7 @@ const EarShield = () => {
             
             {/* Left Column: Product Image */}
             <div className="space-y-6">
-              <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846]">
+              <div className="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846] transform scale-85">
                 <img 
                   src={productImages[currentImageIndex]} 
                   alt="Aware EarShield" 
