@@ -33,7 +33,7 @@ export default function CustomOvermold() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Product Images */}
           <div className="space-y-4">
-            <div className="aspect-square rounded-lg overflow-hidden bg-card">
+            <div className="aspect-square rounded-lg overflow-hidden bg-card transform scale-75">
               <img
                 src={productImages[imageIndex]}
                 alt="Custom Overmold"
