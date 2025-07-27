@@ -67,7 +67,7 @@ export default function CustomOvermold() {
                 Aware Custom Overmold
               </h1>
               <p className="text-lg text-muted-foreground">
-                Custom-fit ear canal sleeves designed to integrate with your existing comms systems—transforming popular headsets into mission-ready, professionally sealed solutions.
+                Custom-fit ear canal sleeves designed to integrate with your existing comms systems—transforming popular headsets into mission-ready solutions.
               </p>
             </div>
 
@@ -118,47 +118,44 @@ export default function CustomOvermold() {
                   </div>
                 </div>
 
-              <div className="flex items-center space-x-2 mb-6">
-                <Checkbox 
-                  id="confirm" 
-                  checked={confirmed}
-                  onCheckedChange={(checked) => setConfirmed(checked === true)}
-                />
-                <label htmlFor="confirm" className="text-sm">
-                  I confirm that I need custom overmolds for tactical communication systems
-                </label>
-              </div>
-
-              <div className="space-y-3">
-                <Button className="w-full" variant="outline">
-                  REQUEST CONSULTATION
+              <div className="space-y-4">
+                <Button className="btn-hero-cta text-white bg-black hover:bg-scarlet-red text-base transition-all duration-300 w-full py-4">
+                  REQUEST CONSULTATION TO SCAN MY TEAM
                 </Button>
+                
+                {/* Checkbox for 3D Scan Confirmation */}
+                <div className="flex items-center space-x-3 py-2">
+                  <Checkbox 
+                    id="scan-confirm"
+                    checked={confirmed}
+                    onCheckedChange={(checked) => setConfirmed(checked === true)}
+                  />
+                  <label 
+                    htmlFor="scan-confirm" 
+                    className="text-signal-white text-sm cursor-pointer"
+                  >
+                    Confirm 3D Scan On-File
+                  </label>
+                </div>
+                
                 <Button 
-                  className="w-full" 
+                  className={`w-full py-4 text-base transition-all duration-300 ${
+                    confirmed 
+                      ? 'bg-secondary text-background hover:bg-secondary/90' 
+                      : 'bg-muted text-muted-foreground cursor-not-allowed'
+                  }`}
                   disabled={!confirmed || !selectedColor || !selectedFinish || !selectedBrand}
                 >
                   ADD TO CART
                 </Button>
               </div>
-            </div>
 
-            {/* Key Benefits */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-4 border rounded-lg">
-                <h4 className="font-semibold text-primary">Enhanced Comfort</h4>
-                <p className="text-sm text-muted-foreground">No hotspots or fatigue</p>
-              </div>
-              <div className="text-center p-4 border rounded-lg">
-                <h4 className="font-semibold text-primary">Superior Seal</h4>
-                <p className="text-sm text-muted-foreground">Consistent protection</p>
-              </div>
-              <div className="text-center p-4 border rounded-lg">
-                <h4 className="font-semibold text-primary">100% Fit Guarantee</h4>
-                <p className="text-sm text-muted-foreground">FDA-cleared 3D scan</p>
-              </div>
-              <div className="text-center p-4 border rounded-lg">
-                <h4 className="font-semibold text-primary">Quick Remake</h4>
-                <p className="text-sm text-muted-foreground">Digital profile</p>
+              {/* Additional Info */}
+              <div className="pt-4 border-t border-[#6C6846]">
+                <p className="text-secondary text-sm">
+                  Individual scanning opportunities available at events, or coordinated with team scanning locations. 
+                  Check out our upcoming events, or reach out to the team to coordinate your scan.
+                </p>
               </div>
             </div>
           </div>
