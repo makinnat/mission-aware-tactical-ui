@@ -104,6 +104,15 @@ const GetScanned = () => {
                     <p className="text-lg text-signal-white">Scans take less than 90 seconds minutes per person</p>
                   </div>
                 </div>
+                
+                <div className="mt-8">
+                  <Link to="/efit-3d-scanner">
+                    <Button className="bg-desert-tan text-combat-black hover:bg-desert-tan/90 text-lg px-8 py-3 font-semibold uppercase tracking-wide">
+                      Learn more about eFIT
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
