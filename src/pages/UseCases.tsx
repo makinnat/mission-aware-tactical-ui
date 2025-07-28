@@ -494,6 +494,7 @@ const UseCases = () => {
               <Button 
                 className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
                 style={{ backgroundColor: '#95182b' }}
+                onClick={() => navigate('/request-consultation')}
               >
                 REQUEST A CONSULTATION
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -501,6 +502,7 @@ const UseCases = () => {
               <Button 
                 variant="outline"
                 className="text-lg px-8 py-3 font-semibold uppercase tracking-wide border-desert-tan text-desert-tan hover:bg-desert-tan hover:text-combat-black"
+                onClick={() => navigate('/request-consultation')}
               >
                 CONTACT OUR TEAM
               </Button>
