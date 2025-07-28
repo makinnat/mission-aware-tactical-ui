@@ -104,6 +104,11 @@ const Products = () => {
                 WHY CUSTOM FIT MATTERS
               </h2>
               <p className="body-tactical text-signal-white text-lg leading-relaxed">Every ear is unique. Our patented FDA-cleared 3D scanner creates a precise ear profile, enabling superior protection, comfort, and sensor integration. With zero risk, and 100% fit. </p>
+              <Link to="/efit-3d-scanner">
+                <Button className="btn-olive-outline mt-6">
+                  SEE OUR 3D eFIT TECHNOLOGY
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
