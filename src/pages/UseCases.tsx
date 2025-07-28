@@ -112,9 +112,21 @@ const UseCases = () => {
       ],
       imagePlaceholder: "construction-site.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png", alt: "Construction Orange Ear Protection" },
-        { src: "/lovable-uploads/cbf5a753-bdd5-4a75-98c6-20e80a09c659.png", alt: "High-Vis Yellow Construction Plugs" },
-        { src: "/lovable-uploads/bced67a7-d7bf-45c1-b515-634e0f92fdd3.png", alt: "Durable Construction Ear Protection" }
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        },
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
+          alt: "EarBud",
+          link: "/products/earbud"
+        }
       ]
     },
     {
