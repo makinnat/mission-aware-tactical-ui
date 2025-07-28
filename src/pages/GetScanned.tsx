@@ -146,14 +146,16 @@ const GetScanned = () => {
                   </h3>
                   
                   <p className="text-signal-white text-lg leading-relaxed">
-                    Schedule a scanner deployment to your unit or facility. Perfect for military units, law enforcement teams, and organizations requiring custom-fit protective equipment.
+                    Schedule a scanner deployment to your unit or facility.
                   </p>
                   
-                  <Link to="/request-consultation">
-                    <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
-                      REQUEST TEAM SCANNING EVENT
-                    </Button>
-                  </Link>
+                  <div className="mt-8">
+                    <Link to="/request-consultation">
+                      <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide">
+                        REQUEST TEAM SCANNING EVENT
+                      </Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -169,7 +171,7 @@ const GetScanned = () => {
                   </h3>
                   
                   <p className="text-signal-white text-lg leading-relaxed">
-                    Join us at a scheduled scanning event near you. Attend industry events and trade shows where our mobile scanning units will be available for quick, professional scans.
+                    Join us at a scheduled scanning event near you.
                   </p>
                   
                   <Button className="btn-scarlet w-full text-lg py-3 font-semibold uppercase tracking-wide" onClick={() => eventsRef.current?.scrollIntoView({
