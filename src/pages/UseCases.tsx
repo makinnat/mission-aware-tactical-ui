@@ -247,9 +247,21 @@ const UseCases = () => {
       ],
       imagePlaceholder: "law-enforcement.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png", alt: "Law Enforcement Tactical Earpieces" },
-        { src: "/lovable-uploads/be18c3de-9beb-44fe-81a8-625c16ec03d9.png", alt: "SWAT Team Hearing Protection" },
-        { src: "/lovable-uploads/71a992fd-155b-4df3-a294-21f188459041.png", alt: "Police Officer Ear Protection" }
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/46468d82-9fe3-4eb1-bc54-5a1a45b2c547.png", 
+          alt: "RadioCOMM",
+          link: "/products/radiocomm"
+        },
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        }
       ]
     },
     {
