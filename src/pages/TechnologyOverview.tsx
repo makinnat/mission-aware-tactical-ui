@@ -156,7 +156,7 @@ const TechnologyOverview = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { icon: CheckCircle, text: "No physical impressions required" },
-                { icon: Zap, text: "Same-day scan + ship capability" },
+                { icon: Zap, text: "Faster shipping, 100% fit guarantee" },
                 { icon: Brain, text: "Passive biometric readiness built-in" },
                 { icon: Headphones, text: "Comms compatibility built into design" },
                 { icon: Database, text: "Digitally stored profiles for lifetime access" },
