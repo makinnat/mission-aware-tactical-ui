@@ -185,16 +185,16 @@ const Products = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-8 text-center space-y-6">
-                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+            <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-8 text-center h-full flex flex-col">
+                <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/c8c84d7c-5408-41e6-a09b-c302b846944b.png" alt="Custom Overmolds Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">Custom Overmolds</h3>
-                <p className="text-secondary">
+                <h3 className="heading-tactical text-primary text-xl mb-4">Custom Overmolds</h3>
+                <p className="text-secondary mb-6 flex-grow">
                   Enhanced durability and grip for demanding tactical environments
                 </p>
-                <Link to="/products/custom-overmold">
+                <Link to="/products/custom-overmold" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
                     VIEW CUSTOM OVERMOLDS
                   </Button>
@@ -202,16 +202,16 @@ const Products = () => {
               </CardContent>
             </Card>
 
-            <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-8 text-center space-y-6">
-                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/f08cb946-2b01-4ed0-b9a2-26f1e82cd776.png" alt="EarBud Product" className="w-full h-full object-cover" />
+            <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-8 text-center h-full flex flex-col">
+                <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
+                  <img src="/lovable-uploads/aa0cf4ea-596c-48cc-9dc1-fd66febe17ea.png" alt="EarBud Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">EarBud</h3>
-                <p className="text-secondary">
+                <h3 className="heading-tactical text-primary text-xl mb-4">EarBud</h3>
+                <p className="text-secondary mb-6 flex-grow">
                   Advanced audio technology with superior protection
                 </p>
-                <Link to="/products/earbud">
+                <Link to="/products/earbud" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
                     VIEW EARBUD
                   </Button>
@@ -219,16 +219,16 @@ const Products = () => {
               </CardContent>
             </Card>
 
-            <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
-              <CardContent className="p-8 text-center space-y-6">
-                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
+            <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
+              <CardContent className="p-8 text-center h-full flex flex-col">
+                <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
                   <img src="/lovable-uploads/84a31d0b-15e4-451c-b912-8cea07846932.png" alt="EarShield Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">EarShield</h3>
-                <p className="text-secondary">
+                <h3 className="heading-tactical text-primary text-xl mb-4">EarShield</h3>
+                <p className="text-secondary mb-6 flex-grow">
                   Experience the next generation of hearing protection
                 </p>
-                <Link to="/products/earshield">
+                <Link to="/products/earshield" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
                     VIEW EARSHIELD
                   </Button>
