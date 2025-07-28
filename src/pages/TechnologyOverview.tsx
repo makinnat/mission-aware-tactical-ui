@@ -336,6 +336,7 @@ const TechnologyOverview = () => {
               <Button 
                 variant="outline" 
                 className="text-lg px-8 py-3 font-semibold uppercase tracking-wide border-olive-drab text-olive-drab hover:bg-olive-drab hover:text-signal-white"
+                onClick={() => navigate('/request-consultation')}
               >
                 CONTACT OUR TEAM
               </Button>
