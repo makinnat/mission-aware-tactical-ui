@@ -39,7 +39,7 @@ export const Footer = () => {
               <img 
                 src="/lovable-uploads/e319426e-8e90-469b-bc84-bde45b072745.png" 
                 alt="eFit 3D Scanner" 
-                className="w-40 h-auto object-contain hover:opacity-80 transition-opacity"
+                className="w-28 h-auto object-contain hover:opacity-80 transition-opacity"
               />
             </Link>
           </div>
