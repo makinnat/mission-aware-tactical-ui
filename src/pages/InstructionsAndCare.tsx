@@ -237,7 +237,7 @@ const InstructionsAndCare = () => {
       </section>
 
       {/* Final CTA */}
-      <section ref={ctaRef} className={`py-20 px-6 relative scroll-fade-in ${ctaVisible ? 'visible' : ''}`} style={{
+      <section ref={ctaRef} className={`py-20 px-6 relative transition-all duration-1000 delay-600 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
