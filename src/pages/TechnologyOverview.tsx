@@ -99,7 +99,7 @@ const TechnologyOverview = () => {
                   <Button 
                     variant="outline" 
                     className="w-full font-semibold uppercase tracking-wide border-olive-drab text-olive-drab hover:bg-olive-drab hover:text-signal-white"
-                    onClick={() => navigate('/earshield')}
+                    onClick={() => navigate('/technology/efit-3d-scanner')}
                   >
                     LEARN ABOUT EFIT SCANNING
                   </Button>
@@ -125,6 +125,7 @@ const TechnologyOverview = () => {
                   <Button 
                     variant="outline" 
                     className="w-full font-semibold uppercase tracking-wide border-olive-drab text-olive-drab hover:bg-olive-drab hover:text-signal-white"
+                    onClick={() => navigate('/technology/biometric-wearables')}
                   >
                     LEARN ABOUT BIOMETRICS
                   </Button>
