@@ -4,8 +4,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ArrowRight, Activity, Brain, Heart, Eye, Wifi, Shield, Radio, Target, Zap, Users, Plane } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const BiometricWearables = () => {
+  const navigate = useNavigate();
   const {
     ref: heroRef,
     isVisible: heroVisible
@@ -66,6 +68,7 @@ const BiometricWearables = () => {
             <Button 
               className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white drop-shadow-lg" 
               style={{ backgroundColor: '#95182b' }}
+              onClick={() => navigate('/request-consultation')}
             >
               SCHEDULE A TECHNOLOGY DEMO
               <ArrowRight className="ml-2 h-5 w-5" />
