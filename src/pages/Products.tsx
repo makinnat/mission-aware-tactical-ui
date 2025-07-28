@@ -188,45 +188,51 @@ const Products = () => {
             <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-8 text-center space-y-6">
                 <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/9db2ccc3-d00b-475a-9cd2-77903091e325.png" alt="EarDefender Vented Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/c8c84d7c-5408-41e6-a09b-c302b846944b.png" alt="Custom Overmolds Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">EarDefender Vented A & B</h3>
+                <h3 className="heading-tactical text-primary text-xl">Custom Overmolds</h3>
                 <p className="text-secondary">
-                  Protection + communication for variable-noise zones
+                  Enhanced durability and grip for demanding tactical environments
                 </p>
-                <Button className="btn-olive-outline w-full">
-                  VIEW VENTED PROTECTION
-                </Button>
+                <Link to="/products/custom-overmold">
+                  <Button className="btn-olive-outline w-full">
+                    VIEW CUSTOM OVERMOLDS
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
             <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-8 text-center space-y-6">
                 <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/b7aad65c-fd78-406e-bf87-102a0dbef2db.png" alt="CEP Comm Earpiece Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/f08cb946-2b01-4ed0-b9a2-26f1e82cd776.png" alt="EarBud Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">CEP (Comm Earpiece)</h3>
+                <h3 className="heading-tactical text-primary text-xl">EarBud</h3>
                 <p className="text-secondary">
-                  Connect securely to radios in the field or factory
+                  Advanced audio technology with superior protection
                 </p>
-                <Button className="btn-olive-outline w-full">
-                  VIEW CEP
-                </Button>
+                <Link to="/products/earbud">
+                  <Button className="btn-olive-outline w-full">
+                    VIEW EARBUD
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
             <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group">
               <CardContent className="p-8 text-center space-y-6">
                 <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/732ca253-419d-4d13-b681-0a8bdb8dfbfc.png" alt="3D Ear Scanner" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/84a31d0b-15e4-451c-b912-8cea07846932.png" alt="EarShield Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl">3D Ear Scans</h3>
+                <h3 className="heading-tactical text-primary text-xl">EarShield</h3>
                 <p className="text-secondary">
-                  Get scanned onsite — scale across your workforce
+                  Experience the next generation of hearing protection
                 </p>
-                <Button className="btn-olive-outline w-full">
-                  LEARN ABOUT SCANNING
-                </Button>
+                <Link to="/products/earshield">
+                  <Button className="btn-olive-outline w-full">
+                    VIEW EARSHIELD
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>
