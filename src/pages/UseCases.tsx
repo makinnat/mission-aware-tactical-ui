@@ -43,27 +43,27 @@ const UseCases = () => {
       imagePlaceholder: "defense-operations.jpg",
       featuredProducts: [
         { 
-          src: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          src: "/lovable-uploads/1b44b514-4cf3-486f-b784-05a70e8c5469.png", 
           alt: "Aviation CEP",
           link: "/products/aviation-cep"
         },
         { 
-          src: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
           alt: "EarShield",
           link: "/products/earshield"
         },
         { 
-          src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          src: "/lovable-uploads/898ed8b2-e6e0-419c-84d9-4cc58e636bdc.png", 
           alt: "SleepPlug",
           link: "/products/sleepplug"
         },
         { 
-          src: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          src: "/lovable-uploads/25ac5f0e-de6f-491d-bf2a-2c3405813a20.png", 
           alt: "EarDefender",
           link: "/products/eardefender"
         },
         { 
-          src: "https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
           alt: "Custom Overmold",
           link: "/products/custom-overmold"
         }
