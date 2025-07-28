@@ -4,8 +4,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ArrowRight, Shield, Plane, HardHat, Activity, Target, Music, Truck, Zap, Building, Settings } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const UseCases = () => {
+  const navigate = useNavigate();
   const {
     ref: heroRef,
     isVisible: heroVisible
@@ -40,11 +42,31 @@ const UseCases = () => {
       ],
       imagePlaceholder: "defense-operations.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/f3ca1a0a-0b90-4aea-90c0-d793af035f66.png", alt: "Yellow Custom Earpieces" },
-        { src: "/lovable-uploads/065dc0a4-a05b-4fca-b455-9304b48e1741.png", alt: "Black Custom Earpieces with Blue Accents" },
-        { src: "/lovable-uploads/749b2910-71a3-4bb3-b5ce-a6138b01476f.png", alt: "Black Custom Earpieces" },
-        { src: "/lovable-uploads/e4da610b-6c0b-4ab8-bf6f-9ad045af4202.png", alt: "Blue Translucent Custom Earpiece" },
-        { src: "/lovable-uploads/7e9576d1-7ec4-4c2a-8e2d-33dcdfc3131d.png", alt: "Blue Custom Earpieces" }
+        { 
+          src: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          alt: "Aviation CEP",
+          link: "/products/aviation-cep"
+        },
+        { 
+          src: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          alt: "SleepPlug",
+          link: "/products/sleepplug"
+        },
+        { 
+          src: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          alt: "EarDefender",
+          link: "/products/eardefender"
+        },
+        { 
+          src: "https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        }
       ]
     },
     {
@@ -269,7 +291,11 @@ const UseCases = () => {
                             </p>
                             <div className="flex space-x-3">
                               {sector.featuredProducts.map((product, productIndex) => (
-                                <div key={productIndex} className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                                <div 
+                                  key={productIndex} 
+                                  className="w-16 h-16 bg-white rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
+                                  onClick={() => product.link && navigate(product.link)}
+                                >
                                   <img 
                                     src={product.src} 
                                     alt={product.alt} 
