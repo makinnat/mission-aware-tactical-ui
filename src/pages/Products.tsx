@@ -255,15 +255,15 @@ const Products = () => {
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
               <CardContent className="p-8 text-center h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/e6f319aa-df08-44f9-a43f-616e668d2ae1.png" alt="MusicPlugs Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/6ed97b98-3542-4d03-b0a1-4c02753a092c.png" alt="MusicPlug Product" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="heading-tactical text-primary text-xl mb-4">MusicPlugs</h3>
+                <h3 className="heading-tactical text-primary text-xl mb-4">MusicPlug</h3>
                 <p className="text-secondary mb-6 flex-grow">
                   Audio protection with crystal clarity
                 </p>
                 <Link to="/products/music-plugs" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
-                    VIEW MUSICPLUGS
+                    VIEW MUSICPLUG
                   </Button>
                 </Link>
               </CardContent>
