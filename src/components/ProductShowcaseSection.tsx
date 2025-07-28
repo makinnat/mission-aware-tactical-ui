@@ -55,11 +55,11 @@ const ProductShowcaseSection = () => {
                 key={`${product.name}-${index}`} 
                 className="group p-4"
               >
-                <div className="w-full h-64 bg-black rounded-2xl p-8 flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20">
+                <div className="w-full h-64 bg-black rounded-2xl flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20 overflow-hidden">
                   <LazyImage
                     src={product.src}
                     alt={product.alt}
-                    className="max-w-full max-h-full object-contain filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300"
+                    className="w-full h-full object-cover filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300 rounded-2xl"
                     priority={index < 3}
                   />
                 </div>
