@@ -182,9 +182,21 @@ const UseCases = () => {
       ],
       imagePlaceholder: "mining-operations.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/4b95c70a-27c5-400a-a838-b2203455961f.png", alt: "Mining Industry Ear Protection" },
-        { src: "/lovable-uploads/244828ef-a80b-4a51-8921-7977b82689a4.png", alt: "Energy Sector Hearing Protection" },
-        { src: "/lovable-uploads/4292650a-69ee-427d-8ccf-bc2e4433f736.png", alt: "Heavy Industry Ear Plugs" }
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        },
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
+          alt: "EarBud",
+          link: "/products/earbud"
+        }
       ]
     },
     {
