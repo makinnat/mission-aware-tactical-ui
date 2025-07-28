@@ -13,7 +13,7 @@ const ProductShowcaseSection = () => {
       alt: "Black custom-fit ear protection with droplet design"
     },
     {
-      name: "SleepPlug",
+      name: "Aviation CEP",
       src: "/lovable-uploads/1353552f-30af-4dd7-b89e-848918e19da8.png",
       alt: "Yellow custom-fit sleep ear protection"
     },
