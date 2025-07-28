@@ -70,12 +70,12 @@ const Navigation = () => {
                       <Link to="/products/musicplugs" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         MusicPlug
                       </Link>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                      <Link to="/products/eardefender" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         EarDefender
-                      </a>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                      </Link>
+                      <Link to="/products/radiocomm" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         RadioCOMM
-                      </a>
+                      </Link>
 
                       {/* Other Items */}
                       <div className="border-t border-desert-tan/10 mt-2 pt-2">
