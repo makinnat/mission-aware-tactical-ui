@@ -40,7 +40,7 @@ const Products = () => {
       
       {/* Hero Section */}
       <section ref={heroRef} className={`relative py-32 px-6 bg-cover bg-center bg-no-repeat scroll-fade-in ${heroVisible ? 'visible' : ''}`} style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/lovable-uploads/dc67d67a-fb82-4800-96a6-3ca6bea85908.png')`
     }}>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-background/70" />
