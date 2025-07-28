@@ -127,9 +127,11 @@ const Products = () => {
                 <p className="text-secondary mb-6 flex-grow">
                   Enhanced durability and grip for demanding tactical environments
                 </p>
-                <Button className="btn-olive-outline w-full mt-auto">
-                  VIEW CUSTOM OVERMOLDS
-                </Button>
+                <Link to="/products/custom-overmold" className="mt-auto">
+                  <Button className="btn-olive-outline w-full">
+                    VIEW CUSTOM OVERMOLDS
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -142,9 +144,11 @@ const Products = () => {
                 <p className="text-secondary mb-6 flex-grow">
                   Achieve crystal-clear communications while maintaining superior hearing protection with the Aviation CEP
                 </p>
-                <Button className="btn-olive-outline w-full mt-auto">
-                  VIEW AVIATION CEP
-                </Button>
+                <Link to="/products/aviation-cep" className="mt-auto">
+                  <Button className="btn-olive-outline w-full">
+                    VIEW AVIATION CEP
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
