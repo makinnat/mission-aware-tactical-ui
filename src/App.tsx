@@ -18,6 +18,7 @@ const AviationCEP = lazy(() => import("./pages/AviationCEP"));
 const CustomOvermold = lazy(() => import("./pages/CustomOvermold"));
 const MusicPlugs = lazy(() => import("./pages/MusicPlugs"));
 const EarDefender = lazy(() => import("./pages/EarDefender"));
+const RadioCOMM = lazy(() => import("./pages/RadioCOMM"));
 const SleepPlug = lazy(() => import("./pages/SleepPlug"));
 const GetScanned = lazy(() => import("./pages/GetScanned"));
 const InstructionsAndCare = lazy(() => import("./pages/InstructionsAndCare"));
@@ -71,6 +72,7 @@ const App = () => {
             <Route path="/products/custom-overmold" element={<CustomOvermold />} />
             <Route path="/products/musicplugs" element={<MusicPlugs />} />
             <Route path="/products/eardefender" element={<EarDefender />} />
+            <Route path="/products/radiocomm" element={<RadioCOMM />} />
             <Route path="/products/sleepplug" element={<SleepPlug />} />
               <Route path="/get-scanned" element={<GetScanned />} />
               <Route path="/instructions-and-care" element={<InstructionsAndCare />} />
