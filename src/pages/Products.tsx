@@ -205,7 +205,7 @@ const Products = () => {
             <Card className="military-card bg-background border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
               <CardContent className="p-8 text-center h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/aa0cf4ea-596c-48cc-9dc1-fd66febe17ea.png" alt="EarBud Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/8c75de71-5567-4458-ace4-b743cc10fdc4.png" alt="EarBud Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">EarBud</h3>
                 <p className="text-secondary mb-6 flex-grow">
