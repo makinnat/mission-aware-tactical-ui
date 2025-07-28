@@ -212,9 +212,26 @@ const UseCases = () => {
       ],
       imagePlaceholder: "transportation-logistics.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/46f89658-3f71-426b-922d-d3d4d545d211.png", alt: "Transportation Hearing Protection" },
-        { src: "/lovable-uploads/8656c4f5-a409-4d5f-8cd1-f4c642eba875.png", alt: "Logistics Worker Ear Protection" },
-        { src: "/lovable-uploads/732ca253-419d-4d13-b681-0a8bdb8dfbfc.png", alt: "Mobile Workforce Ear Plugs" }
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        },
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
+          alt: "EarBud",
+          link: "/products/earbud"
+        },
+        { 
+          src: "/lovable-uploads/46468d82-9fe3-4eb1-bc54-5a1a45b2c547.png", 
+          alt: "RadioCOMM",
+          link: "/products/radiocomm"
+        }
       ]
     },
     {
