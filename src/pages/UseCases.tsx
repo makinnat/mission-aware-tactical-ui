@@ -277,9 +277,21 @@ const UseCases = () => {
       ],
       imagePlaceholder: "competitive-shooting.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/352d3b3f-b71b-42a4-866f-a51c29f3bb25.png", alt: "Shooting Sports Ear Protection" },
-        { src: "/lovable-uploads/4fc34f4c-b066-4cb7-812f-9e888c91f448.png", alt: "Competition Shooter Earpieces" },
-        { src: "/lovable-uploads/c121614b-05af-4f5b-845d-8b90cf6eee13.png", alt: "Range Safety Hearing Protection" }
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        },
+        { 
+          src: "/lovable-uploads/898ed8b2-e6e0-419c-84d9-4cc58e636bdc.png", 
+          alt: "SleepPlug",
+          link: "/products/sleepplug"
+        }
       ]
     }
   ];
