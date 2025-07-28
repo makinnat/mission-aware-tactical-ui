@@ -67,9 +67,9 @@ const Navigation = () => {
                       <Link to="/products/earbud" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         EarBud
                       </Link>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                      <Link to="/products/musicplugs" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         MusicPlug
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         EarDefender
                       </a>
