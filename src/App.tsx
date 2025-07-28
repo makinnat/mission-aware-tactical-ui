@@ -13,6 +13,7 @@ import Index from "./pages/Index";
 const Products = lazy(() => import("./pages/Products"));
 const EarShield = lazy(() => import("./pages/EarShield"));
 const SwimPlug = lazy(() => import("./pages/SwimPlug"));
+const EarBud = lazy(() => import("./pages/EarBud"));
 const AviationCEP = lazy(() => import("./pages/AviationCEP"));
 const CustomOvermold = lazy(() => import("./pages/CustomOvermold"));
 const SleepPlug = lazy(() => import("./pages/SleepPlug"));
@@ -63,6 +64,7 @@ const App = () => {
               <Route path="/collections/:handle" element={<Products />} />
             <Route path="/products/earshield" element={<EarShield />} />
             <Route path="/products/swimplug" element={<SwimPlug />} />
+            <Route path="/products/earbud" element={<EarBud />} />
             <Route path="/products/aviation-cep" element={<AviationCEP />} />
             <Route path="/products/custom-overmold" element={<CustomOvermold />} />
             <Route path="/products/sleepplug" element={<SleepPlug />} />
