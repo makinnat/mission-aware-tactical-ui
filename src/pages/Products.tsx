@@ -272,7 +272,7 @@ const Products = () => {
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
               <CardContent className="p-8 text-center h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/c121614b-05af-4f5b-845d-8b90cf6eee13.png" alt="SleepPlug Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/898ed8b2-e6e0-419c-84d9-4cc58e636bdc.png" alt="SleepPlug Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">SleepPlug</h3>
                 <p className="text-secondary mb-6 flex-grow">
@@ -289,7 +289,7 @@ const Products = () => {
             <Card className="military-card bg-muted/50 border-[#6C6846] hover:border-scarlet-red transition-all duration-300 group h-full">
               <CardContent className="p-8 text-center h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-lg">
-                  <img src="/lovable-uploads/8656c4f5-a409-4d5f-8cd1-f4c642eba875.png" alt="SwimPlug Product" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/9fcf5ff1-91bc-456c-8737-11c234a7c989.png" alt="SwimPlug Product" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">SwimPlug</h3>
                 <p className="text-secondary mb-6 flex-grow">
