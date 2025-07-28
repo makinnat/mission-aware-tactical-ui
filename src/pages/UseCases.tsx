@@ -142,9 +142,31 @@ const UseCases = () => {
       ],
       imagePlaceholder: "aviation-ground-crew.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/3cb1df53-745e-44e5-95b9-ebb3c3921521.png", alt: "Aviation Communication Earpieces" },
-        { src: "/lovable-uploads/ef310f2d-7afe-464d-816e-302392b965e4.png", alt: "Flight Line Hearing Protection" },
-        { src: "/lovable-uploads/4b4e91cd-a209-4478-a2de-7b81a45ef759.png", alt: "Aviation Ground Crew Protection" }
+        { 
+          src: "/lovable-uploads/1b44b514-4cf3-486f-b784-05a70e8c5469.png", 
+          alt: "Aviation CEP",
+          link: "/products/aviation-cep"
+        },
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/898ed8b2-e6e0-419c-84d9-4cc58e636bdc.png", 
+          alt: "SleepPlug",
+          link: "/products/sleepplug"
+        },
+        { 
+          src: "/lovable-uploads/25ac5f0e-de6f-491d-bf2a-2c3405813a20.png", 
+          alt: "EarDefender",
+          link: "/products/eardefender"
+        },
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        }
       ]
     },
     {
