@@ -192,7 +192,7 @@ const Products = () => {
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">Custom Overmolds</h3>
                 <p className="text-secondary mb-6 flex-grow">
-                  Enhanced durability and grip for demanding tactical environments
+                  Upgrade your gear without replacing it
                 </p>
                 <Link to="/products/custom-overmold" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
@@ -209,7 +209,7 @@ const Products = () => {
                 </div>
                 <h3 className="heading-tactical text-primary text-xl mb-4">EarBud</h3>
                 <p className="text-secondary mb-6 flex-grow">
-                  Advanced audio technology with superior protection
+                  Designed to transform your existing earbuds into perfectly fitted audio devices
                 </p>
                 <Link to="/products/earbud" className="mt-auto">
                   <Button className="btn-olive-outline w-full">
