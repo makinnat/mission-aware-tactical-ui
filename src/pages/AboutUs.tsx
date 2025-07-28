@@ -5,8 +5,10 @@ import { Shield, MessageSquare, ArrowUpRight, Settings, Quote } from "lucide-rea
 import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   const {
     ref: heroRef,
     isVisible: heroVisible
@@ -329,6 +331,7 @@ const AboutUs = () => {
               <Button 
                 className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
                 style={{ backgroundColor: '#95182b' }}
+                onClick={() => navigate('/request-consultation')}
               >
                 TALK TO OUR TEAM
               </Button>
