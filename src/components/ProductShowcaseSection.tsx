@@ -2,6 +2,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { LazyImage } from "@/components/ui/lazy-image";
 import { useImagePreloader } from "@/hooks/useImagePreloader";
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 
 const ProductShowcaseSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -10,17 +11,20 @@ const ProductShowcaseSection = () => {
     {
       name: "EarShield",
       src: "/lovable-uploads/2bf1dbd2-9f57-4571-8ec2-448676c5817b.png",
-      alt: "Black custom-fit ear protection with droplet design"
+      alt: "Black custom-fit ear protection with droplet design",
+      link: "/earshield"
     },
     {
       name: "Aviation CEP",
       src: "/lovable-uploads/1353552f-30af-4dd7-b89e-848918e19da8.png",
-      alt: "Yellow custom-fit sleep ear protection"
+      alt: "Yellow custom-fit sleep ear protection",
+      link: "/aviation-cep"
     },
     {
       name: "Custom Overmold",
       src: "/lovable-uploads/85b4c708-ab5b-4849-a9f6-5887c9bd50b2.png",
-      alt: "Black custom overmold ear protection"
+      alt: "Black custom overmold ear protection",
+      link: "/custom-overmold"
     }
   ];
 
@@ -51,11 +55,12 @@ const ProductShowcaseSection = () => {
         }`}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {products.map((product, index) => (
-              <div 
+              <Link 
                 key={`${product.name}-${index}`} 
-                className="group p-4"
+                to={product.link}
+                className="group p-4 block"
               >
-                <div className="w-full h-64 bg-black rounded-2xl flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20 overflow-hidden">
+                <div className="w-full h-64 bg-black rounded-2xl flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20 overflow-hidden cursor-pointer">
                   <LazyImage
                     src={product.src}
                     alt={product.alt}
@@ -63,10 +68,10 @@ const ProductShowcaseSection = () => {
                     priority={index < 3}
                   />
                 </div>
-                <h3 className="text-center mt-4 text-lg font-semibold text-signal-white">
+                <h3 className="text-center mt-4 text-lg font-semibold text-signal-white group-hover:text-primary transition-colors duration-300">
                   {product.name}
                 </h3>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
