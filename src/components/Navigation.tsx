@@ -61,9 +61,9 @@ const Navigation = () => {
                       <Link to="/products/sleepplug" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         SleepPlug
                       </Link>
-                      <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
+                      <Link to="/products/swimplug" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         SwimPlug
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-2 text-desert-tan/80 hover:text-scarlet-red text-sm transition-colors">
                         EarBud
                       </a>
