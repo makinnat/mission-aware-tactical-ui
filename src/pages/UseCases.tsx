@@ -82,9 +82,21 @@ const UseCases = () => {
       ],
       imagePlaceholder: "manufacturing-facility.jpg",
       featuredProducts: [
-        { src: "/lovable-uploads/cc7ec663-888b-4d72-b2d8-1a7c4e7c2690.png", alt: "Industrial Yellow Ear Protection" },
-        { src: "/lovable-uploads/5900a8c0-a2ed-485e-adfb-7c5259b1e025.png", alt: "Heavy Duty Black Ear Protection" },
-        { src: "/lovable-uploads/1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png", alt: "Manufacturing Blue Ear Protection" }
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        },
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
+          alt: "EarBud",
+          link: "/products/earbud"
+        }
       ]
     },
     {
