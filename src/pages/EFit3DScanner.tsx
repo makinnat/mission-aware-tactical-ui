@@ -309,7 +309,7 @@ const EFit3DScanner = () => {
               Mission-Critical Reliability
             </h3>
             <p className="text-lg text-desert-tan leading-relaxed text-center mb-12">
-              The eFit scanner has been validated by Special Operations Forces, Navy aviators, and elite military units across multiple service branches. Field testing has demonstrated superior performance in the most demanding operational environments.
+              The eFit scanner has been validated by DoD Aviators, Special Operations Forces, and elite military units across multiple service branches. Field testing has demonstrated superior performance in the most demanding operational environments.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
