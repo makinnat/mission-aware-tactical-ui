@@ -49,7 +49,7 @@ const AviationCEP = () => {
       {/* Product Detail Section */}
       <section ref={productRef} className={`py-20 px-6 relative scroll-fade-in ${productVisible ? 'visible' : ''}`} style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
-        backgroundSize: '600px',
+        backgroundSize: '900px',
         backgroundPosition: 'center',
         backgroundRepeat: 'repeat'
       }}>
