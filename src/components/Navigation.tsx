@@ -24,7 +24,7 @@ const Navigation = () => {
               <img 
                 src="/lovable-uploads/7ea90a58-8b4d-45d2-a9a6-c8f05c5e3f83.png" 
                 alt="Aware Defense Logo" 
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
             </Link>
           </div>
