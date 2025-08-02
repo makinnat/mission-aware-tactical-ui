@@ -16,7 +16,7 @@ const ProductShowcaseSection = () => {
     },
     {
       name: "Aviation CEP",
-      src: "/lovable-uploads/1353552f-30af-4dd7-b89e-848918e19da8.png",
+      src: "/lovable-uploads/c36b5e26-f400-488b-a44d-d6d173bd3f03.png",
       alt: "Yellow custom-fit sleep ear protection",
       link: "/products/aviation-cep"
     },
