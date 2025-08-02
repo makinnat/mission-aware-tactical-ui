@@ -11,7 +11,7 @@ export default function CustomOvermold() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedFinish, setSelectedFinish] = useState('');
-  const [selectedBrand, setSelectedBrand] = useState('');
+  const [selectedModel, setSelectedModel] = useState('');
   const [isConfirmed, setIsConfirmed] = useState(false);
   
   const { ref: productRef, isVisible: productVisible } = useScrollAnimation();
@@ -109,17 +109,16 @@ export default function CustomOvermold() {
                     </Select>
                   </div>
 
-                  {/* Brand Selection */}
+                  {/* Model Selection */}
                   <div className="space-y-2">
-                    <label className="text-signal-white text-sm font-medium">Brand</label>
-                    <Select value={selectedBrand} onValueChange={setSelectedBrand}>
+                    <label className="text-signal-white text-sm font-medium">Model</label>
+                    <Select value={selectedModel} onValueChange={setSelectedModel}>
                       <SelectTrigger className="w-full bg-muted/30 border-[#6C6846] text-signal-white">
-                        <SelectValue placeholder="Select brand" />
+                        <SelectValue placeholder="Select model" />
                       </SelectTrigger>
                       <SelectContent className="bg-background border-[#6C6846] z-50">
-                        <SelectItem value="otto" className="text-signal-white hover:bg-muted/30">Otto Noize Barrier</SelectItem>
-                        <SelectItem value="axil" className="text-signal-white hover:bg-muted/30">AXIL XCOR</SelectItem>
-                        <SelectItem value="invisio" className="text-signal-white hover:bg-muted/30">Invisio X-5 & X-7</SelectItem>
+                        <SelectItem value="bose-pro-flight-2" className="text-signal-white hover:bg-muted/30">Bose Pro Flight 2</SelectItem>
+                        <SelectItem value="clarity-aloft" className="text-signal-white hover:bg-muted/30">Clarity Aloft</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
