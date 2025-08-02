@@ -44,22 +44,36 @@ export const Footer = () => {
             </Link>
           </div>
 
-          {/* Atlanta Office */}
+          {/* Navigation Links */}
           <div className="text-center">
             <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
-              ATLANTA OFFICE
+              NAVIGATION
             </h3>
             <div className="space-y-2 text-secondary text-sm">
-              <p>2277 Peachtree Road</p>
-              <p>Suite D</p>
-              <p>Atlanta, GA 30309</p>
-              <p>Office 404.480.9949</p>
-              <a 
-                href="mailto:info@awaredefense.us" 
-                className="text-scarlet-red hover:text-scarlet-red/80 transition-colors"
+              <Link 
+                to="/products" 
+                className="block hover:text-scarlet-red transition-colors"
               >
-                info@awaredefense.us
-              </a>
+                Products
+              </Link>
+              <Link 
+                to="/technology" 
+                className="block hover:text-scarlet-red transition-colors"
+              >
+                Technology
+              </Link>
+              <Link 
+                to="/use-cases" 
+                className="block hover:text-scarlet-red transition-colors"
+              >
+                Use Cases
+              </Link>
+              <Link 
+                to="/about" 
+                className="block hover:text-scarlet-red transition-colors"
+              >
+                About Us
+              </Link>
             </div>
           </div>
 
