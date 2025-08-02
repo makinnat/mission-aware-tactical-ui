@@ -19,7 +19,7 @@ const AviationCEP = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedFinish, setSelectedFinish] = useState("");
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(1);
 
   const productImages = [
     "/lovable-uploads/1b44b514-4cf3-486f-b784-05a70e8c5469.png",
