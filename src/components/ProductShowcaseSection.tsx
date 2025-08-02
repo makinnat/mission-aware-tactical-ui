@@ -12,19 +12,19 @@ const ProductShowcaseSection = () => {
       name: "EarShield",
       src: "/lovable-uploads/2bf1dbd2-9f57-4571-8ec2-448676c5817b.png",
       alt: "Black custom-fit ear protection with droplet design",
-      link: "/earshield"
+      link: "/products/earshield"
     },
     {
       name: "Aviation CEP",
       src: "/lovable-uploads/1353552f-30af-4dd7-b89e-848918e19da8.png",
       alt: "Yellow custom-fit sleep ear protection",
-      link: "/aviation-cep"
+      link: "/products/aviation-cep"
     },
     {
       name: "Custom Overmold",
       src: "/lovable-uploads/85b4c708-ab5b-4849-a9f6-5887c9bd50b2.png",
       alt: "Black custom overmold ear protection",
-      link: "/custom-overmold"
+      link: "/products/custom-overmold"
     }
   ];
 
