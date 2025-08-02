@@ -317,7 +317,7 @@ const AboutUs = () => {
       {/* Final CTA Section */}
       <section 
         ref={ctaRef} 
-        className={`py-20 transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`py-20 px-6 relative transition-all duration-1000 delay-800 ${ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
           backgroundSize: 'cover',
@@ -325,17 +325,67 @@ const AboutUs = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
-                style={{ backgroundColor: '#95182b' }}
-                onClick={() => navigate('/request-consultation')}
-              >
-                TALK TO OUR TEAM
-              </Button>
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl md:text-6xl font-black text-signal-white mb-8 uppercase">
+            Ready to Protect Your Team and Future-Proof Your Mission?
+          </h2>
+          
+          <p className="text-desert-tan mb-8 max-w-3xl mx-auto font-semibold text-base md:text-lg">
+            Schedule a meeting to review your requirements with an Aware Defense expert.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+            <Button 
+              className="text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
+              style={{ backgroundColor: '#95182b' }}
+              onClick={() => navigate('/request-consultation')}
+            >
+              SCHEDULE A MEETING
+            </Button>
+            <Button 
+              variant="outline"
+              className="text-lg px-8 py-3 font-semibold uppercase tracking-wide border-desert-tan text-desert-tan hover:bg-desert-tan hover:text-combat-black"
+              onClick={() => navigate('/technology')}
+            >
+              LEARN MORE ABOUT OUR TECHNOLOGY
+            </Button>
+          </div>
+
+          {/* Three columns */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="text-left border-l-2 border-scarlet pl-4">
+              <h3 className="text-lg font-black text-desert-tan mb-2 uppercase">
+                SCANNER LEASING
+              </h3>
+              <p className="text-signal-white text-sm">
+                Train-your-own-unit programs available
+              </p>
             </div>
+            
+            <div className="text-left border-l-2 border-scarlet pl-4">
+              <h3 className="text-lg font-black text-desert-tan mb-2 uppercase">
+                PROVEN RESULTS
+              </h3>
+              <p className="text-signal-white text-sm">
+                Field-tested at numerous DoD installations
+              </p>
+            </div>
+            
+            <div className="text-left border-l-2 border-scarlet pl-4">
+              <h3 className="text-lg font-black text-desert-tan mb-2 uppercase">
+                BEST VALUE
+              </h3>
+              <p className="text-signal-white text-sm">
+                Lower cost than foam after 12 months
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom tagline */}
+          <div className="border-t border-desert-tan/20 pt-8">
+            <h2 className="text-xl md:text-2xl font-black text-scarlet uppercase tracking-wider">
+              FIT TO FIGHT, BUILT TO ENDURE
+            </h2>
           </div>
         </div>
       </section>
