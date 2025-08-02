@@ -91,6 +91,9 @@ const EarBud = () => {
                 <h1 className="heading-tactical text-signal-white text-4xl md:text-5xl">
                   AWARE EARBUD
                 </h1>
+                <div className="text-3xl font-bold text-desert-tan">
+                  ${selectedColor === 'camouflage' ? '195.00' : '185.00'}
+                </div>
               </div>
 
               {/* Product Options */}
@@ -107,7 +110,7 @@ const EarBud = () => {
                         <SelectItem value="black" className="text-signal-white hover:bg-muted/30">Black</SelectItem>
                         <SelectItem value="blue" className="text-signal-white hover:bg-muted/30">Blue</SelectItem>
                         <SelectItem value="clear" className="text-signal-white hover:bg-muted/30">Clear</SelectItem>
-                        <SelectItem value="camouflage" className="text-signal-white hover:bg-muted/30">Camouflage</SelectItem>
+                        <SelectItem value="camouflage" className="text-signal-white hover:bg-muted/30">Camouflage +$10</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

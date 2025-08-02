@@ -77,6 +77,9 @@ export default function RadioCOMM() {
                 <h1 className="heading-tactical text-signal-white text-4xl md:text-5xl">
                   AWARE RADIOCOMM
                 </h1>
+                <div className="text-3xl font-bold text-desert-tan">
+                  $125.00
+                </div>
               </div>
 
               {/* Product Options */}
