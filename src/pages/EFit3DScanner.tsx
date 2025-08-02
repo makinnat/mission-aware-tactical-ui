@@ -127,28 +127,49 @@ const EFit3DScanner = () => {
           <div className="max-w-6xl mx-auto">
             <h3 className="text-2xl font-bold text-signal-white text-center mb-12">Key Technical Advantages</h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                { icon: Shield, text: "FDA-cleared for medical device applications" },
-                { icon: CheckCircle, text: "Non-contact scanning eliminates safety risks - no risk of eardrum puncture or injury" },
-                { icon: Target, text: "Two-micron precision - medical-grade accuracy for perfect fit" },
-                { icon: Clock, text: "90-second scanning time - rapid data collection without discomfort" },
-                { icon: Zap, text: "Captures the critical second bend - the only technology capable of accurately mapping this vital area" }
-              ].map((advantage, index) => (
-                <Card 
-                  key={index}
-                  className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-500 delay-${400 + (index * 100)} ${techVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-                >
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-scarlet rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <advantage.icon className="h-6 w-6 text-signal-white flex-shrink-0" />
-                    </div>
-                    <p className="text-desert-tan text-sm leading-relaxed">
-                      {advantage.text}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="flex flex-wrap justify-center gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+                {[
+                  { icon: Shield, text: "FDA-cleared for medical device applications" },
+                  { icon: CheckCircle, text: "Non-contact scanning eliminates safety risks - no risk of eardrum puncture or injury" },
+                  { icon: Target, text: "Two-micron precision - medical-grade accuracy for perfect fit" }
+                ].map((advantage, index) => (
+                  <Card 
+                    key={index}
+                    className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-500 delay-${400 + (index * 100)} ${techVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+                  >
+                    <CardContent className="p-6 text-center">
+                      <div className="w-12 h-12 bg-scarlet rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <advantage.icon className="h-6 w-6 text-signal-white flex-shrink-0" />
+                      </div>
+                      <p className="text-desert-tan text-sm leading-relaxed">
+                        {advantage.text}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
+                {[
+                  { icon: Clock, text: "90-second scanning time - rapid data collection without discomfort" },
+                  { icon: Zap, text: "Captures the critical second bend - the only technology capable of accurately mapping this vital area" }
+                ].map((advantage, index) => (
+                  <Card 
+                    key={index + 3}
+                    className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-500 delay-${700 + (index * 100)} ${techVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+                  >
+                    <CardContent className="p-6 text-center">
+                      <div className="w-12 h-12 bg-scarlet rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <advantage.icon className="h-6 w-6 text-signal-white flex-shrink-0" />
+                      </div>
+                      <p className="text-desert-tan text-sm leading-relaxed">
+                        {advantage.text}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </div>
