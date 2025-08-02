@@ -276,7 +276,7 @@ const EFit3DScanner = () => {
                     <div>
                       <h4 className="font-bold text-olive-drab mb-3">Operational Safety:</h4>
                       <div className="space-y-2 text-desert-tan">
-                        <p>• Zero contact eliminates risk of ear canal injury</p>
+                        <p>• Zero contact reduces risk of ear canal injury</p>
                         <p>• No silicone injection removes risk of eardrum puncture</p>
                         <p>• No special certification required for operators</p>
                       </div>
