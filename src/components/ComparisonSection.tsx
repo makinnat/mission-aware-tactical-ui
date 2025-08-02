@@ -135,11 +135,6 @@ export const ComparisonSection = () => {
                   alt="AWARE 3D Scanner Device" 
                   className="w-full max-w-none h-auto object-cover"
                 />
-                <img 
-                  src="/lovable-uploads/e319426e-8e90-469b-bc84-bde45b072745.png" 
-                  alt="eFit 3D Scanner" 
-                  className="w-16 h-auto object-contain"
-                />
               </div>
             </Link>
           </div>
