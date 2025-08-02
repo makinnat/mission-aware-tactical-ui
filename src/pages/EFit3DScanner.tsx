@@ -185,7 +185,7 @@ const EFit3DScanner = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-signal-white text-center mb-8">
-              The Only Technology to Capture the Second Bend
+              The Only Technology That Accurately Captures the Second Bend
             </h2>
             <p className="text-lg text-desert-tan leading-relaxed mb-8">
               What sets the eFit apart from all other scanning technologies is its unique ability to accurately capture the second bend of the ear canal. This anatomical feature, located deep within the ear canal, is critical for:
