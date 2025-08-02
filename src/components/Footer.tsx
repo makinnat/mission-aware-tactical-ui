@@ -85,7 +85,10 @@ export const Footer = () => {
               <p>ATLANTA</p>
               <p>SAN DIEGO</p>
               <p>DALLAS</p>
-              <div className="flex items-center justify-center gap-2 mt-3">
+              <h4 className="heading-tactical text-primary text-sm mt-4 mb-2 uppercase">
+                CONTACT US
+              </h4>
+              <div className="flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4 text-secondary" />
                 <span>(855)EAR-SCAN</span>
               </div>
