@@ -84,7 +84,7 @@ const TechnologyOverview = () => {
               <Card className={`bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-400 ${pillarsVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
                 <CardContent className="p-8 text-center">
                   <h3 className="text-2xl font-bold text-signal-white mb-6">
-                    FDA CLEARED, NON-Contact
+                    FDA CLEARED, NON-CONTACT
                   </h3>
                   <div className="w-48 h-48 mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden">
                     <img 
