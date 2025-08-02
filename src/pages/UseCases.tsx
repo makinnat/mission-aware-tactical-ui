@@ -351,6 +351,12 @@ const UseCases = () => {
       <section 
         ref={sectorsRef} 
         className={`py-8 transition-all duration-1000 delay-300 ${sectorsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
