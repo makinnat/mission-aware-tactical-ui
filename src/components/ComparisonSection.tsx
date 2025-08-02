@@ -131,9 +131,9 @@ export const ComparisonSection = () => {
             <Link to="/technology/efit-3d-scanner" className="block w-full">
               <div className="bg-combat-black rounded-lg border border-scarlet-red p-8 flex flex-col items-center space-y-6 hover:opacity-80 transition-opacity cursor-pointer">
                 <img 
-                  src="/lovable-uploads/3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png" 
+                  src="/lovable-uploads/e87552d4-e956-43e2-8bd1-925bd60ec088.png" 
                   alt="AWARE 3D Scanner Device" 
-                  className="w-full h-auto object-contain"
+                  className="w-full max-w-none h-auto object-cover"
                 />
                 <img 
                   src="/lovable-uploads/e319426e-8e90-469b-bc84-bde45b072745.png" 
