@@ -375,7 +375,7 @@ const UseCases = () => {
                           <div className="space-y-3 mb-8">
                             {sector.applications.map((application, appIndex) => (
                               <div key={appIndex} className="flex items-start space-x-3">
-                                <div className="w-2 h-2 bg-scarlet rounded-full mt-3 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-scarlet rounded-full mt-2 flex-shrink-0"></div>
                                 <p className="text-desert-tan text-sm leading-relaxed">
                                   {application}
                                 </p>
