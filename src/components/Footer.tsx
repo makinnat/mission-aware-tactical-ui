@@ -1,4 +1,4 @@
-import { Twitter, Instagram, Linkedin, ArrowRight } from "lucide-react";
+import { Twitter, Instagram, Linkedin, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
@@ -82,9 +82,13 @@ export const Footer = () => {
               OFFICES
             </h3>
             <div className="space-y-2 text-secondary text-sm">
-              <p>Atlanta</p>
-              <p>San Diego</p>
-              <p>Dallas</p>
+              <p>ATLANTA</p>
+              <p>SAN DIEGO</p>
+              <p>DALLAS</p>
+              <div className="flex items-center justify-center gap-2 mt-3">
+                <Phone className="w-4 h-4 text-secondary" />
+                <span>(855)EAR-SCAN</span>
+              </div>
             </div>
           </div>
 
