@@ -76,16 +76,15 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* San Diego Office */}
+          {/* Offices */}
           <div className="text-center">
             <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
-              SAN DIEGO OFFICE
+              OFFICES
             </h3>
             <div className="space-y-2 text-secondary text-sm">
-              <p>11545 West Bernardo Court</p>
-              <p>Suite 211</p>
-              <p>San Diego, CA 92127</p>
-              <p>Office 404.779.7821</p>
+              <p>Atlanta</p>
+              <p>San Diego</p>
+              <p>Dallas</p>
             </div>
           </div>
 
