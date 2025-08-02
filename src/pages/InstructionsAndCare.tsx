@@ -44,7 +44,7 @@ const InstructionsAndCare = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section ref={heroRef} className={`pt-24 pb-16 transition-all duration-1000 bg-cover bg-center bg-no-repeat relative ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/lovable-uploads/585fd23f-f43a-49ab-ab65-676067bcc1e1.png')`}}>
+      <section ref={heroRef} className={`pt-24 pb-32 min-h-[70vh] transition-all duration-1000 bg-cover bg-center bg-no-repeat relative ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/lovable-uploads/585fd23f-f43a-49ab-ab65-676067bcc1e1.png')`}}>
         <div className="absolute inset-0 bg-combat-black/70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
