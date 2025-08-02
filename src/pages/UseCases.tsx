@@ -70,62 +70,32 @@ const UseCases = () => {
       ]
     },
     {
-      icon: Settings,
-      title: "Manufacturing & Heavy Industry", 
-      subtitle: "Enterprise-Scale Safety Solutions",
-      description: "Manufacturing generates 14,500 recordable hearing-loss cases annually—76% occur in this sector alone. Custom protection reduces remake rates, speeds shift changeovers, and raises PPE compliance in plants where traditional foam plugs are correctly inserted only 8% of the time.",
+      icon: Activity,
+      title: "Recreational & Competitive Shooting",
+      subtitle: "Precision Meets Protection", 
+      description: "Shooting sports represent America's fastest-growing recreational activity, with participation increasing 24.1% from 2009 to 2022. Yet only 58% of recreational shooters consistently use hearing protection, with 20% of high-volume shooters never using protection.",
       applications: [
-        "All-day comfort enables consistent wear throughout 12-hour shifts",
-        "Communication integration maintains productivity and safety coordination",
-        "Moisture resistance withstands demanding manufacturing conditions", 
-        "Digital documentation streamlines OSHA compliance reporting"
+        "Range officer commands become clear and audible", 
+        "Environmental awareness critical for situational timing is preserved",
+        "Shot timing feedback from steel targets remains clear",
+        "Equipment malfunction alerts are not masked"
       ],
-      imagePlaceholder: "manufacturing-facility.jpg",
+      imagePlaceholder: "competitive-shooting.jpg",
       featuredProducts: [
-        { 
-          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
-          alt: "Custom Overmold",
-          link: "/products/custom-overmold"
-        },
         { 
           src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
           alt: "EarShield",
           link: "/products/earshield"
         },
         { 
-          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
-          alt: "EarBud",
-          link: "/products/earbud"
-        }
-      ]
-    },
-    {
-      icon: HardHat,
-      title: "Construction & Infrastructure",
-      subtitle: "High-Risk Environment Protection", 
-      description: "51% of construction workers have been exposed to hazardous noise levels, yet 52% report not wearing hearing protection. Jackhammers, nail guns and concrete saws create bursts exceeding 120 dB. Our lock-and-key custom fit guarantees proper attenuation.",
-      applications: [
-        "Impact resistance for debris and falling objects",
-        "Radio compatibility for construction communication systems",
-        "Sweat resistance for outdoor work in all weather conditions",
-        "Quick insertion/removal for varied noise exposure throughout the day"
-      ],
-      imagePlaceholder: "construction-site.jpg",
-      featuredProducts: [
-        { 
           src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
           alt: "Custom Overmold",
           link: "/products/custom-overmold"
         },
         { 
-          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
-          alt: "EarShield",
-          link: "/products/earshield"
-        },
-        { 
-          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
-          alt: "EarBud",
-          link: "/products/earbud"
+          src: "/lovable-uploads/898ed8b2-e6e0-419c-84d9-4cc58e636bdc.png", 
+          alt: "SleepPlug",
+          link: "/products/sleepplug"
         }
       ]
     },
@@ -166,6 +136,96 @@ const UseCases = () => {
           src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
           alt: "Custom Overmold",
           link: "/products/custom-overmold"
+        }
+      ]
+    },
+    {
+      icon: Target,
+      title: "Public Safety & Law Enforcement",
+      subtitle: "Tactical Audio Solutions",
+      description: "Police officers are 19% more likely to have hearing loss than the general population. SWAT operators and patrol officers need split-second audio cues while facing exposure from sirens (120 dB) and gunfire (160+ dB).",
+      applications: [
+        "SWAT and tactical units require impulse protection with communication clarity",
+        "Traffic enforcement officers face continuous highway and siren noise",
+        "Emergency responders need rapid deployment hearing protection",
+        "Training facilities require protection for firearms and scenario training"
+      ],
+      imagePlaceholder: "law-enforcement.jpg",
+      featuredProducts: [
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/46468d82-9fe3-4eb1-bc54-5a1a45b2c547.png", 
+          alt: "RadioCOMM",
+          link: "/products/radiocomm"
+        },
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        }
+      ]
+    },
+    {
+      icon: HardHat,
+      title: "Construction & Infrastructure",
+      subtitle: "High-Risk Environment Protection", 
+      description: "51% of construction workers have been exposed to hazardous noise levels, yet 52% report not wearing hearing protection. Jackhammers, nail guns and concrete saws create bursts exceeding 120 dB. Our lock-and-key custom fit guarantees proper attenuation.",
+      applications: [
+        "Impact resistance for debris and falling objects",
+        "Radio compatibility for construction communication systems",
+        "Sweat resistance for outdoor work in all weather conditions",
+        "Quick insertion/removal for varied noise exposure throughout the day"
+      ],
+      imagePlaceholder: "construction-site.jpg",
+      featuredProducts: [
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        },
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
+          alt: "EarBud",
+          link: "/products/earbud"
+        }
+      ]
+    },
+    {
+      icon: Settings,
+      title: "Manufacturing & Heavy Industry", 
+      subtitle: "Enterprise-Scale Safety Solutions",
+      description: "Manufacturing generates 14,500 recordable hearing-loss cases annually—76% occur in this sector alone. Custom protection reduces remake rates, speeds shift changeovers, and raises PPE compliance in plants where traditional foam plugs are correctly inserted only 8% of the time.",
+      applications: [
+        "All-day comfort enables consistent wear throughout 12-hour shifts",
+        "Communication integration maintains productivity and safety coordination",
+        "Moisture resistance withstands demanding manufacturing conditions", 
+        "Digital documentation streamlines OSHA compliance reporting"
+      ],
+      imagePlaceholder: "manufacturing-facility.jpg",
+      featuredProducts: [
+        { 
+          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
+          alt: "Custom Overmold",
+          link: "/products/custom-overmold"
+        },
+        { 
+          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
+          alt: "EarShield",
+          link: "/products/earshield"
+        },
+        { 
+          src: "/lovable-uploads/27802c88-a2c7-4bc1-8c39-658c9a526d77.png", 
+          alt: "EarBud",
+          link: "/products/earbud"
         }
       ]
     },
@@ -233,66 +293,6 @@ const UseCases = () => {
           link: "/products/radiocomm"
         }
       ]
-    },
-    {
-      icon: Target,
-      title: "Public Safety & Law Enforcement",
-      subtitle: "Tactical Audio Solutions",
-      description: "Police officers are 19% more likely to have hearing loss than the general population. SWAT operators and patrol officers need split-second audio cues while facing exposure from sirens (120 dB) and gunfire (160+ dB).",
-      applications: [
-        "SWAT and tactical units require impulse protection with communication clarity",
-        "Traffic enforcement officers face continuous highway and siren noise",
-        "Emergency responders need rapid deployment hearing protection",
-        "Training facilities require protection for firearms and scenario training"
-      ],
-      imagePlaceholder: "law-enforcement.jpg",
-      featuredProducts: [
-        { 
-          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
-          alt: "EarShield",
-          link: "/products/earshield"
-        },
-        { 
-          src: "/lovable-uploads/46468d82-9fe3-4eb1-bc54-5a1a45b2c547.png", 
-          alt: "RadioCOMM",
-          link: "/products/radiocomm"
-        },
-        { 
-          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
-          alt: "Custom Overmold",
-          link: "/products/custom-overmold"
-        }
-      ]
-    },
-    {
-      icon: Activity,
-      title: "Recreational & Competitive Shooting",
-      subtitle: "Precision Meets Protection", 
-      description: "Shooting sports represent America's fastest-growing recreational activity, with participation increasing 24.1% from 2009 to 2022. Yet only 58% of recreational shooters consistently use hearing protection, with 20% of high-volume shooters never using protection.",
-      applications: [
-        "Range officer commands become clear and audible", 
-        "Environmental awareness critical for situational timing is preserved",
-        "Shot timing feedback from steel targets remains clear",
-        "Equipment malfunction alerts are not masked"
-      ],
-      imagePlaceholder: "competitive-shooting.jpg",
-      featuredProducts: [
-        { 
-          src: "/lovable-uploads/d29ee097-8a6f-4865-ad02-b39949605030.png", 
-          alt: "EarShield",
-          link: "/products/earshield"
-        },
-        { 
-          src: "/lovable-uploads/007c27eb-f1af-44c2-9993-6f6619b6102f.png", 
-          alt: "Custom Overmold",
-          link: "/products/custom-overmold"
-        },
-        { 
-          src: "/lovable-uploads/898ed8b2-e6e0-419c-84d9-4cc58e636bdc.png", 
-          alt: "SleepPlug",
-          link: "/products/sleepplug"
-        }
-      ]
     }
   ];
 
@@ -344,7 +344,7 @@ const UseCases = () => {
       {/* Industry Sectors Grid */}
       <section 
         ref={sectorsRef} 
-        className={`py-20 transition-all duration-1000 delay-300 ${sectorsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`py-12 transition-all duration-1000 delay-300 ${sectorsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
@@ -416,44 +416,44 @@ const UseCases = () => {
                             />
                           ) : index === 1 ? (
                             <img 
-                              src="/lovable-uploads/ec0fc2c8-2cc0-4cb1-b6d4-ad1a9f439054.png" 
-                              alt="Manufacturing and Heavy Industry Operations" 
+                              src="/lovable-uploads/864a9bfd-9667-4c95-b683-2c86443241bc.png" 
+                              alt="Recreational and Competitive Shooting Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : index === 2 ? (
-                            <img 
-                              src="/lovable-uploads/5a0bcd62-e02b-4d44-b984-c3153435ab72.png" 
-                              alt="Construction and Infrastructure Operations" 
-                              className="w-full h-full object-cover"
-                            />
-                          ) : index === 3 ? (
                             <img 
                               src="/lovable-uploads/cb89dbec-314e-409b-b792-21da7b98292e.png" 
                               alt="Aviation and Airports Operations" 
                               className="w-full h-full object-cover"
                             />
-                          ) : index === 4 ? (
-                            <img 
-                              src="/lovable-uploads/b4eb3490-cc39-4921-8158-e59860c99aa1.png" 
-                              alt="Mining and Energy Operations" 
-                              className="w-full h-full object-cover"
-                            />
-                          ) : index === 5 ? (
-                            <img 
-                              src="/lovable-uploads/0395ed94-f56e-4c2d-a713-7753eee8d533.png" 
-                              alt="Transportation and Logistics Operations" 
-                              className="w-full h-full object-cover"
-                            />
-                          ) : index === 6 ? (
+                          ) : index === 3 ? (
                             <img 
                               src="/lovable-uploads/80b794a0-00ea-493c-8eae-b5e4a067075b.png" 
                               alt="Public Safety and Law Enforcement Operations" 
                               className="w-full h-full object-cover"
                             />
+                          ) : index === 4 ? (
+                            <img 
+                              src="/lovable-uploads/5a0bcd62-e02b-4d44-b984-c3153435ab72.png" 
+                              alt="Construction and Infrastructure Operations" 
+                              className="w-full h-full object-cover"
+                            />
+                          ) : index === 5 ? (
+                            <img 
+                              src="/lovable-uploads/ec0fc2c8-2cc0-4cb1-b6d4-ad1a9f439054.png" 
+                              alt="Manufacturing and Heavy Industry Operations" 
+                              className="w-full h-full object-cover"
+                            />
+                          ) : index === 6 ? (
+                            <img 
+                              src="/lovable-uploads/b4eb3490-cc39-4921-8158-e59860c99aa1.png" 
+                              alt="Mining and Energy Operations" 
+                              className="w-full h-full object-cover"
+                            />
                           ) : index === 7 ? (
                             <img 
-                              src="/lovable-uploads/864a9bfd-9667-4c95-b683-2c86443241bc.png" 
-                              alt="Recreational and Competitive Shooting Operations" 
+                              src="/lovable-uploads/0395ed94-f56e-4c2d-a713-7753eee8d533.png" 
+                              alt="Transportation and Logistics Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : (
