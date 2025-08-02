@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="flex flex-col items-center text-center">
             <div className="w-48 h-16">
               <img 
-                src="/lovable-uploads/ef310f2d-7afe-464d-816e-302392b965e4.png" 
+                src="/lovable-uploads/7ea90a58-8b4d-45d2-a9a6-c8f05c5e3f83.png" 
                 alt="Aware Defense" 
                 className="w-full h-full object-contain"
               />
