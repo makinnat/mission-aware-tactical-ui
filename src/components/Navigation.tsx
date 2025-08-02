@@ -22,7 +22,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/">
               <img 
-                src="/lovable-uploads/5c607f12-b54d-4365-a386-81fe63ac9dda.png" 
+                src="/lovable-uploads/90b13fc6-3bac-4fbe-af2c-3bf9b0238ef8.png" 
                 alt="Aware Defense Logo" 
                 className="h-8 w-auto"
               />
