@@ -10,24 +10,28 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo, Made in USA, eFit, and Social */}
           <div className="flex flex-col items-center text-center">
-            <div className="w-48 h-16">
+            <Link to="/" className="block">
+              <div className="w-48 h-16">
               <img 
                 src="/lovable-uploads/7ea90a58-8b4d-45d2-a9a6-c8f05c5e3f83.png" 
                 alt="Aware Defense" 
                 className="w-full h-full object-contain"
               />
-            </div>
+              </div>
+            </Link>
             
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-32 h-24">
+              <Link to="/" className="block">
+                <div className="w-32 h-24">
                 <img 
                   src="/lovable-uploads/f769839c-af38-4801-aab1-98f74e7c07c9.png" 
                   alt="Made in USA" 
                   className="w-full h-full object-contain"
                 />
-              </div>
+                </div>
+              </Link>
               
-              <Link to="/technology/efit-3d-scanner" className="block">
+              <Link to="/" className="block">
                 <img 
                   src="/lovable-uploads/e319426e-8e90-469b-bc84-bde45b072745.png" 
                   alt="eFit 3D Scanner" 
