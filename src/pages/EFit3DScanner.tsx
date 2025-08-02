@@ -183,29 +183,29 @@ const EFit3DScanner = () => {
         backgroundRepeat: 'no-repeat'
       }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-signal-white text-center mb-8">
               The Only Technology That Accurately Captures the Second Bend
             </h2>
-            <p className="text-lg text-desert-tan leading-relaxed mb-8">
+            <p className="text-lg text-desert-tan leading-relaxed mb-12 max-w-4xl mx-auto">
               What sets the eFit apart from all other scanning technologies is its unique ability to accurately capture the second bend of the ear canal. This anatomical feature, located deep within the ear canal, is critical for:
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
               {[
                 "Perfect seal integrity for hearing protection effectiveness",
                 "Medical-grade biometric sensor placement for accurate data collection",
                 "Optimal comfort through precise anatomical mapping",
                 "Future-proof platform for advanced sensor integration"
               ].map((item, index) => (
-                <div key={index} className="flex items-start space-x-3">
+                <div key={index} className="flex items-start space-x-3 text-left">
                   <CheckCircle className="h-5 w-5 text-scarlet mt-1 flex-shrink-0" />
                   <p className="text-signal-white">{item}</p>
                 </div>
               ))}
             </div>
             
-            <p className="text-desert-tan leading-relaxed mt-8">
+            <p className="text-desert-tan leading-relaxed max-w-4xl mx-auto">
               The second bend is strategically positioned close to the brain, major blood vessels, and Arnold's nerve (the auricular branch of the vagus nerve). This proximity enables the collection of medical-grade data that universal, one-size-fits-all devices cannot consistently capture.
             </p>
           </div>
