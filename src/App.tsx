@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import { CartProvider } from "@/contexts/CartContext";
 import { usePerformanceMonitor } from "@/hooks/usePerformanceMonitor";
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 
 // Lazy load non-critical pages
@@ -59,6 +60,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Index />} />

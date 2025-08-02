@@ -16,7 +16,6 @@ import {
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 const InstructionsAndCare = () => {
   const {
@@ -39,10 +38,6 @@ const InstructionsAndCare = () => {
     isVisible: ctaVisible
   } = useScrollAnimation();
   
-  // Scroll to top when component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="min-h-screen bg-combat-black text-signal-white font-inter">

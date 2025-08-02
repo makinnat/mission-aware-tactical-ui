@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { ShoppingCart, Plus, Minus, X, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { CartLineItem } from '@/types/product';
 
 interface CartSidebarProps {
@@ -171,7 +172,7 @@ export const CartSidebar: React.FC<CartSidebarProps> = ({ trigger }) => {
                   <p className="text-muted-foreground">Add some tactical gear to get started</p>
                 </div>
                 <Button variant="outline" asChild>
-                  <a href="/products">Browse Products</a>
+                  <Link to="/products">Browse Products</Link>
                 </Button>
               </div>
             </div>
