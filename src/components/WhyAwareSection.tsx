@@ -12,8 +12,8 @@ export const WhyAwareSection = () => {
       description: "Our scanning technology meets the highest medical standards"
     },
     {
-      title: "SPECIAL OPERATIONS TRUSTED", 
-      description: "Validated by DoD aviators in the field"
+      title: "TRUSTED BY DOD AVIATORS", 
+      description: "Validated by Special Operations"
     },
     {
       title: "INDUSTRY PARTNERSHIPS",
