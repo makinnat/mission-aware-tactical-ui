@@ -9,11 +9,11 @@ export const SolutionSection = () => {
   } = useScrollAnimation();
   const solutions = [{
     icon: Target,
-    title: "Zero Contact. 100% Fit.",
+    title: "ZERO CONTACT, 100% FIT",
     description: "Our patented, non-contact 3D ear scanner captures the full geometry of the ear—including the critical second bend—in just 90 seconds."
   }, {
     icon: Clock,
-    title: "Scan Once, Fit For Your Career.",
+    title: "SCAN ONCE, FIT FOR YOUR CAREER",
     description: "Permanent digital profile for fast remakes and future upgrades. Your ear geometry is stored securely for life."
   }, {
     icon: Radio,
