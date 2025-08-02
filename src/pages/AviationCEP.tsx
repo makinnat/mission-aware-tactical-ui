@@ -19,6 +19,7 @@ const AviationCEP = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedFinish, setSelectedFinish] = useState("");
+  const [selectedModel, setSelectedModel] = useState("");
   const [currentImageIndex, setCurrentImageIndex] = useState(1);
 
   const productImages = [
@@ -128,6 +129,24 @@ const AviationCEP = () => {
                       </SelectContent>
                     </Select>
                   </div>
+                </div>
+                
+                {/* Model Selection */}
+                <div className="space-y-2">
+                  <label className="text-signal-white text-sm font-medium">Model</label>
+                  <Select value={selectedModel} onValueChange={setSelectedModel}>
+                    <SelectTrigger className="w-full bg-muted/30 border-[#6C6846] text-signal-white">
+                      <SelectValue placeholder="Select model" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-combat-black border-[#6C6846] z-50">
+                      <SelectItem value="CEP505-C11" className="text-signal-white hover:bg-muted/30">CEP505-C11</SelectItem>
+                      <SelectItem value="CEP505-C11-V" className="text-signal-white hover:bg-muted/30">CEP505-C11-V</SelectItem>
+                      <SelectItem value="CEP508-C15" className="text-signal-white hover:bg-muted/30">CEP508-C15</SelectItem>
+                      <SelectItem value="CEP508-C16" className="text-signal-white hover:bg-muted/30">CEP508-C16</SelectItem>
+                      <SelectItem value="CEP402-C05" className="text-signal-white hover:bg-muted/30">CEP402-C05</SelectItem>
+                      <SelectItem value="ROWANWELL-499-999-006-603" className="text-signal-white hover:bg-muted/30">ROWANWELL (499-999-006-603)</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
               </div>
 
