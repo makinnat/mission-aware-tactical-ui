@@ -57,25 +57,25 @@ export const Footer = () => {
                 to="/products" 
                 className="block hover:text-scarlet-red transition-colors"
               >
-                Products
+                PRODUCTS
               </Link>
               <Link 
                 to="/technology" 
                 className="block hover:text-scarlet-red transition-colors"
               >
-                Technology
+                TECHNOLOGY
               </Link>
               <Link 
                 to="/use-cases" 
                 className="block hover:text-scarlet-red transition-colors"
               >
-                Use Cases
+                USE CASES
               </Link>
               <Link 
                 to="/about" 
                 className="block hover:text-scarlet-red transition-colors"
               >
-                About Us
+                ABOUT US
               </Link>
             </div>
           </div>
