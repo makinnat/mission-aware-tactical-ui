@@ -120,6 +120,8 @@ export default function CustomOvermold() {
                         <SelectItem value="otto" className="text-signal-white hover:bg-muted/30">Otto Noize Barrier</SelectItem>
                         <SelectItem value="axil" className="text-signal-white hover:bg-muted/30">AXIL XCOR</SelectItem>
                         <SelectItem value="invisio" className="text-signal-white hover:bg-muted/30">Invisio X-5 & X-7</SelectItem>
+                        <SelectItem value="bose" className="text-signal-white hover:bg-muted/30">Bose Pro Flight 2</SelectItem>
+                        <SelectItem value="clarity" className="text-signal-white hover:bg-muted/30">Clarity Aloft</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
