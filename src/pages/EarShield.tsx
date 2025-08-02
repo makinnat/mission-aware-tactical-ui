@@ -91,6 +91,9 @@ const EarShield = () => {
                 <h1 className="heading-tactical text-signal-white text-4xl md:text-5xl">
                   Aware EarShield
                 </h1>
+                <div className="text-3xl font-bold text-scarlet-red">
+                  $199.00
+                </div>
               </div>
 
               {/* Product Options */}
