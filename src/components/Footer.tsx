@@ -45,7 +45,7 @@ export const Footer = () => {
 
           {/* Navigation Links */}
           <div className="text-center">
-            <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
+            <h3 className="heading-tactical text-primary text-lg mb-2 uppercase">
               NAVIGATION
             </h3>
             <div className="space-y-2 text-secondary text-sm">
@@ -78,7 +78,7 @@ export const Footer = () => {
 
           {/* Offices */}
           <div className="text-center">
-            <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
+            <h3 className="heading-tactical text-primary text-lg mb-2 uppercase">
               OFFICES
             </h3>
             <div className="space-y-2 text-secondary text-sm">
@@ -102,7 +102,7 @@ export const Footer = () => {
 
           {/* Newsletter Signup */}
           <div className="text-center">
-            <h3 className="heading-tactical text-primary text-lg mb-4 uppercase">
+            <h3 className="heading-tactical text-primary text-lg mb-2 uppercase">
               STAY UPDATED
             </h3>
             <p className="text-secondary text-sm mb-4">
