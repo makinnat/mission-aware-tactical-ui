@@ -277,7 +277,7 @@ const HowToBuy = () => {
                   <div className="flex items-start space-x-4">
                     <Truck className="h-6 w-6 text-scarlet mt-1 flex-shrink-0" />
                     <p className="text-lg text-signal-white">
-                      Delivery: 2–3 weeks from scan date
+                      Delivery: 2-4 weeks from scan date, rush production and shipping available
                     </p>
                   </div>
                 </CardContent>
