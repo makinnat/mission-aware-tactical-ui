@@ -89,7 +89,7 @@ const Products = () => {
                 <div className="text-center space-y-6">
                   <div className="text-6xl font-bold text-scarlet-red">92%</div>
                   <h3 className="heading-tactical text-primary text-2xl">
-                    UNIVERSAL FIT FAILS 92% OF THE TIME
+                    Universal Fit fails 92% of the time, leading to permanent hearing loss
                   </h3>
                   <div className="mt-8">
                     <p className="text-secondary text-lg text-center">Only Aware accurately captures the second bend of the ear for superior fit and performance, even beyond traditional silicone pour methods.</p>
