@@ -448,7 +448,7 @@ const UseCases = () => {
                             <img 
                               src="/lovable-uploads/b4eb3490-cc39-4921-8158-e59860c99aa1.png" 
                               alt="Mining and Energy Operations" 
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-cover scale-x-[-1]"
                             />
                           ) : index === 7 ? (
                             <img 
