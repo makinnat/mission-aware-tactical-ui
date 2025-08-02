@@ -88,10 +88,15 @@ export const Footer = () => {
               <h4 className="heading-tactical text-primary text-sm mt-4 mb-2 uppercase">
                 CONTACT US
               </h4>
-              <div className="flex items-center justify-center gap-2">
-                <Phone className="w-4 h-4 text-secondary" />
+              <div className="flex items-center justify-center">
                 <span>(855)EAR-SCAN</span>
               </div>
+              <a 
+                href="mailto:info@awaredefense.us" 
+                className="text-scarlet-red hover:text-scarlet-red/80 transition-colors"
+              >
+                info@awaredefense.us
+              </a>
             </div>
           </div>
 
