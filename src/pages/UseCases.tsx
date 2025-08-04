@@ -424,7 +424,7 @@ const UseCases = () => {
                                   className="w-16 h-16 bg-white rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
                                   onClick={() => product.link && navigate(product.link)}
                                 >
-                                  <LazyImage 
+                                  <img 
                                     src={product.src} 
                                     alt={product.alt} 
                                     className="w-full h-full object-cover"
@@ -438,52 +438,49 @@ const UseCases = () => {
                         {/* Image Side */}
                         <div className="bg-combat-black/30 border-l border-desert-tan/20 flex items-center justify-center min-h-[300px] lg:min-h-[350px]">
                           {index === 0 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/f1e814a3-2edb-4313-8649-962fba392f5a.png" 
                               alt="Defense and Federal Government Operations" 
                               className="w-full h-full object-cover"
-                              priority={true}
                             />
                           ) : index === 1 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/864a9bfd-9667-4c95-b683-2c86443241bc.png" 
                               alt="Recreational and Competitive Shooting Operations" 
                               className="w-full h-full object-cover"
-                              priority={true}
                             />
                           ) : index === 2 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/cb89dbec-314e-409b-b792-21da7b98292e.png" 
                               alt="Aviation and Airports Operations" 
                               className="w-full h-full object-cover"
-                              priority={true}
                             />
                           ) : index === 3 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/80b794a0-00ea-493c-8eae-b5e4a067075b.png" 
                               alt="Public Safety and Law Enforcement Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : index === 4 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/5a0bcd62-e02b-4d44-b984-c3153435ab72.png" 
                               alt="Construction and Infrastructure Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : index === 5 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/ec0fc2c8-2cc0-4cb1-b6d4-ad1a9f439054.png" 
                               alt="Manufacturing and Heavy Industry Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : index === 6 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/b4eb3490-cc39-4921-8158-e59860c99aa1.png" 
                               alt="Mining and Energy Operations" 
                               className="w-full h-full object-cover scale-x-[-1]"
                             />
                           ) : index === 7 ? (
-                            <LazyImage 
+                            <img 
                               src="/lovable-uploads/0395ed94-f56e-4c2d-a713-7753eee8d533.png" 
                               alt="Transportation and Logistics Operations" 
                               className="w-full h-full object-cover"
