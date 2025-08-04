@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useScrollAnimation, useStaggeredAnimation } from "@/hooks/useScrollAnimation";
+import { LazyImage } from "@/components/ui/lazy-image";
 import { ArrowRight, Shield, Plane, HardHat, Activity, Target, Music, Truck, Zap, Building, Settings } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { useNavigate } from "react-router-dom";
+import { useImagePreloader } from "@/hooks/useImagePreloader";
+import { useMemo } from "react";
 
 const UseCases = () => {
   const navigate = useNavigate();
@@ -21,12 +24,23 @@ const UseCases = () => {
   const {
     ref: sectorsRef,
     isVisible: sectorsVisible
-  } = useScrollAnimation();
+  } = useStaggeredAnimation();
   
   const {
     ref: ctaRef,
     isVisible: ctaVisible
   } = useScrollAnimation();
+
+  // Preload critical images for faster rendering
+  const criticalImages = useMemo(() => [
+    '/lovable-uploads/58f8e7d8-4eae-435b-97e4-5d655310aec9.png', // Hero background
+    '/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png', // Pattern background
+    '/lovable-uploads/f1e814a3-2edb-4313-8649-962fba392f5a.png', // Defense image
+    '/lovable-uploads/864a9bfd-9667-4c95-b683-2c86443241bc.png', // Shooting image
+    '/lovable-uploads/cb89dbec-314e-409b-b792-21da7b98292e.png', // Aviation image
+  ], []);
+
+  useImagePreloader(criticalImages);
 
   const industrySectors = [
     {
@@ -350,7 +364,7 @@ const UseCases = () => {
       {/* Industry Sectors Grid */}
       <section 
         ref={sectorsRef} 
-        className={`py-8 transition-all duration-1000 delay-300 ${sectorsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`py-8 transition-all duration-500 ${sectorsVisible ? "opacity-100" : "opacity-0"}`}
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/lovable-uploads/dcbaa36b-0d95-4b4b-a548-872be284e918.png')`,
           backgroundSize: '400px 400px',
@@ -364,7 +378,10 @@ const UseCases = () => {
               {industrySectors.map((sector, index) => (
                 <div 
                   key={index}
-                  className={`transition-all duration-700 delay-${400 + (index * 100)} ${sectorsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                  className={`transition-all duration-300 ${sectorsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+                  style={{
+                    transitionDelay: `${index * 50}ms`
+                  }}
                 >
                   <Card className="bg-desert-tan/5 border-desert-tan/20 rounded-xl overflow-hidden">
                     <CardContent className="p-0">
@@ -407,7 +424,7 @@ const UseCases = () => {
                                   className="w-16 h-16 bg-white rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
                                   onClick={() => product.link && navigate(product.link)}
                                 >
-                                  <img 
+                                  <LazyImage 
                                     src={product.src} 
                                     alt={product.alt} 
                                     className="w-full h-full object-cover"
@@ -421,49 +438,52 @@ const UseCases = () => {
                         {/* Image Side */}
                         <div className="bg-combat-black/30 border-l border-desert-tan/20 flex items-center justify-center min-h-[300px] lg:min-h-[350px]">
                           {index === 0 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/f1e814a3-2edb-4313-8649-962fba392f5a.png" 
                               alt="Defense and Federal Government Operations" 
                               className="w-full h-full object-cover"
+                              priority={true}
                             />
                           ) : index === 1 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/864a9bfd-9667-4c95-b683-2c86443241bc.png" 
                               alt="Recreational and Competitive Shooting Operations" 
                               className="w-full h-full object-cover"
+                              priority={true}
                             />
                           ) : index === 2 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/cb89dbec-314e-409b-b792-21da7b98292e.png" 
                               alt="Aviation and Airports Operations" 
                               className="w-full h-full object-cover"
+                              priority={true}
                             />
                           ) : index === 3 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/80b794a0-00ea-493c-8eae-b5e4a067075b.png" 
                               alt="Public Safety and Law Enforcement Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : index === 4 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/5a0bcd62-e02b-4d44-b984-c3153435ab72.png" 
                               alt="Construction and Infrastructure Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : index === 5 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/ec0fc2c8-2cc0-4cb1-b6d4-ad1a9f439054.png" 
                               alt="Manufacturing and Heavy Industry Operations" 
                               className="w-full h-full object-cover"
                             />
                           ) : index === 6 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/b4eb3490-cc39-4921-8158-e59860c99aa1.png" 
                               alt="Mining and Energy Operations" 
                               className="w-full h-full object-cover scale-x-[-1]"
                             />
                           ) : index === 7 ? (
-                            <img 
+                            <LazyImage 
                               src="/lovable-uploads/0395ed94-f56e-4c2d-a713-7753eee8d533.png" 
                               alt="Transportation and Logistics Operations" 
                               className="w-full h-full object-cover"
