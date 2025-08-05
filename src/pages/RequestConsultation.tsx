@@ -58,12 +58,14 @@ const RequestConsultation = () => {
 
           {/* HubSpot Form */}
           <div className="max-w-2xl mx-auto">
-            <div 
-              className="hs-form-frame" 
-              data-region="na1" 
-              data-form-id="fc71169f-c440-4a2b-8bcb-b5ca76737fe6" 
-              data-portal-id="47124486"
-            />
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div 
+                className="hs-form-frame" 
+                data-region="na1" 
+                data-form-id="fc71169f-c440-4a2b-8bcb-b5ca76737fe6" 
+                data-portal-id="47124486"
+              />
+            </div>
           </div>
         </div>
       </section>
