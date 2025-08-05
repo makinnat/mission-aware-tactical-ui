@@ -1,10 +1,25 @@
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { ConsultationForm } from "@/components/ConsultationForm";
+import { useEffect } from "react";
 
 const heroImage = "/lovable-uploads/2bf4d720-4753-487d-ba23-f8007156d857.png";
 
 const RequestConsultation = () => {
+  useEffect(() => {
+    // Load HubSpot forms script
+    const script = document.createElement('script');
+    script.src = 'https://js.hsforms.net/forms/embed/47124486.js';
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Clean up script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen w-full">
       <Navigation />
@@ -41,8 +56,15 @@ const RequestConsultation = () => {
             </p>
           </div>
 
-          {/* Consultation Form */}
-          <ConsultationForm />
+          {/* HubSpot Form */}
+          <div className="max-w-2xl mx-auto">
+            <div 
+              className="hs-form-frame" 
+              data-region="na1" 
+              data-form-id="fc71169f-c440-4a2b-8bcb-b5ca76737fe6" 
+              data-portal-id="47124486"
+            />
+          </div>
         </div>
       </section>
 
